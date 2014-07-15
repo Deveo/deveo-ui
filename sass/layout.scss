@@ -1,0 +1,79 @@
+/*Generic layout elements*/
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  opacity: 0.5;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  display: none;
+
+  &.first {
+    z-index: 45;
+  }
+
+  &.second {
+    z-index: 55;
+  }
+
+}
+
+/*Position layouts*/
+
+.layouts {
+  width: 100%;
+  height: 100%;
+
+  noscript p {
+    background-color: #6296BC;
+    padding: 1em;
+    text-align: center;
+  }
+}
+
+.layout {
+  display: none;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#layout_page {
+  z-index: 20;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#layout_fullscreen {
+  z-index: 30;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#layout_task {
+  z-index: 50;
+  height: 100%;
+
+  .panel.second {
+    z-index: 60;
+  }
+
+}
+
+#layout_session {
+  z-index: 50;
+  height: 100%;
+}
+
+/*Content areas*/
+
+.column > .content, .item > .content {
+  padding: 20px;
+}

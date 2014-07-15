@@ -1,0 +1,92 @@
+
+/*Vertical rhythm*/
+
+h1 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+h2, h3, h4, h5, h6, p, ul, ol, table, pre, blockquote {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+  .condensed h2, .condensed h3, .condensed h4, .condensed h5, .condensed h6, .condensed p, .condensed ul, .condensed ol, .condensed table, .condensed pre, .condensed blockquote {
+    margin-top: 0.5em;
+  }
+
+  .list h2, .list h3, .list h4, .list h5, .list h6, .list p, .list ul, .list ol, .list table, .list pre, .list blockquote,
+  p.image {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .inverted {
+    h4 {
+      margin-top: 2.5em;
+      margin-bottom: 0;
+    }
+
+    .condensed {
+      h4 {
+        margin-top: 0.5em;
+      }
+    }
+    .list {
+      h4 {
+        margin-top: 0;
+      }
+    }
+  }
+
+  h2.first, h3.first, h4.first, h5.first, h6.first, p.first, ul.first, ol.first, dl.first,
+  .menu ul, .menu ol, ol.menu, ul.menu,
+  ul ul, ul ol, ol ol, ol ul {
+    margin-top: 0;
+  }
+
+dl {
+  margin-bottom: 0.5em;
+}
+
+dt {
+  margin-top: 1.5em;
+}
+
+pre {
+  padding: 1em;
+}
+
+/*Tables*/
+
+caption {
+  margin-bottom: 1em;
+}
+
+th, td {
+  padding: 1em;
+}
+
+  table table th, table table td {
+    padding: 0.5em;
+  }
+
+/*Forms*/
+
+form p, ul, ol {
+}
+
+  form p.label {
+    margin-top: 1em;
+    margin-bottom: 0;
+  }
+
+  form p.input {
+    margin-top: 0.2em;
+    margin-top: 0.5em;
+  }
+
+  form p.description {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+  }

@@ -1,0 +1,131 @@
+
+/*Menu layouts*/
+
+.menu ul, .menu ol, ul.menu, ol.menu {
+  list-style: none;
+}
+
+.menu ul, .menu ol, ul.menu, ol.menu {
+  padding-left: 0;
+}
+
+  .menu ul.left {
+    float: left;
+    clear: right;
+  }
+
+  .menu ul.right, .menu ul.last {
+    float: right;
+    clear: right;
+  }
+
+ul.menu.images > li {
+  margin: 5px 5px 10px 5px;
+  min-height: 30px;
+
+  > a {
+    display: block;
+    min-height: 30px;
+    padding: 0 10px 0 0;
+
+    > img, > span {
+      display: inline-block;
+    }
+
+    > img {
+    }
+
+    > span {
+      padding-top: 0.4em;
+    }
+
+  }
+
+}
+
+/*List layouts*/
+
+ul.breathe {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+  }
+
+  &.menu {
+    li {
+      margin-top: 0;
+      margin-bottom: 0;
+      a {
+        padding: 0.5em 10px;
+      }
+    }
+  }
+
+}
+
+/*Inline list layouts*/
+
+ul.inline, ol.inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+  ul.inline > li, ol.inline > li, ul.inline > li > a, ol.inline > li > a {
+    display: inline-block;
+  }
+
+    ul.inline > li, ol.inline > li {
+      margin-right: 1em;
+    }
+
+    ul.inline.right > li, ol.inline.right > li {
+      margin-right: 0;
+      margin-left: 1em;
+    }
+
+dl.inline > dt, dl.inline > dd {
+  float: left;
+  clear: right;
+}
+
+  dl.inline > dt {
+    margin-top: 0;
+  }
+
+ul.stack {
+  list-style: none;
+  padding-left: 0;
+}
+
+/*All menus*/
+
+.menu li, .menu li a {
+  display: block;
+}
+
+.menu li.hidden {
+  display: none;
+}
+
+.menu li a {
+  padding: 5px 10px 5px 5px;
+}
+
+/*Inline menus layout*/
+ul.menu.inline > li > a, .menu ul.inline > li > a {
+  padding: 0;
+}
+
+/*Condensed menu layout*/
+.menu.condensed li a {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/*Menus with icons*/
+.menu.icons li a {
+  padding: 5px 10px 5px 30px;
+}

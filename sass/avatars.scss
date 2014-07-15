@@ -1,0 +1,80 @@
+.avatar {
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+
+  i {
+    display: inline-block;
+    color: #fff;
+    vertical-align: top;
+
+    &.hidden {
+      display: none;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+
+  &.tiny {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+
+    i {
+      font-size: 10px;
+    }
+  }
+
+  &.small {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+
+    i {
+      font-size: 16px;
+    }
+  }
+
+  &.large {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+
+    i {
+      font-size: 30px;
+    }
+  }
+
+  &.default {
+    background-color: #50566A;
+  }
+
+  &.blue {
+    background-color: #3589c4;
+  }
+
+  &.green {
+    background-color: #abce00;
+  }
+
+  &.red {
+    background-color: #e5163d;
+  }
+
+  &.orange {
+    background-color: #ff9500;
+  }
+
+  &.turquoise {
+    background-color: #00d9a3;
+  }
+
+  &.purple {
+    background-color: #623494;
+  }
+}

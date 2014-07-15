@@ -1,0 +1,65 @@
+
+// Panels
+
+.panel {
+  display: none;
+}
+
+.panel {
+  position: absolute;
+  width: 560px;
+  height: 100%;
+  top: 0;
+  right: -560px;
+  overflow-x: hidden;
+  z-index: 50;
+
+  &.left {
+    width: 400px;
+    left: -400px;
+  }
+
+    &.left > .content {
+      padding: rem(50px);
+    }
+
+  &.right {
+    width: 560px;
+    right: -560px;
+  }
+
+    &.right > .content {
+      padding: rem(50px);
+    }
+
+}
+
+// Small screens
+@media handheld, only screen and (max-width: 1023px) {
+
+  .panel, .panel.right {
+    width: 500px;
+    right: -500px;
+
+    &.right > .content {
+      //width: 440px;
+    }
+
+  }
+
+}
+
+// Really small screens
+@media handheld, only screen and (max-width: 499px) {
+
+  .panel, .panel.right {
+    width: 360px;
+    right: -360px;
+
+    &.right > .content {
+      //width: 300px;
+    }
+
+  }
+
+}

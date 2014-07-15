@@ -1,0 +1,196 @@
+/*Overall rhythm*/
+
+html, body {
+  line-height: 1.4;
+}
+
+  .condensed {
+    line-height: 1.2;
+  }
+
+/*Fonts*/
+
+@font-face {
+  font-family: "deveoicons";
+  src: url("/fonts/deveo_icons.eot");
+  src: url("/fonts/deveo_icons.woff") format('woff'),
+       url("/fonts/deveo_icons.svg#deveo-icons") format('svg'),
+       url("/fonts/deveo_icons.otf") format('opentype'),
+       url("/fonts/deveo_icons.ttf") format('truetype');
+}
+
+/* Webfont: LatoLatinLight-Regular */
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/LatoLatinLight-Regular.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/LatoLatinLight-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/LatoLatinLight-Regular.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/LatoLatinLight-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: LatoLatin-Regular */
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/LatoLatin-Regular.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/LatoLatin-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/LatoLatin-Regular.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/LatoLatin-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: LatoLatinSemBd-Regular */
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/LatoLatinSemBd-Regular.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/LatoLatinSemBd-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/LatoLatinSemBd-Regular.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/LatoLatinSemBd-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+html {
+  font-family: "Lato", "Lucida Grande", "Segoe UI", "Arial", sans-serif;
+
+  &.zh {
+    font-family: "STSong", "SimSun";
+  }
+}
+
+blockquote, q {
+  font-family: "Georgia", serif;
+}
+
+i.icons {
+  font-family: deveoicons;
+  font-size: 14px;
+  font-weight: normal;
+  color: inherit;
+  font-style: normal;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+
+  &.black {
+    color: #000;
+  }
+  &.blue {
+    color: #3589c4;
+  }
+  &.dark {
+    color: #29587a;
+  }
+  &.darker {
+    color: #142630;
+  }
+  &.grey {
+    color: #8394A0;
+  }
+  &.light {
+    color: #fff;
+  }
+  &.red {
+    color: #d87f6f;
+  }
+  &.green {
+    color: #c3da09;
+  }
+}
+
+pre, code, kbd, samp {
+  font-family: monospace;
+}
+
+/*Sizes*/
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: rem(13px);
+}
+
+h1 {
+  font-size: 2.8em;
+}
+
+h2 {
+  font-size: 2.1em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h5, h6 {
+  font-size: 1em;
+}
+
+small, .discreet {
+  font-size: 0.8667em;
+}
+
+  a.discreet, input.discreet, textarea.discreet {
+    font-size: inherit;
+  }
+
+.highlight {
+  font-size: 1.2em;
+}
+
+/*Variations*/
+
+h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: normal;
+}
+
+  a.discreet, h2.discreet, h3.discreet, h4.discreet, h5.discreet, h6.discreet {
+    font-weight: inherit;
+  }
+
+.required label, label.required {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+  a.text {
+    text-decoration: underline;
+  }
+
+    a.text:hover {
+      text-decoration: none;
+    }
+
+/*Responsive versions*/
+
+/*Smaller screens*/
+@media only screen and (max-width: 1023px) {
+
+  body {
+    font-size: 0.85em;
+  }
+
+}
+
+/*Mobile*/
+@media handheld, only screen and (max-width: 767px) {
+
+  body {
+    font-size: 0.85em;
+    -webkit-text-size-adjust: none;
+  }
+
+}

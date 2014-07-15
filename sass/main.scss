@@ -1,0 +1,34 @@
+@import 'functions';
+@import 'mixins';
+
+@import 'blocks';
+@import 'colors';
+@import 'columns';
+@import 'common';
+@import 'forms';
+@import 'functions';
+@import 'layout';
+@import 'shadows';
+@import 'syntax';
+@import 'transitions';
+@import 'typography';
+
+@import 'alerts';
+@import 'avatars';
+@import 'buttons';
+@import 'collapsibles';
+@import 'confirmation';
+@import 'icons';
+@import 'labels';
+@import 'loader';
+@import 'markdown';
+@import 'menus';
+@import 'panels';
+
+.container {
+  margin: 50px auto;
+  padding: 1em 2em;
+  background-color: #fff;
+  width: 800px;
+  min-height: 100%;
+}

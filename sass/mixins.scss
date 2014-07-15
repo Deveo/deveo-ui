@@ -1,0 +1,28 @@
+// http://stackoverflow.com/questions/7073484/how-does-this-css-triangle-shape-work
+@mixin tip-top {
+  position: absolute;
+  width: 20px;
+
+  &:before, &:after {
+    position: absolute;
+
+    width: 0px;
+    height: 0px;
+
+    border-width: 0px 10px 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+
+    content: "";
+  }
+
+  &:before {
+    top: -12px;
+
+    border-bottom-color: #d4d4d4;
+  }
+
+  &:after {
+    top: -9px;
+  }
+}

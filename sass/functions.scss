@@ -1,0 +1,3 @@
+@function rem($font-size-in-px){
+  @return $font-size-in-px / 16px * 1rem
+}

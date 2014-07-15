@@ -1,0 +1,53 @@
+.deactivated {
+  opacity: 0.4;
+}
+
+.render-error {
+  .icon-bot {
+    font-size: 2em;
+    padding-right: 15px;
+  }
+
+  &.task {
+    .icon-bot {
+      color: #444;
+    }
+  }
+}
+
+.thumbnail {
+  width: 40px;
+  height: 40px;
+
+  &.small {
+    width: 30px;
+    height: 30px;
+  }
+
+  &.medium {
+    width: 60px;
+    height: 60px;
+  }
+
+  &.large {
+    width: 100px;
+    height: 100px;
+  }
+
+  &.circle {
+    border-radius: 50%;
+    vertical-align: middle;
+
+    > img {
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+  }
+}
+
+.truncate {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

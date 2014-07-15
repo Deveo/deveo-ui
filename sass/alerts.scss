@@ -1,0 +1,26 @@
+.alert {
+  padding: 12px 20px;
+
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+
+  i {
+    margin-right: 20px;
+  }
+
+  &.info {
+    color: #4e9fc0;
+    border-color: #c3d4db;
+  }
+
+  &.error {
+    color: #aa6d6e;
+    border-color: #e0cdcd;
+  }
+
+  &.success {
+    color: #62aa95;
+    border-color: #acd6c8;
+  }
+}

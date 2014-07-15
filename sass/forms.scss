@@ -1,0 +1,66 @@
+form, .form {
+  .error {
+    color: #CA4B4B;
+    display: none;
+  }
+}
+
+input.text, input.password, textarea {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+
+  position: relative;
+  width: 100%;
+  background: #FFF;
+  border: 2px solid #D3D3D3;
+  border-radius: 5px;
+  padding: rem(10px) rem(15px);
+  line-height: rem(16px);
+  height: rem(40px);
+
+  &.light {
+    border-color: #E7E7E7;
+  }
+
+  &.small {
+    padding: rem(10px);
+    height: rem(34px);
+  }
+
+  &.error {
+    color: inherit;
+    border-color: #DEB3B4;
+  }
+}
+
+.disabled input.text, .disabled input.password, .disabled textarea,
+input.text.disabled, input.password.disabled, textarea.disabled {
+  color: #CCCCCC;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  margin-right: rem(10px);
+}
+
+.placeholder {
+  color: #CECECE;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #CECECE;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #CECECE;
+    opacity:  1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #CECECE;
+    opacity:  1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #CECECE;
+}
