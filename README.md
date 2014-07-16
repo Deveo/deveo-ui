@@ -2,13 +2,19 @@
 
 This project acts as a showcase for the Deveo UI components.
 
-To get started, you'll first need to run SASS compilation,
+To get started, you'll first need to run SASS compilation with
 
-    $ grunt sass
+    $ gulp sass
 
-then start up the server,
+or
 
-    $ node app.js 
+    $ gulp
+
+if you want to compile and watch the directory for changes.
+
+Then start up the server,
+
+    $ node app.js
 
 and finally access the app with your browser.
 
@@ -18,9 +24,9 @@ and finally access the app with your browser.
 
 This project uses
 
-* [npm][npm] to manage developer tools (such as [Grunt][grunt]),
+* [npm][npm] to manage developer tools (such as [Gulp][gulp]),
 * [Bower][bower] to manage frontend packages (such as [jQuery][jquery]), and
-* [Grunt][grunt] to run project tasks (such as [SASS][sass] compilation).
+* [Gulp][gulp] to run project tasks (such as [SASS][sass] compilation and watching for file changes).
 
 The Bower components of this project are exceptionally installed in `public/js/vendor/` instead of the default `bower_components/`.
 
@@ -39,11 +45,11 @@ Below you'll find short descriptions for the essential project directories and f
 | .bowerrc            | project-specific Bower settings       |
 | app.js              | the application file to run           |
 | bower.json          | project-specific Bower dependencies   |
-| Gruntfile.js        | project-specific Grunt tasks          |
+| gulpfile.js         | project-specific Gulp tasks           |
 | package.json        | project-specific npm dependencies     |
 
 [bower]:  http://bower.io/
-[grunt]:  http://gruntjs.com/
+[gulp]:   http://gulpjs.com/
 [jquery]: http://jquery.com/
 [npm]:    https://www.npmjs.org/
 [sass]:   http://sass-lang.com/
