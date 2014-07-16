@@ -1,8 +1,9 @@
 "use strict";
 
-var gulp    = require('gulp');
-var plumber = require('gulp-plumber');
-var sass    = require('gulp-sass');
+var gulp      = require('gulp');
+var plumber   = require('gulp-plumber');
+var sass      = require('gulp-sass');
+var webserver = require('gulp-webserver');
 
 var paths = {
     styles: ['sass/main.scss']
@@ -24,5 +25,13 @@ gulp.task('watch', function() {
     gulp.watch('sass/*.scss', ['sass']);
 });
 
+// Run the server
+gulp.task('webserver', function () {
+    gulp.src('public')
+        .pipe(webserver({
+            livereload: true
+        }));
+});
+
 // Default task
-gulp.task('default', ['sass', 'watch']);
+gulp.task('default', ['sass', 'watch', 'webserver']);

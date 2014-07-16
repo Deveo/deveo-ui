@@ -2,21 +2,11 @@
 
 This project acts as a showcase for the Deveo UI components.
 
-To get started, you'll first need to run SASS compilation with
+To get started you'll just need to run
 
-    $ gulp sass
+    $ npm start
 
-or
-
-    $ gulp
-
-if you want to compile and watch the directory for changes.
-
-Then start up the server,
-
-    $ node app.js
-
-and finally access the app with your browser.
+and access the app with your browser.
 
     $ open http://lvh.me:8000
 
