@@ -5,7 +5,7 @@ var plumber = require('gulp-plumber');
 var sass    = require('gulp-sass');
 
 var paths = {
-    styles: ['sass/reset.scss', 'sass/main.scss', 'sass/deveo.dropdown.scss']
+    styles: ['sass/main.scss']
 };
 
 // Compile Sass
