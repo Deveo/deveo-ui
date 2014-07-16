@@ -33,7 +33,6 @@ Below you'll find short descriptions for the essential project directories and f
 | public/js/vendor/   | the installed bower components        |
 | sass/               | contains all SASS files to compile    |
 | .bowerrc            | project-specific Bower settings       |
-| app.js              | the application file to run           |
 | bower.json          | project-specific Bower dependencies   |
 | gulpfile.js         | project-specific Gulp tasks           |
 | package.json        | project-specific npm dependencies     |
