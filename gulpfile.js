@@ -12,6 +12,7 @@ var paths = {
 gulp.task('sass', function() {
     return gulp.src(paths.styles)
         .pipe(plumber(function(error) {
+            console.log(error.message);
             this.emit('end');
         }))
         .pipe(sass())
