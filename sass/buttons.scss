@@ -9,9 +9,22 @@
   border-radius: 5px;
   vertical-align: middle;
   display: inline-block;
-  padding: rem(10px) rem(15px);
+  padding: rem(10px) rem(20px);
   line-height: rem(16px);
   height: rem(40px);
+
+  i:first-child {
+    font-size: 16px;
+    margin-right: rem(10px);
+  }
+
+  &.icon-only {
+    padding: rem(10px) rem(14px);
+
+    i:first-child {
+      margin-right: 0;
+    }
+  }
 
   &:hover {
     color: #43454C;
@@ -19,20 +32,34 @@
   }
 
   &.small {
-    padding: rem(10px) rem(15px);
+    padding: rem(10px) rem(18px);
     line-height: rem(10px);
     height: rem(34px);
+
+    i:first-child {
+      font-size: rem(14px);
+      margin-right: rem(8px);
+    }
+
+    &.icon-only {
+      padding: rem(8px) rem(12px);
+
+      i:first-child {
+        margin-right: 0;
+      }
+    }
   }
 
   &.secondary {
     border-color: transparent;
     background-color: transparent;
+
+    padding: rem(7px);
   }
 
   &.primary {
     border-color: #D87F6F;
     color: #D87F6F;
-    padding: rem(10px) rem(20px);
     font-size: rem(11px);
     font-weight: bold;
     text-transform: uppercase;
@@ -54,9 +81,5 @@
 
   &.hidden {
     display: none;
-  }
-
-  .icons {
-    padding-left: 0.7em;
   }
 }

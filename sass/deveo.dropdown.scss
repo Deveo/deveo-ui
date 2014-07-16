@@ -19,54 +19,50 @@
     position: relative;
 
     .icons {
-      padding: 0;
-      margin: 0;
-      font-size: rem(11px);
+      &.icon-interaction-down, &.icon-interaction-up {
+        font-size: rem(10px);
+        margin-left: rem(16px);
+      }
     }
   }
 
-  .menu {
+  ul.menu {
     @include tip-top;
 
     display: none;
     position: absolute;
     z-index: 75;
-    margin-top: 1rem;
+    margin-top: rem(15px);
     white-space: nowrap;
     padding: 0;
     border: 2px solid #D4D4D4;
     border-radius: 5px;
     background-color: #FFF;
 
-    ul {
-      margin-bottom: 0;
-
+    &.inline {
       > li {
-
         &.selected, a:hover {
-          color: #43454c;
-          background-color: #F1F1F1;
-        }
-
-        a {
-          padding: rem(10px) rem(20px);
-          line-height: rem(16px);
-          font-weight: bold;
-
-          &.disabled {
-            color: #8394a0;
-
-            &:hover {
-              background: transparent;
-            }
-          }
+          background-color: transparent;
         }
       }
+    }
 
-      &.inline {
-        > li {
-          &.selected, a:hover {
-            background-color: transparent;
+    li {
+      &.selected, a:hover {
+        color: #43454c;
+        background-color: #F1F1F1;
+      }
+
+      a {
+        padding: rem(10px) rem(20px);
+        line-height: rem(16px);
+        font-weight: bold;
+
+        &.disabled {
+          color: #8394a0;
+
+          &:hover {
+            background: transparent;
           }
         }
       }
