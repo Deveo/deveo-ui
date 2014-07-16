@@ -1,15 +1,13 @@
 // http://stackoverflow.com/questions/7073484/how-does-this-css-triangle-shape-work
 @mixin tip-top {
-  position: absolute;
-  width: 20px;
-
   &:before, &:after {
     position: absolute;
+    left: 6px;
 
     width: 0px;
     height: 0px;
 
-    border-width: 0px 10px 10px 10px;
+    border-width: 0px 6px 6px 6px;
     border-style: solid;
     border-color: transparent transparent #fff transparent;
 
@@ -17,12 +15,12 @@
   }
 
   &:before {
-    top: -12px;
+    top: -8px;
 
     border-bottom-color: #d4d4d4;
   }
 
   &:after {
-    top: -9px;
+    top: -5px;
   }
 }

@@ -1,11 +1,14 @@
-@import 'mixins';
-
 .deveo-dropdown {
   display: inline-block;
   position: relative;
 
   &.right .menu {
     right: 0;
+
+    &:before, &:after {
+      left: initial;
+      right: 6px;
+    }
   }
 
   &.open .menu {
@@ -22,6 +25,8 @@
   }
 
   .menu {
+    @include tip-top;
+
     display: none;
     position: absolute;
     z-index: 75;
@@ -31,10 +36,6 @@
     border: 2px solid #D4D4D4;
     border-radius: 5px;
     background-color: #FFF;
-
-    .tip {
-      @include tip-top;
-    }
 
     ul {
       margin-bottom: 0;
