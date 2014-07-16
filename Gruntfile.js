@@ -8,7 +8,6 @@ module.exports = function (grunt) {
         sass: {
             dist: {
                 files: {
-                    'public/css/reset.css': 'sass/reset.scss',
                     'public/css/main.css': 'sass/main.scss',
                     'public/css/deveo.dropdown.css': 'sass/deveo.dropdown.scss'
                 }
