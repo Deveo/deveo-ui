@@ -3,11 +3,14 @@
 var gulp    = require('gulp');
 var plumber = require('gulp-plumber');
 var sass    = require('gulp-sass');
-var src     = ['sass/reset.scss', 'sass/main.scss', 'sass/deveo.dropdown.scss'];
+
+var paths = {
+    styles: ['sass/reset.scss', 'sass/main.scss', 'sass/deveo.dropdown.scss']
+};
 
 // Compile Sass
 gulp.task('sass', function() {
-    return gulp.src(src)
+    return gulp.src(paths.styles)
         .pipe(plumber(function(error) {
             this.emit('end');
         }))
