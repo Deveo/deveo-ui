@@ -8,10 +8,10 @@
      * @constructor
      */
     var Dropdown = function (element) {
-        this.element   = $(element);
-        this.trigger   = this.element.find('.trigger');
-        this.menu      = this.element.find('.menu');
-        this.direction = this.element.hasClass('right') ? 'right' : 'left';
+        this.element = $(element);
+        this.trigger = this.element.find('.trigger');
+        this.menu    = this.element.find('.menu');
+        this.icon    = this.trigger.find('i:last');
 
         this.init();
     };
@@ -24,16 +24,6 @@
     };
 
     /**
-     * Position the dropdown tip
-     */
-    Dropdown.prototype.positionTip = function () {
-        var tip      = this.menu.find('.tip'),
-            position = calculateTipPosition(this.trigger, tip, this.direction);
-
-        tip.css(this.direction, position);
-    };
-
-    /**
      * Toggle the dropdown
      */
     Dropdown.prototype.toggle = function () {
@@ -42,11 +32,8 @@
 
         closeAllBut(event.target);
 
-        if (!this.element.hasClass('open')) {
-            this.positionTip.call(this);
-        }
-
         this.element.toggleClass('open');
+        this.icon.toggleClass('icon-interaction-down icon-interaction-up');
     };
 
     /**
@@ -54,49 +41,8 @@
      */
     Dropdown.prototype.close = function () {
         this.element.removeClass('open');
+        this.icon.removeClass('icon-interaction-up').addClass('icon-interaction-down');
     };
-
-    /**
-     * Calculate tip position based on dropdown direction
-     * @param  {Object} trigger   The trigger to align the tip with
-     * @param  {Object} tip       The tip to position
-     * @param  {String} direction The direction of the dropdown
-     * @return {Number}           The tip position
-     */
-    function calculateTipPosition (trigger, tip, direction) {
-        return direction === 'right' ?
-            calculateTipPositionRight(trigger) :
-            calculateTipPositionLeft(trigger, tip);
-    }
-
-    /**
-     * Calculate tip position for dropdowns that are aligned to right
-     * @param  {Object} trigger The trigger to align the tip with
-     * @return {Number}         The tip position
-     */
-    function calculateTipPositionRight (trigger) {
-        var triggerWidth = trigger.outerWidth(),
-            icon         = trigger.find('.icon-interaction-down'),
-            iconLeft     = icon.position().left,
-            iconWidth    = icon.width();
-
-        return triggerWidth - (iconLeft + iconWidth) - (iconWidth / 2) - 2;
-    }
-
-    /**
-     * Calculate tip position for dropdowns that are aligned to left
-     * @param  {Object} trigger The trigger to align the tip with
-     * @param  {Object} tip     The tip to position
-     * @return {Number}         The tip position
-     */
-    function calculateTipPositionLeft (trigger, tip) {
-        var icon      = trigger.find('.icon-interaction-down'),
-            iconLeft  = icon.position().left,
-            iconWidth = icon.width(),
-            tipWidth  = tip.width();
-
-        return iconLeft - (tipWidth / 2) + (iconWidth / 2);
-    }
 
     /**
      * Close all but the targeted dropdown
