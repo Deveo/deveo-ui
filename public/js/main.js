@@ -10,7 +10,13 @@
         code.text(self[0].outerHTML);
     }
 
+    function noop () {
+        event.preventDefault();
+    }
+
     $('#section-button .button').each(loadMarkup);
     $('#section-dropdown .deveo-dropdown').dropdown().each(loadMarkup);
+
+    $('.button').click(noop);
 
 })();
