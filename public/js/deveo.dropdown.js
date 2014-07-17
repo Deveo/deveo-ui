@@ -30,7 +30,7 @@
         event.preventDefault();
         event.stopPropagation();
 
-        closeAllBut(event.target);
+        closeAllBut(getDropdown(event.target));
 
         this.element.toggleClass('open');
         this.icon.toggleClass('icon-interaction-down icon-interaction-up');
@@ -45,24 +45,54 @@
     };
 
     /**
-     * Close all but the targeted dropdown
-     * @param {Object} dropdown The targeted dropdown
+     * Close all but the given dropdown
+     * @param {Object} dropdown The dropdown that should not be closed
      */
     function closeAllBut (dropdown) {
-        dropdown = $(dropdown);
-        dropdown =
-            dropdown.hasClass('deveo-dropdown') ?
-            dropdown :
-            dropdown.parents('.deveo-dropdown');
-
         $('.deveo-dropdown.open').not(dropdown).dropdown('close');
     }
 
     /**
-     * Close all dropdowns
+     * Close all open dropdowns
      */
     function closeAll () {
         $('.deveo-dropdown.open').dropdown('close');
+    }
+
+    /**
+     * Determine which dropdowns to close when a click event occurs
+     */
+    function close () {
+        var target   = event.target,
+            dropdown = getDropdown(target);
+
+        if (!dropdown || dropdown.length && isClosingElement(target)) {
+            closeAll();
+        } else {
+            closeAllBut(dropdown);
+        }
+    }
+
+    /**
+     * Get a dropdown element for an element
+     * @param  {Object} element The element to get a dropdown for
+     * @return {Object}         A dropdown element or empty array if none was
+     *                          found
+     */
+    function getDropdown (element) {
+        element = $(element);
+        return element.hasClass('deveo-dropdown') ?
+               element :
+               element.parents('.deveo-dropdown');
+    }
+
+    /**
+     * Determine whether an element is of menu-closing type
+     * @param  {Object}  element The element to check
+     * @return {Boolean}         True if yes, false if no
+     */
+    function isClosingElement (element) {
+        return $(element).is('a');
     }
 
     /**
@@ -97,6 +127,6 @@
     };
 
     // Close open dropdowns when clicking anywhere in the document
-    $(document).click(closeAll);
+    $(document).click(close);
 
 })();
