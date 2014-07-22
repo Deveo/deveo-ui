@@ -1,18 +1,13 @@
 "use strict";
 
-var gulp      = require('gulp');
-var plumber   = require('gulp-plumber');
-var sass      = require('gulp-sass');
-var webserver = require('gulp-webserver');
-
-var paths = {
-    styles: ['sass/deveo.scss']
-};
+var gulp    = require('gulp'),
+    plumber = require('gulp-plumber'),
+    sass    = require('gulp-sass');
 
 // Compile Sass
-gulp.task('sass', function() {
-    return gulp.src(paths.styles)
-        .pipe(plumber(function(error) {
+gulp.task('sass', function () {
+    return gulp.src(['sass/deveo.scss'])
+        .pipe(plumber(function (error) {
             console.log(error.message);
             this.emit('end');
         }))
@@ -21,17 +16,9 @@ gulp.task('sass', function() {
 });
 
 // Watch files for changes
-gulp.task('watch', function() {
+gulp.task('watch', function () {
     gulp.watch('sass/*.scss', ['sass']);
 });
 
-// Run the server
-gulp.task('webserver', function () {
-    gulp.src('public')
-        .pipe(webserver({
-            livereload: true
-        }));
-});
-
 // Default task
-gulp.task('default', ['sass', 'watch', 'webserver']);
+gulp.task('default', ['sass', 'watch']);
