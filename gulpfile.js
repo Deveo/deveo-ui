@@ -6,7 +6,7 @@ var sass      = require('gulp-sass');
 var webserver = require('gulp-webserver');
 
 var paths = {
-    styles: ['sass/main.scss']
+    styles: ['sass/deveo.scss']
 };
 
 // Compile Sass
