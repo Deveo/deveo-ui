@@ -49,14 +49,14 @@
      * @param {Object} dropdown The dropdown that should not be closed
      */
     function closeAllBut (dropdown) {
-        $('.deveo-dropdown.open').not(dropdown).dropdown('close');
+        $('.dropdown.open').not(dropdown).dropdown('close');
     }
 
     /**
      * Close all open dropdowns
      */
     function closeAll () {
-        $('.deveo-dropdown.open').dropdown('close');
+        $('.dropdown.open').dropdown('close');
     }
 
     /**
@@ -81,9 +81,9 @@
      */
     function getDropdown (element) {
         element = $(element);
-        return element.hasClass('deveo-dropdown') ?
+        return element.hasClass('dropdown') ?
                element :
-               element.parents('.deveo-dropdown');
+               element.parents('.dropdown');
     }
 
     /**

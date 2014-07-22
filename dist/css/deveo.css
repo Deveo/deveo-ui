@@ -1120,20 +1120,20 @@ a.text:hover {
   .button.hidden {
     display: none; }
 
-.deveo-dropdown {
+.dropdown {
   position: relative;
   display: inline-block; }
-  .deveo-dropdown .trigger .icons.icon-interaction-down, .deveo-dropdown .trigger .icons.icon-interaction-up {
+  .dropdown .trigger .icons.icon-interaction-down, .dropdown .trigger .icons.icon-interaction-up {
     font-size: 0.625rem;
     margin-left: 1rem; }
-  .deveo-dropdown.open .menu {
+  .dropdown.open .menu {
     display: block; }
-  .deveo-dropdown.right .menu {
+  .dropdown.right .menu {
     right: 0; }
-    .deveo-dropdown.right .menu:before, .deveo-dropdown.right .menu:after {
+    .dropdown.right .menu:before, .dropdown.right .menu:after {
       right: 6px;
       left: initial; }
-  .deveo-dropdown .menu {
+  .dropdown .menu {
     position: absolute;
     z-index: 75;
     display: none;
@@ -1143,7 +1143,7 @@ a.text:hover {
     border: 2px solid #d4d4d4;
     border-radius: 5px;
     background-color: #fff; }
-    .deveo-dropdown .menu:before, .deveo-dropdown .menu:after {
+    .dropdown .menu:before, .dropdown .menu:after {
       position: absolute;
       left: 6px;
       width: 0px;
@@ -1152,26 +1152,26 @@ a.text:hover {
       border-style: solid;
       border-color: transparent transparent #fff transparent;
       content: ""; }
-    .deveo-dropdown .menu:before {
+    .dropdown .menu:before {
       top: -8px;
       border-bottom-color: #d4d4d4; }
-    .deveo-dropdown .menu:after {
+    .dropdown .menu:after {
       top: -5px; }
-    .deveo-dropdown .menu.inline > li.selected, .deveo-dropdown .menu.inline > li a:hover {
+    .dropdown .menu.inline > li.selected, .dropdown .menu.inline > li a:hover {
       background-color: transparent; }
-    .deveo-dropdown .menu li.selected, .deveo-dropdown .menu li a:hover, .deveo-dropdown .menu li label:hover {
+    .dropdown .menu li.selected, .dropdown .menu li a:hover, .dropdown .menu li label:hover {
       color: #43454c;
       background-color: #f1f1f1; }
-    .deveo-dropdown .menu li a, .deveo-dropdown .menu li label {
+    .dropdown .menu li a, .dropdown .menu li label {
       font-weight: bold;
       line-height: 1rem;
       display: block;
       padding: 0.625rem 1.25rem; }
-      .deveo-dropdown .menu li a.disabled, .deveo-dropdown .menu li label.disabled {
+      .dropdown .menu li a.disabled, .dropdown .menu li label.disabled {
         color: #8394a0; }
-        .deveo-dropdown .menu li a.disabled:hover, .deveo-dropdown .menu li label.disabled:hover {
+        .dropdown .menu li a.disabled:hover, .dropdown .menu li label.disabled:hover {
           background: transparent; }
-    .deveo-dropdown .menu li label {
+    .dropdown .menu li label {
       padding-left: 0.625rem; }
 
 @font-face {
