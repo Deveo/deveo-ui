@@ -17,7 +17,7 @@ gulp.task('sass', function() {
             this.emit('end');
         }))
         .pipe(sass())
-        .pipe(gulp.dest('public/css'));
+        .pipe(gulp.dest('dist/css'));
 });
 
 // Watch files for changes
