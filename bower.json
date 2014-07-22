@@ -1,7 +1,22 @@
 {
   "name": "deveo-ui",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "dependencies": {
-    "jquery": ""
-  }
+    "jquery": ">= 2.1.0"
+  },
+  "main": [
+    "dist/css/deveo.css",
+    "dist/js/deveo.js",
+    "dist/fonts/deveo_icons.eot",
+    "dist/fonts/deveo_icons.otf",
+    "dist/fonts/deveo_icons.svg",
+    "dist/fonts/deveo_icons.ttf",
+    "dist/fonts/deveo_icons.woff"
+  ],
+  "ignore": [
+    "/.*",
+    "js/vendor",
+    "node_modules",
+    "test"
+  ]
 }
