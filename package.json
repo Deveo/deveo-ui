@@ -5,8 +5,12 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.8.6",
+    "gulp-concat": "^2.3.3",
+    "gulp-cssmin": "^0.1.6",
     "gulp-plumber": "^0.6.3",
-    "gulp-sass": "^0.7.2"
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^0.7.2",
+    "gulp-uglify": "^0.3.1"
   },
   "engines": {
     "node": ">=0.10.0"
