@@ -1767,10 +1767,3 @@ ul.menu.inline > li > a, .menu ul.inline > li > a {
 /*Menus with icons*/
 .menu.icons li a {
   padding: 5px 10px 5px 30px; }
-
-.container {
-  margin: 50px auto;
-  padding: 1em 2em;
-  background-color: #fff;
-  width: 800px;
-  min-height: 100%; }
