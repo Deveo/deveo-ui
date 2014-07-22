@@ -44,11 +44,11 @@ gulp.task('uglify', ['concat'], function () {
 
 // Watch files for changes
 gulp.task('watch', function () {
-    gulp.watch('sass/*.scss', ['sass']);
+    gulp.watch('sass/*.scss', ['cssmin']);
 });
 
 // Prepare package
 gulp.task('dist', ['cssmin', 'uglify']);
 
 // Default task
-gulp.task('default', ['sass', 'watch']);
+gulp.task('default', ['cssmin', 'watch']);
