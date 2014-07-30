@@ -45,6 +45,7 @@ gulp.task('uglify', ['concat'], function () {
 // Watch files for changes
 gulp.task('watch', function () {
     gulp.watch('sass/*.scss', ['cssmin']);
+    gulp.watch('js/*.js', ['uglify']);
 });
 
 // Prepare package
