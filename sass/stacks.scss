@@ -1,0 +1,53 @@
+.stack {
+  .item {
+    float: left;
+    clear: right;
+    width: 280px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #fff;
+
+    &:hover {
+      border-color: #d4d4d4;
+    }
+
+    a {
+      display: block;
+      padding: 30px;
+
+      .push .content {
+        margin-left: 70px;
+      }
+
+      .pull {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .thumbnail {
+      line-height: 40px;
+    }
+
+    .thumbnail i {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 20px;
+      background-color: #50566a;
+    }
+
+    .content .title {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .content .details {
+      color: #999;
+    }
+  }
+}

@@ -15,7 +15,7 @@ body {
   float: left;
   min-height: 1px;
   margin-right: 3.8%;
-  
+
   &.first, &.twelve {
     clear: both;
   }
@@ -23,7 +23,7 @@ body {
   &.last, &.twelve {
     margin-right: 0;
   }
-  
+
   &.right {
     clear: none;
     float: right;
@@ -82,24 +82,6 @@ body {
 
 }
 
-  // Stacked grid
-
-.stack .item {
-  float: left;
-  clear: right;
-  margin-right: 3%;
-  margin-bottom: 0.5em;
-
-  &.first {
-    clear: both;
-  }
-  
-  &.last {
-    margin-right: 0;
-  }
-
-}
-
   // Pull fixed columns from content
 
 .fixed {
@@ -132,7 +114,7 @@ body {
     > .pull {
       float: right;
     }
-    
+
   }
 
 }

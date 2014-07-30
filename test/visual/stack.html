@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Deveo Stack</title>
+    <link rel="stylesheet" href="../../dist/css/deveo.min.css">
+
+    <style>
+      body {
+        margin: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Deveo Stack</h1>
+
+    <section>
+      <h2>Normal</h2>
+
+      <div class="stack">
+        <div class="item">
+          <a href="" class="fixed discreet">
+            <div class="push">
+              <div class="content">
+                <div class="title truncate">
+                  <span>Title</span>
+                </div>
+                <div class="details truncate">
+                  <span>Details</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pull">
+              <div class="thumbnail">
+                <i class="icons icon-app light"></i>
+              </div>
+            </div>
+
+            <div class="clear"></div>
+          </a>
+        </div>
+
+        <div class="clear"></div>
+      </div>
+    </section>
+
+    <script src="../../js/vendor/jquery/dist/jquery.min.js"></script>
+
+    <script>
+    $(function () {
+      'use strict';
+
+      var stack = $('.stack'),
+          item  = $('.item', stack).detach(),
+          count = 12;
+
+      // Create some items to our stack.
+      for (; count > 0; count--) {
+        stack.prepend(item.clone());
+      }
+    });
+    </script>
+  </body>
+</html>
