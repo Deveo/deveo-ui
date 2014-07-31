@@ -175,6 +175,12 @@ ol, ul {
   clear: both;
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 legend, .hidden {
   display: none;
 }
