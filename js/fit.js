@@ -37,9 +37,10 @@
      * container
      */
     Fit.prototype.reset = function () {
-        this.items    = this.getItems();
-        this.margin   = this.margin   || this.settings.margin   || this.getMargin();
-        this.minWidth = this.minWidth || this.settings.minWidth || this.items.outerWidth();
+        this.items      = this.getItems();
+        this.margin     = this.margin     || this.settings.margin     || this.getMargin();
+        this.minWidth   = this.minWidth   || this.settings.minWidth   || this.items.outerWidth();
+        this.itemHeight =                    this.settings.itemHeight || this.getItemHeight();
 
         this.refit();
     };
@@ -115,13 +116,26 @@
     };
 
     /**
+     * Get the height of the highest item
+     * @return {Number} The height in pixels
+     */
+    Fit.prototype.getItemHeight = function () {
+        return Math.max.apply(null, this.items.map(function () {
+            return $(this).outerHeight();
+        }).get());
+    };
+
+    /**
      * Adjust the width and left margin of items so that they fit nicely on rows
      */
     Fit.prototype.adjustItems = function () {
         var that = this;
 
         $.each(this.items, function (index) {
-            var self = $(this).css('width', that.itemWidth);
+            var self = $(this).css({
+                width:  that.itemWidth,
+                height: that.itemHeight
+            });
 
             if (index % that.rowSize === 0) {
                 self.css('marginLeft', 0);
