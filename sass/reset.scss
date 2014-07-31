@@ -13,7 +13,7 @@ small, strong, sub, sup, var,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
+article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 input.text, input.password, textarea,
 time, mark, audio, video {
@@ -82,7 +82,7 @@ audio:not([controls]) {
 
 html, body, div, p, li, dt, dd, th, td, caption,
 h1, h2, h3, h4, h5, h6, blockquote, pre,
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary {
   word-wrap: break-word;
 }
@@ -158,7 +158,7 @@ small, strong, sub, sup, var,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
+article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
   border-width: 0;
@@ -245,7 +245,7 @@ a {
   a:hover {
     text-decoration: none;
   }
-  
+
 /*Tables*/
 
 table {
@@ -268,7 +268,7 @@ label, button, .button {
   input[type="submit"], input[type="button"], input[type="reset"] {
     cursor: pointer;
   }
-  
+
     .disabled input[type="submit"], .disabled input[type="button"], .disabled input[type="reset"] {
       cursor: default;
     }
@@ -293,4 +293,3 @@ textarea, .textarea {
 button, input, select {
   vertical-align: baseline;
 }
-
