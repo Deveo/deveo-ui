@@ -46,6 +46,37 @@
       </div>
     </section>
 
+    <section>
+      <h2>Compact</h2>
+
+      <div class="stack stack-compact">
+        <div class="item">
+          <a href="" class="fixed discreet">
+            <div class="push">
+              <div class="content">
+                <div class="title truncate">
+                  <span>Title</span>
+                </div>
+                <div class="details condensed truncate">
+                  <span>Details</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pull">
+              <div class="thumbnail">
+                <i class="icons icon-app light"></i>
+              </div>
+            </div>
+
+            <div class="clear"></div>
+          </a>
+        </div>
+
+        <div class="clear"></div>
+      </div>
+    </section>
+
     <script src="../../js/vendor/jquery/dist/jquery.min.js"></script>
     <script src="../../js/fit.js"></script>
 
@@ -53,16 +84,20 @@
     $(function () {
       'use strict';
 
-      var stack = $('.stack'),
-          item  = $('.item', stack).detach(),
-          count = 12;
+      var stacks = $('.stack');
 
-      // Create some items to our stack.
-      for (; count > 0; count--) {
-        stack.prepend(item.clone());
-      }
+      stacks.each(function () {
+        var stack = $(this),
+            item  = $('.item', stack).detach(),
+            count = 12;
 
-      stack.fit();
+        // Create some items to our stack.
+        for (; count > 0; count--) {
+          stack.prepend(item.clone());
+        }
+      });
+
+      stacks.fit();
     });
     </script>
   </body>
