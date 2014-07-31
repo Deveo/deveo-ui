@@ -47,6 +47,7 @@
     </section>
 
     <script src="../../js/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../../js/fit.js"></script>
 
     <script>
     $(function () {
@@ -60,6 +61,8 @@
       for (; count > 0; count--) {
         stack.prepend(item.clone());
       }
+
+      stack.fit();
     });
     </script>
   </body>
