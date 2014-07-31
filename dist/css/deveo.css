@@ -1783,15 +1783,6 @@ ul.menu.inline > li > a, .menu ul.inline > li > a {
     .stack .item a .pull {
       width: 40px;
       height: 40px; }
-  .stack .item .thumbnail {
-    line-height: 40px; }
-  .stack .item .thumbnail i {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-size: 20px;
-    background-color: #50566a; }
   .stack .item .content .title {
     font-size: 14px;
     font-weight: bold;
