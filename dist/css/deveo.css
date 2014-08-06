@@ -1035,21 +1035,21 @@ a.text:hover {
     vertical-align: middle; }
   .avatar.tiny {
     width: 20px;
-    height: 20px;
-    line-height: 20px; }
+    height: 20px; }
     .avatar.tiny i {
+      line-height: 20px;
       font-size: 10px; }
   .avatar.small {
     width: 40px;
-    height: 40px;
-    line-height: 40px; }
+    height: 40px; }
     .avatar.small i {
-      font-size: 16px; }
+      line-height: 40px;
+      font-size: 14px; }
   .avatar.large {
     width: 100px;
-    height: 100px;
-    line-height: 100px; }
+    height: 100px; }
     .avatar.large i {
+      line-height: 100px;
       font-size: 30px; }
   .avatar.default {
     background-color: #50566A; }
@@ -1769,6 +1769,8 @@ ul.menu.inline > li > a, .menu ul.inline > li > a {
 .menu.icons li a {
   padding: 5px 10px 5px 30px; }
 
+.stack h4 {
+  text-transform: uppercase; }
 .stack .item {
   float: left;
   clear: right;
