@@ -15,7 +15,6 @@
   ],
   "ignore": [
     "/.*",
-    "js/vendor",
     "node_modules",
     "test"
   ]

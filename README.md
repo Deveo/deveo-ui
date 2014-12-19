@@ -7,8 +7,10 @@ Deveo UI consists of the following:
 * UI components
 * Fonts and icons
 
-To get started you'll just need to run,
+Get started
 
+    $ npm install
+    $ bower install
     $ npm start
 
 access one of the visual test files with your browser, and
@@ -25,8 +27,6 @@ This project uses
 * [npm][npm] to manage developer tools (such as [Gulp][gulp]),
 * [Bower][bower] to manage frontend packages (such as [jQuery][jquery]), and
 * [Gulp][gulp] to run project tasks (such as [SASS][sass] compilation).
-
-The Bower components of this project are exceptionally installed in `js/vendor/` instead of the default `bower_components/`.
 
 [bower]:  http://bower.io/
 [gulp]:   http://gulpjs.com/
