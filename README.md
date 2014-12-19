@@ -7,18 +7,23 @@ Deveo UI consists of the following:
 * UI components
 * Fonts and icons
 
-Get started
+## Getting started
+
+First, install project dependencies with
 
     $ npm install
     $ bower install
-    $ npm start
 
-access one of the visual test files with your browser, and
+then, run [Gulp][gulp] with
+
+    $ gulp
+
+then, view one of the visual test files in your browser with
 
     $ open test/visual/button.html
     $ open test/visual/dropdown.html
 
-start developing.
+and start developing.
 
 ## Acknowledgements
 
