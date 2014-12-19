@@ -6,7 +6,10 @@ var gulp    = require('gulp'),
     concat  = require('gulp-concat'),
     uglify  = require('gulp-uglify'),
     rename  = require('gulp-rename'),
-    cssmin  = require('gulp-cssmin');
+    cssmin  = require('gulp-cssmin'),
+    foreach = require('gulp-foreach'),
+    cache   = require('gulp-cached'),
+    csscomb = require('gulp-csscomb');
 
 // Compile Sass
 gulp.task('sass', function () {
@@ -27,6 +30,21 @@ gulp.task('cssmin', ['sass'], function () {
         .pipe(gulp.dest('dist/css'));
 });
 
+// Comb Sass files
+gulp.task('csscomb', function () {
+    return gulp.src('sass/*.scss')
+        .pipe(plumber(function (error) {
+            console.log(error.message);
+            this.emit('end');
+        }))
+        .pipe(foreach(function (stream) {
+            return stream
+                .pipe(cache('combing'))
+                .pipe(csscomb());
+        }))
+        .pipe(gulp.dest('sass'));
+});
+
 // Concatenate all JavaScript files into one
 gulp.task('concat', function () {
     return gulp.src(['js/*.js'])
@@ -44,7 +62,7 @@ gulp.task('uglify', ['concat'], function () {
 
 // Watch files for changes
 gulp.task('watch', function () {
-    gulp.watch('sass/*.scss', ['cssmin']);
+    gulp.watch('sass/*.scss', ['csscomb', 'cssmin']);
     gulp.watch('js/*.js', ['uglify']);
 });
 
