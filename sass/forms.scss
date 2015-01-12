@@ -1,66 +1,89 @@
 form, .form {
   .error {
-    color: #CA4B4B;
     display: none;
+
+    color: #ca4b4b;
   }
 }
 
 input.text, input.password, textarea {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+  line-height: rem(16px);
 
   position: relative;
+  position: relative;
+
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
-  background: #FFF;
-  border: 2px solid #D3D3D3;
-  border-radius: 5px;
+  height: rem(36px);
   padding: rem(10px) rem(15px);
-  line-height: rem(16px);
-  height: rem(40px);
+
+  color: #181c1e;
+  border: 1px solid #b4bcc3;
+  border-radius: 3px;
+  background: #fff;
 
   &.light {
-    border-color: #E7E7E7;
+    border-color: #c4cbd1;
   }
 
   &.small {
-    padding: rem(10px);
-    height: rem(34px);
+    font-size: rem(12px);
+
+    height: rem(28px);
+    padding: rem(4px) rem(10px);
+  }
+
+  &.placeholder {
+    color: #cecece;
   }
 
   &.error {
     color: inherit;
-    border-color: #DEB3B4;
+    border-color: #deb3b4;
+  }
+
+  &:hover {
+    border-color: #98a1a7;
+  }
+
+  &:focus {
+    border-color: #269fe5;
   }
 }
 
-.disabled input.text, .disabled input.password, .disabled textarea,
-input.text.disabled, input.password.disabled, textarea.disabled {
-  color: #CCCCCC;
+.disabled input.text, .disabled input.password, .disabled textarea, input.text.disabled, input.password.disabled, textarea.disabled {
+  opacity: 0.5;
+  color: #ccc;
 }
 
-input[type="checkbox"], input[type="radio"] {
+input[type='checkbox'], input[type='radio'] {
   margin-right: rem(10px);
 }
 
 .placeholder {
-  color: #CECECE;
+  color: #cecece;
 }
 
-::-webkit-input-placeholder { /* WebKit browsers */
-    color:    #CECECE;
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #cecece;
 }
 
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    #CECECE;
-    opacity:  1;
+:-moz-placeholder {
+  opacity: 1;
+  /* Mozilla Firefox 4 to 18 */
+  color: #cecece;
 }
 
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    #CECECE;
-    opacity:  1;
+::-moz-placeholder {
+  opacity: 1;
+  /* Mozilla Firefox 19+ */
+  color: #cecece;
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10+ */
-    color:    #CECECE;
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #cecece;
 }

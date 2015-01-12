@@ -5,6 +5,7 @@
 .render-error {
   .icon-bot {
     font-size: 2em;
+
     padding-right: 15px;
   }
 
@@ -35,19 +36,23 @@
   }
 
   &.circle {
-    border-radius: 50%;
     vertical-align: middle;
 
+    border-radius: 50%;
+
     > img {
-      border-radius: 50%;
       vertical-align: middle;
+
+      border-radius: 50%;
     }
   }
 }
 
 .truncate {
-  width: 100%;
   overflow: hidden;
-  text-overflow: ellipsis;
+
+  width: 100%;
+
   white-space: nowrap;
+  text-overflow: ellipsis;
 }

@@ -1,15 +1,5 @@
 // Borders
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp, a,
-small, strong, sub, sup, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, a, small, strong, sub, sup, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
   border-color: #fff;
 }
 
@@ -30,14 +20,34 @@ body {
 }
 
 a {
-  color: #369FCC;
+  color: $default-link-color;
 
-  &.remove {
-    color: #d87f6f;
+  i {
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: $default-link-hover-color;
+  }
+
+  &.disabled {
+    text-decoration: none;
   }
 }
 
-.menu a, a.discreet {
+a:hover {
+  color: $default-link-hover-color;
+}
+
+.menu a {
+  color: $alt-link-color;
+
+  &:hover {
+    color: $alt-link-hover-color;
+  }
+}
+
+a.discreet {
   color: inherit;
 }
 
@@ -45,13 +55,9 @@ a {
 
 ul.menu, .menu ul, ol.menu, .menu ol {
   > li {
-    &.open, &.selected {
-      background-color: #21323a;
-    }
-
     a {
       &:hover {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: #e7e9eb;
       }
     }
   }

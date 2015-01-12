@@ -1,52 +1,94 @@
 .stack {
-  h4 {
-    text-transform: uppercase;
+  h5 {
+    margin: 0;
+  }
+
+  &.card {
+    padding: 20px;
+
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    background: #fff;
   }
 
   .item {
     float: left;
     clear: right;
-    width: 280px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    background-color: #fff;
 
-    &:hover {
-      border-color: #d4d4d4;
+    width: 240px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+
+    &.small {
+      width: 200px;
+    }
+
+    &.medium {
+      width: 220px;
     }
 
     a {
+      &:hover {
+        color: #181c1e;
+      }
+    }
+
+    .block {
       display: block;
-      padding: 30px;
 
-      .push .content {
-        margin-left: 70px;
-      }
+      padding: 0;
+    }
 
-      .pull {
-        width: 40px;
-        height: 40px;
-      }
+    .push .content {
+      margin-left: 35px;
+    }
+
+    .pull {
+      width: 20px;
+      height: 20px;
     }
 
     .content .title {
       font-size: 14px;
       font-weight: bold;
+
       margin-bottom: 5px;
     }
 
     .content .details {
-      color: #999;
+      color: #5d5f68;
+
+      i.icons {
+        font-size: 12px;
+
+        color: #abafba;
+      }
+
+      .trigger i {
+        font-size: 10px;
+
+        padding-left: rem(5px);
+
+        color: #5d5f68;
+      }
     }
   }
 }
 
+.stack-fixed {
+  a {
+    min-height: 105px;
+    max-height: 105px;
+    padding: 30px 30px 0 30px;
+  }
+}
+
 .stack-compact {
-  background-color: #fff;
+  padding: 20px;
+
   border-radius: 5px;
-  padding: 15px 30px;
+  background-color: #fff;
 
   .item, .item:hover {
     border: none;
@@ -54,9 +96,11 @@
 
   .item {
     width: 260px;
-    margin: 15px 0;
+    margin: 20px 0 0 0;
 
-    a {
+    .content .title {
+      display: block;
+
       padding: 0 30px 0 0;
     }
   }

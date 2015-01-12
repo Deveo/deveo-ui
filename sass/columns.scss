@@ -3,16 +3,18 @@ html, body {
 }
 
 body {
+  overflow-x: hidden;
+
   width: auto;
   margin: 0 auto;
-  overflow-x: hidden;
 }
 
 // Content columns
 
 .column {
-  clear: right;
   float: left;
+  clear: right;
+
   min-height: 1px;
   margin-right: 3.8%;
 
@@ -25,8 +27,9 @@ body {
   }
 
   &.right {
-    clear: none;
     float: right;
+    clear: none;
+
     margin-right: 0;
   }
 
@@ -79,51 +82,45 @@ body {
   &.twelve {
     width: 100%;
   }
-
 }
 
-  // Pull fixed columns from content
+// Pull fixed columns from content
 
 .fixed {
-
   > .push {
-    clear: none;
     float: left;
+    clear: none;
+
     width: 100%;
 
     > .content {
       margin-left: 120px;
     }
-
   }
 
   > .pull {
-    clear: none;
     float: left;
-    margin-left: -100%;
+    clear: none;
+
     width: 100px;
+    margin-left: -100%;
   }
 
   &.reverse {
-
     > .push > .content {
-      margin-left: 0;
       margin-right: 120px;
+      margin-left: 0;
     }
 
     > .pull {
       float: right;
     }
-
   }
-
 }
 
 // Smaller screens
 @media only screen and (max-width: 1023px) {
-
 }
 
 @media handheld, only screen and (max-width: 767px) {
-
 }

@@ -3,46 +3,147 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Deveo Button</title>
+    <title>Deveo Stylesheet - Buttons</title>
     <link rel="stylesheet" href="../../dist/css/deveo.min.css">
     <style>
     body {
-      margin: 30px;
+      margin: 0px;
+    }
+
+    header {
+      background: #fff;
+      height: 50px;
+      color: #269fe5;
+      line-height: 50px;
+      padding-left: 30px;
+      border-bottom: 1px solid #e3e6e7;
+      font-size: 14px;
+    }
+
+    .sidebar  {
+      padding-left: 30px;
+      margin: 0;
+      padding-top: 20px;
+      color: #5d5f68;
+    }
+    .sidebar ul {
+      margin: 0; padding: 0;
+    }
+    .sidebar li  {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      line-height: 28px;
+    }
+    .sidebar a {
+      color: #5d5f68;
+    }
+    .sidebar li.selected a{
+      color: #cb6654;
+      background-color: none!important;
+      line-height: 22px;
     }
     </style>
   </head>
 
   <body>
-    <h1>Deveo Button</h1>
+    <header><i class="icons icon-deveo" style="font-size:22px;"></i> &nbsp;&nbsp; Stylesheet v1</header>
 
-    <section>
-      <h2>Primary</h2>
-      <a href="#" class="button primary">Text</a>
-      <a href="#" class="button primary small">Text</a>
-    </section>
+    <div class="content">
+      <div class="column two">
+        <ul class="sidebar">
+          <li class="selected"><a href="button.html">Buttons</a></li>
+          <li><a href="dropdown.html">Dropdowns</a></li>
+        </ul>
+      </div>
 
-    <section>
-      <h2>Normal</h2>
-      <a href="#" class="button">Text</a>
-      <a href="#" class="button">
-        <i class="icons icon-milestone"></i><span class="text">Text</span>
-      </a>
-      <a href="#" class="button icon-only">
-        <i class="icons icon-settings-alt"></i>
-      </a>
-      <a href="#" class="button small">Text</a>
-      <a href="#" class="button small">
-        <i class="icons icon-milestone"></i><span class="text">Text</span>
-      </a>
-      <a href="#" class="button small icon-only">
-        <i class="icons icon-settings-alt"></i>
-      </a>
-    </section>
+      <div class="column eight">
+         <section>
+            <h4>Primary</h4>
+            <a href="#" class="button primary">Big button</a>
 
-    <section>
-      <h2>Secondary</h2>
-      <a href="#" class="button secondary">Text</a>
-      <a href="#" class="button secondary small">Text</a>
-    </section>
+            <a href="#" class="button primary"><i class="icons icon-add"></i><span class="text">Big button</span></a>
+
+            <a href="#" class="button primary icon-only">
+              <i class="icons icon-settings-alt"></i>
+            </a>
+
+            <br><br>
+
+            <a href="#" class="button primary small">Small</a>
+
+            <a href="#" class="button primary small"><i class="icons icon-add"></i><span class="text">Small</span></a>
+
+            <a href="#" class="button primary small icon-only">
+              <i class="icons icon-settings-alt"></i>
+            </a>
+
+            <a href="#" class="button disabled primary small">Small</a>
+
+            <br><br>
+
+            <a href="#" class="button primary x-small">X-small</a>
+
+            <a href="#" class="button primary x-small"><i class="icons icon-add"></i><span class="text">Small</span></a>
+
+            <a href="#" class="button primary x-small icon-only">
+              <i class="icons icon-settings-alt"></i>
+            </a>
+
+          </section>
+
+          <section>
+            <h4>Normal</h4>
+            <a href="#" class="button">Big button</a>
+            <a href="#" class="button">
+              <i class="icons icon-milestone"></i><span class="text">Big button</span>
+            </a>
+            <a href="#" class="button icon-only">
+              <i class="icons icon-settings-alt"></i>
+            </a>
+
+            <br><br>
+
+            <a href="#" class="button small">Small</a>
+            <a href="#" class="button small">
+              <i class="icons icon-milestone"></i><span class="text">Small</span>
+            </a>
+            <a href="#" class="button small icon-only">
+              <i class="icons icon-settings-alt"></i>
+            </a>
+            <a href="#" class="button disabled small">Small</a>
+
+            <br><br>
+
+            <a href="#" class="button x-small">X-small</a>
+
+            <a href="#" class="button x-small"><i class="icons icon-add"></i><span class="text">Small</span></a>
+
+            <a href="#" class="button x-small icon-only">
+              <i class="icons icon-settings-alt"></i>
+            </a>
+          </section>
+
+          <section>
+            <h4>Links</h4>
+
+            <a href="#" class="button primary secondary">Primary normal link</a>
+            <br>
+            <a href="#" class="button primary secondary small">Primary small link</a>
+            <br>
+            <a href="#" class="button primary secondary x-small">Primary x-small link</a>
+
+            <br><br>
+
+            <a href="#" class="button secondary">Normal link</a>
+            <br>
+            <a href="#" class="button secondary small">Small link</a>
+            <br>
+            <a href="#" class="button secondary x-small">X-small link</a>
+          </section>
+      </div>
+
+    </div>
+
   </body>
 </html>

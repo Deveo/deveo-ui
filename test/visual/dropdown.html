@@ -3,154 +3,264 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Deveo Dropdown</title>
+    <title>Deveo Stylesheet - Dropdowns</title>
     <link rel="stylesheet" href="../../dist/css/deveo.min.css">
     <style>
     body {
-      margin: 30px;
+      margin: 0px;
+    }
+
+    header {
+      background: #fff;
+      height: 50px;
+      color: #269fe5;
+      line-height: 50px;
+      padding-left: 30px;
+      border-bottom: 1px solid #e3e6e7;
+      font-size: 14px;
+    }
+
+    .sidebar  {
+      padding-left: 30px;
+      margin: 0;
+      padding-top: 20px;
+      color: #5d5f68;
+    }
+    .sidebar ul {
+      margin: 0; padding: 0;
+    }
+    .sidebar li  {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      line-height: 28px;
+    }
+    .sidebar a {
+      color: #5d5f68;
+    }
+    .sidebar li.selected a{
+      color: #cb6654;
+      background-color: none!important;
+      line-height: 22px;
     }
     </style>
   </head>
 
   <body>
-    <h1>Deveo Dropdown</h1>
+    <header><i class="icons icon-deveo" style="font-size:22px;"></i> &nbsp;&nbsp; Stylesheet v1</header>
 
-    <section>
-      <h2>Normal</h2>
-
-      <div class="dropdown">
-        <a href="#" class="trigger button small">
-          <span class="text">Trigger text</span><i class="icons icon-interaction-down"></i>
-        </a>
-
-        <ul class="menu">
-          <li><a href="">Item 1</a></li>
-          <li><a href="">Item 2</a></li>
-          <li><a href="">Item 3</a></li>
+    <div class="content">
+      <div class="column two">
+        <ul class="sidebar">
+          <li><a href="button.html">Buttons</a></li>
+          <li class="selected"><a href="dropdown.html">Dropdowns</a></li>
         </ul>
       </div>
 
-      <div class="dropdown right">
-        <a href="#" class="trigger button small">
-          <span class="text">Trigger text</span><i class="icons icon-interaction-down"></i>
-        </a>
+      <div class="column eight">
+         <section>
+            <h4>Big</h4>
 
-        <ul class="menu">
-          <li><a href="">Item 1</a></li>
-          <li><a href="">Item 2</a></li>
-          <li><a href="">Item 3</a></li>
-        </ul>
+            <div class="dropdown">
+              <a href="#" class="trigger button">
+                <span class="text">Trigger text</span><i class="icons icon-interaction-down"></i>
+              </a>
+
+              <ul class="menu">
+                <li><a href="">Item 1</a></li>
+                <li><a href="">Item 2</a></li>
+                <li><a href="">Item 3</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="trigger button">
+                <i class="icons icon-clone-code"></i><span class="text">Trigger text</span><i class="icons icon-interaction-down"></i>
+              </a>
+
+              <ul class="menu">
+                <li><a href="">Item 1</a></li>
+                <li><a href="">Item 2</a></li>
+                <li><a href="">Item 3</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="trigger button">
+                <i class="icons icon-clone-code"></i><i class="icons icon-interaction-down"></i>
+              </a>
+
+              <ul class="menu">
+                <li><a href="">Item 1</a></li>
+                <li><a href="">Item 2</a></li>
+                <li><a href="">Item 3</a></li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h4>Small</h4>
+
+            <div class="dropdown">
+              <a href="#" class="trigger button small">
+                <span class="text">Trigger text</span><i class="icons icon-interaction-down"></i>
+              </a>
+
+              <ul class="menu">
+                <li><a href="">Item 1</a></li>
+                <li><a href="">Item 2</a></li>
+                <li><a href="">Item 3</a></li>
+              </ul>
+            </div>
+
+             <div class="dropdown">
+              <a href="#" class="trigger button disabled small">
+                <span class="text">Trigger text</span><i class="icons icon-interaction-down"></i>
+              </a>
+
+              <ul class="menu">
+                <li><a href="">Item 1</a></li>
+                <li><a href="">Item 2</a></li>
+                <li><a href="">Item 3</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown right">
+              <a href="#" class="trigger button small">
+                <span class="text">Trigger text</span><i class="icons icon-interaction-down"></i>
+              </a>
+
+              <ul class="menu">
+                <li><a href="">Item 1</a></li>
+                <li><a href="">Item 2</a></li>
+                <li><a href="">Item 3</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="trigger button small">
+                <i class="icons icon-clone-code"></i><span class="text">Trigger text</span><i class="icons icon-interaction-down"></i>
+              </a>
+
+              <ul class="menu">
+                <li><a href="">Item 1</a></li>
+                <li><a href="">Item 2</a></li>
+                <li><a href="">Item 3</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="trigger button small icon-only">
+                <i class="icons icon-settings-alt"></i><i class="icons icon-interaction-down"></i>
+              </a>
+
+              <ul class="menu">
+                <li><a href="">Item 1</a></li>
+                <li><a href="">Item 2</a></li>
+                <li><a href="">Item 3</a></li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h4>X-Small</h4>
+
+            <div class="dropdown">
+              <a href="#" class="trigger button x-small">
+                <span class="text">Trigger text</span><i class="icons icon-interaction-down"></i>
+              </a>
+
+              <ul class="menu">
+                <li><a href="">Item 1</a></li>
+                <li><a href="">Item 2</a></li>
+                <li><a href="">Item 3</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown right">
+              <a href="#" class="trigger button x-small">
+                <span class="text">Trigger text</span><i class="icons icon-interaction-down"></i>
+              </a>
+
+              <ul class="menu">
+                <li><a href="">Item 1</a></li>
+                <li><a href="">Item 2</a></li>
+                <li><a href="">Item 3</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="trigger button x-small">
+                <i class="icons icon-clone-code"></i><span class="text">Trigger text</span><i class="icons icon-interaction-down"></i>
+              </a>
+
+              <ul class="menu">
+                <li><a href="">Item 1</a></li>
+                <li><a href="">Item 2</a></li>
+                <li><a href="">Item 3</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="trigger button x-small icon-only">
+                <i class="icons icon-settings-alt"></i><i class="icons icon-interaction-down"></i>
+              </a>
+
+              <ul class="menu">
+                <li><a href="">Item 1</a></li>
+                <li><a href="">Item 2</a></li>
+                <li><a href="">Item 3</a></li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h4>Secondary</h4>
+
+            <div class="dropdown">
+              <a href="#" class="trigger button secondary small">
+                <span class="text">Trigger text</span><i class="icons icon-interaction-down"></i>
+              </a>
+
+              <ul class="menu">
+                <li><a href="">Item 1</a></li>
+                <li><a href="">Item 2</a></li>
+                <li><a href="">Item 3</a></li>
+              </ul>
+            </div>
+            &nbsp;&nbsp;
+            <div class="dropdown right">
+              <a href="#" class="trigger button secondary small">
+                <span class="text">Trigger text</span><i class="icons icon-interaction-down"></i>
+              </a>
+
+              <ul class="menu">
+                <li><a href="">Item 1</a></li>
+                <li><a href="">Item 2</a></li>
+                <li><a href="">Item 3</a></li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h4>Checkbox</h4>
+
+            <div class="dropdown">
+              <a href="#" class="trigger button small">
+                <span class="text">Trigger text</span><i class="icons icon-interaction-down"></i>
+              </a>
+
+              <ul class="menu">
+                <li><label><input type="checkbox">Item 1</label></li>
+                <li><label><input type="checkbox">Item 2</label></li>
+                <li><label><input type="checkbox">Item 3</label></li>
+              </ul>
+            </div>
+          </section>
+
       </div>
 
-      <div class="dropdown">
-        <a href="#" class="trigger button small">
-          <i class="icons icon-clone-code"></i><span class="text">Trigger text</span><i class="icons icon-interaction-down"></i>
-        </a>
-
-        <ul class="menu">
-          <li><a href="">Item 1</a></li>
-          <li><a href="">Item 2</a></li>
-          <li><a href="">Item 3</a></li>
-        </ul>
-      </div>
-
-      <div class="dropdown">
-        <a href="#" class="trigger button small icon-only">
-          <i class="icons icon-settings-alt"></i><i class="icons icon-interaction-down"></i>
-        </a>
-
-        <ul class="menu">
-          <li><a href="">Item 1</a></li>
-          <li><a href="">Item 2</a></li>
-          <li><a href="">Item 3</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>Big</h2>
-
-      <div class="dropdown">
-        <a href="#" class="trigger button">
-          <span class="text">Trigger text</span><i class="icons icon-interaction-down"></i>
-        </a>
-
-        <ul class="menu">
-          <li><a href="">Item 1</a></li>
-          <li><a href="">Item 2</a></li>
-          <li><a href="">Item 3</a></li>
-        </ul>
-      </div>
-
-      <div class="dropdown">
-        <a href="#" class="trigger button">
-          <i class="icons icon-clone-code"></i><span class="text">Trigger text</span><i class="icons icon-interaction-down"></i>
-        </a>
-
-        <ul class="menu">
-          <li><a href="">Item 1</a></li>
-          <li><a href="">Item 2</a></li>
-          <li><a href="">Item 3</a></li>
-        </ul>
-      </div>
-
-      <div class="dropdown">
-        <a href="#" class="trigger button">
-          <i class="icons icon-clone-code"></i><i class="icons icon-interaction-down"></i>
-        </a>
-
-        <ul class="menu">
-          <li><a href="">Item 1</a></li>
-          <li><a href="">Item 2</a></li>
-          <li><a href="">Item 3</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>Secondary</h2>
-
-      <div class="dropdown">
-        <a href="#" class="trigger button secondary small">
-          <span class="text">Trigger text</span><i class="icons icon-interaction-down"></i>
-        </a>
-
-        <ul class="menu">
-          <li><a href="">Item 1</a></li>
-          <li><a href="">Item 2</a></li>
-          <li><a href="">Item 3</a></li>
-        </ul>
-      </div>
-
-      <div class="dropdown right">
-        <a href="#" class="trigger button secondary small">
-          <span class="text">Trigger text</span><i class="icons icon-interaction-down"></i>
-        </a>
-
-        <ul class="menu">
-          <li><a href="">Item 1</a></li>
-          <li><a href="">Item 2</a></li>
-          <li><a href="">Item 3</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>Checkbox</h2>
-
-      <div class="dropdown">
-        <a href="#" class="trigger button">
-          <span class="text">Trigger text</span><i class="icons icon-interaction-down"></i>
-        </a>
-
-        <ul class="menu">
-          <li><label><input type="checkbox">Item 1</label></li>
-          <li><label><input type="checkbox">Item 2</label></li>
-          <li><label><input type="checkbox">Item 3</label></li>
-        </ul>
-      </div>
-    </section>
-
+    </div>
     <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../../js/dropdown.js"></script>
 

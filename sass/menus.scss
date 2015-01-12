@@ -9,22 +9,23 @@
   padding-left: 0;
 }
 
-  .menu ul.left {
-    float: left;
-    clear: right;
-  }
+.menu ul.left {
+  float: left;
+  clear: right;
+}
 
-  .menu ul.right, .menu ul.last {
-    float: right;
-    clear: right;
-  }
+.menu ul.right, .menu ul.last {
+  float: right;
+  clear: right;
+}
 
 ul.menu.images > li {
-  margin: 5px 5px 10px 5px;
   min-height: 30px;
+  margin: 5px 5px 10px 5px;
 
   > a {
     display: block;
+
     min-height: 30px;
     padding: 0 10px 0 0;
 
@@ -32,22 +33,18 @@ ul.menu.images > li {
       display: inline-block;
     }
 
-    > img {
-    }
-
     > span {
       padding-top: 0.4em;
     }
-
   }
-
 }
 
 /*List layouts*/
 
 ul.breathe {
-  list-style: none;
   padding-left: 0;
+
+  list-style: none;
 
   li {
     margin-top: 0.6em;
@@ -63,41 +60,42 @@ ul.breathe {
       }
     }
   }
-
 }
 
 /*Inline list layouts*/
 
 ul.inline, ol.inline {
   padding-left: 0;
+
   list-style: none;
 }
 
-  ul.inline > li, ol.inline > li, ul.inline > li > a, ol.inline > li > a {
-    display: inline-block;
-  }
+ul.inline > li, ol.inline > li, ul.inline > li > a, ol.inline > li > a {
+  display: inline-block;
+}
 
-    ul.inline > li, ol.inline > li {
-      margin-right: 1em;
-    }
+ul.inline > li, ol.inline > li {
+  margin-right: 1em;
+}
 
-    ul.inline.right > li, ol.inline.right > li {
-      margin-right: 0;
-      margin-left: 1em;
-    }
+ul.inline.right > li, ol.inline.right > li {
+  margin-right: 0;
+  margin-left: 1em;
+}
 
 dl.inline > dt, dl.inline > dd {
   float: left;
   clear: right;
 }
 
-  dl.inline > dt {
-    margin-top: 0;
-  }
+dl.inline > dt {
+  margin-top: 0;
+}
 
 ul.stack {
-  list-style: none;
   padding-left: 0;
+
+  list-style: none;
 }
 
 /*All menus*/

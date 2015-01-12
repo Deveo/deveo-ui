@@ -1,30 +1,22 @@
 /*Box layout*/
 *, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /*Basics*/
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp, a,
-small, strong, sub, sup, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-input.text, input.password, textarea,
-time, mark, audio, video {
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, a, small, strong, sub, sup, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, input.text, input.password, textarea, time, mark, audio, video {
   margin: 0;
   padding: 0;
-  border: 0;
-  outline: 0;
 
   vertical-align: baseline;
-  background: transparent;
+
+  border: 0;
   border-style: solid;
+  outline: 0;
+  background: transparent;
 }
 
 button, input, select, textarea {
@@ -35,21 +27,24 @@ button, input, select, textarea {
 
 html {
   font-size: 100%;
+
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
 }
 
 input.text, input.password, select, textarea {
   font-family: inherit;
   line-height: inherit;
+
   color: inherit;
 }
 
-  input[type="text"], [type="password"] {
-    font-family: inherit;
-    line-height: inherit;
-    color: inherit;
-  }
+input[type='text'], [type='password'] {
+  font-family: inherit;
+  line-height: inherit;
+
+  color: inherit;
+}
 
 button, input, select, textarea, pre, code, kbd, samp {
   font-size: inherit;
@@ -57,8 +52,7 @@ button, input, select, textarea, pre, code, kbd, samp {
 
 /*HTML5 elements*/
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section, summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
@@ -80,10 +74,7 @@ audio:not([controls]) {
 
 /*Blocks*/
 
-html, body, div, p, li, dt, dd, th, td, caption,
-h1, h2, h3, h4, h5, h6, blockquote, pre,
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary {
+html, body, div, p, li, dt, dd, th, td, caption, h1, h2, h3, h4, h5, h6, blockquote, pre, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   word-wrap: break-word;
 }
 
@@ -103,18 +94,17 @@ blockquote, q {
   quotes: none;
 }
 
-  blockquote:before, blockquote:after,
-  q:before, q:after {
-    content: '';
-    content: none;
-  }
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
 
 /*Interaction*/
 
-input[type="search"] {
-  box-sizing: content-box;
+input[type='search'] {
   -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 /*Font styles*/
@@ -132,8 +122,8 @@ del {
 }
 
 abbr[title], dfn[title] {
-  text-decoration: underline;
   cursor: help;
+  text-decoration: underline;
 }
 
 /*Embedded content*/
@@ -150,21 +140,12 @@ svg:not(:root) {
 
 /*Defaults*/
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp, a,
-small, strong, sub, sup, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, a, small, strong, sub, sup, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  clear: both;
+
   border-width: 0;
   border-style: solid;
   background-repeat: no-repeat;
-  clear: both;
 }
 
 ol, ul {
@@ -176,9 +157,10 @@ ol, ul {
 }
 
 .clearfix:after {
-  content: "";
   display: table;
   clear: both;
+
+  content: '';
 }
 
 legend, .hidden {
@@ -193,10 +175,11 @@ img {
   vertical-align: baseline;
 }
 
-  .image img {
-    max-width: 100%;
-    display: block;
-  }
+.image img {
+  display: block;
+
+  max-width: 100%;
+}
 
 pre {
   white-space: pre-wrap;
@@ -206,27 +189,32 @@ pre {
 /*Lists*/
 
 ul {
-  list-style: disc;
   padding-left: 2em;
+
+  list-style: disc;
 }
 
 ol {
-  list-style: decimal;
   padding-left: 2em;
+
+  list-style: decimal;
 }
 
-  nav ul, nav ol {
-    list-style: none;
-    list-style-image: none;
-    padding-left: 0;
-  }
+nav ul, nav ol {
+  padding-left: 0;
+
+  list-style: none;
+  list-style-image: none;
+}
 
 /*Inline*/
 
 sub, sup {
   font-size: 75%;
   line-height: 0;
+
   position: relative;
+
   vertical-align: baseline;
 }
 
@@ -248,16 +236,17 @@ a {
   text-decoration: underline;
 }
 
-  a:hover {
-    text-decoration: none;
-  }
+a:hover {
+  text-decoration: none;
+}
 
 /*Tables*/
 
 table {
   width: 100%;
-  border-collapse: collapse;
+
   border-spacing: 0;
+  border-collapse: collapse;
 }
 
 caption, th, td {
@@ -271,26 +260,25 @@ label, button, .button {
   cursor: pointer;
 }
 
-  input[type="submit"], input[type="button"], input[type="reset"] {
-    cursor: pointer;
-  }
+input[type='submit'], input[type='button'], input[type='reset'] {
+  cursor: pointer;
+}
 
-    .disabled input[type="submit"], .disabled input[type="button"], .disabled input[type="reset"] {
-      cursor: default;
-    }
+.disabled input[type='submit'], .disabled input[type='button'], .disabled input[type='reset'] {
+  cursor: default;
+}
 
-    input[type="submit"].disabled, input[type="button"].disabled, input[type="reset"].disabled {
-      cursor: default;
-    }
+input[type='submit'].disabled, input[type='button'].disabled, input[type='reset'].disabled {
+  cursor: default;
+}
 
-  .disabled button, .disabled label, .disabled .button, .disabled a,
-  button.disabled, label.disabled, .button.disabled, a.disabled {
-    cursor: default;
-  }
+.disabled button, .disabled label, .disabled .button, .disabled a, button.disabled, label.disabled, .button.disabled, a.disabled {
+  cursor: default;
+}
 
-  button[disabled], input[disabled] {
-    cursor: default;
-  }
+button[disabled], input[disabled] {
+  cursor: default;
+}
 
 textarea, .textarea {
   vertical-align: top;

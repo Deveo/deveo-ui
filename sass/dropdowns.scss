@@ -1,71 +1,41 @@
 .dropdown {
-  position: relative;
+  display: none;
+  position: absolute;
+  z-index: 75;
+  margin-top: rem(10px);
+  white-space: nowrap;
+  padding: 0;
+  border: 1px solid #b3bcc3;
+  border-radius: 4px;
+  background-color: #FFF;
+  padding: rem(5px) 0;
+  min-width: 140px;
 
-  display: inline-block;
-
-  .trigger .icons {
-    &.icon-interaction-down, &.icon-interaction-up {
-      font-size: rem(10px);
-
-      margin-left: rem(16px);
-    }
-  }
-
-  &.open .menu {
-    display: block;
-  }
-
-  &.right .menu {
-    right: 0;
-
-    &:before, &:after {
-      right: 6px;
-      left: initial;
-    }
-  }
-
-  // TODO: Rename to .dropdown-menu to avoid collisions?
-  .menu {
-    // TODO: Class definition instead of Sass mixin?
+  ul.menu, .menu ul {
     @include tip-top;
 
-    position: absolute;
-    z-index: 75;
+    margin-bottom: 0;
 
-    display: none;
+    max-height: 255px;
+    overflow: auto;
 
-    margin-top: rem(15px);
-    padding: 0;
+    > li {
 
-    white-space: nowrap;
-
-    border: 2px solid #d4d4d4;
-    border-radius: 5px;
-    background-color: #fff;
-
-    // TODO: What's this?
-    &.inline > li {
       &.selected, a:hover {
-        background-color: transparent;
-      }
-    }
-
-    li {
-      // TODO: Do we use .selected somewhere?
-      &.selected, a:hover, label:hover {
-        color: #43454c;
-        background-color: #f1f1f1;
+        color: $alt-link-hover-color;
+        background-color: #F1F1F1;
       }
 
-      a, label {
+      a {
+        padding: 8px 15px;
+        line-height: rem(14px);
         font-weight: bold;
-        line-height: rem(16px);
+        color: $alt-link-color;
 
-        display: block;
+        &:hover {
+          color: $alt-link-hover-color;
+        }
 
-        padding: rem(10px) rem(20px);
-
-        // TODO: What do we use .disabled for?
         &.disabled {
           color: #8394a0;
 
@@ -73,11 +43,40 @@
             background: transparent;
           }
         }
-      }
 
-      label {
-        padding-left: rem(10px);
+        span.avatar {
+          i.icons {
+            padding: 0;
+          }
+        }
+
+        i.icons {
+          padding-right: 10px;
+        }
       }
     }
+
+    &.inline {
+      > li {
+        &.selected, a:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
+  &.right {
+
+    ul.menu, .menu ul {
+      &:before,
+      &:after {
+        left: initial;
+        right: 2px;
+      }
+    }
+  }
+
+  &:hover {
+    text-decoration: none;
   }
 }

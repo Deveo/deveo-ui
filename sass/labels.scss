@@ -1,31 +1,33 @@
 
 // Labels
 .label {
-    padding: 10px 5px;
-    line-height: 1.2;
-    text-align: center;
+  line-height: 1.2;
 
-    abbr {
-        display: block;
-        text-decoration: none;
-        cursor: default;
-    }
+  padding: 10px 5px;
 
-    em, strong, small {
-        display: block;
-    }
+  text-align: center;
 
-    em, strong {
-        font-size: 1.2em;
-        font-style: inherit;
-    }
+  abbr {
+    display: block;
 
-    small {
-        font-size: 0.8333em;
-    }
+    cursor: default;
+    text-decoration: none;
+  }
 
+  em, strong, small {
+    display: block;
+  }
+
+  em, strong {
+    font-size: 1.2em;
+    font-style: inherit;
+  }
+
+  small {
+    font-size: 0.8333em;
+  }
 }
 
 .label {
-    background: #000;
+  background: #000;
 }

@@ -1,5 +1,5 @@
 .alert {
-  padding: 12px 20px;
+  padding: 10px 15px;
 
   border-width: 1px;
   border-style: solid;
@@ -9,18 +9,22 @@
     margin-right: 20px;
   }
 
+  a {
+    text-decoration: underline;
+  }
+
   &.info {
-    color: #4e9fc0;
-    border-color: #c3d4db;
+    color: #6a8496;
+    border-color: #a4b2bc;
   }
 
   &.error {
     color: #aa6d6e;
-    border-color: #e0cdcd;
+    border-color: #d9a5a5;
   }
 
   &.success {
     color: #62aa95;
-    border-color: #acd6c8;
+    border-color: #96cd9b;
   }
 }

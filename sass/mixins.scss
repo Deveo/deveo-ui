@@ -2,22 +2,22 @@
 @mixin tip-top {
   &:before, &:after {
     position: absolute;
-    left: 6px;
+    left: 3px;
 
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
 
-    border-width: 0px 6px 6px 6px;
+    content: '';
+
+    border-width: 0 5px 5px 5px;
     border-style: solid;
     border-color: transparent transparent #fff transparent;
-
-    content: "";
   }
 
   &:before {
-    top: -8px;
+    top: -6px;
 
-    border-bottom-color: #d4d4d4;
+    border-bottom-color: #b3bcc3;
   }
 
   &:after {
