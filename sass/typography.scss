@@ -4,9 +4,9 @@ html, body {
   line-height: 1.4;
 }
 
-  .condensed {
-    line-height: 1.2;
-  }
+.condensed {
+  line-height: 1.2;
+}
 
 /*Fonts*/
 
@@ -46,24 +46,25 @@ html, body {
     text-rendering: optimizeLegibility;
 }
 
-
 html, input {
-  font-family: "Lato", "Lucida Grande", "Segoe UI", "Arial", sans-serif;
+  font-family: 'Lato', 'Lucida Grande', 'Segoe UI', 'Arial', sans-serif;
 }
 
 blockquote, q {
-  font-family: "Georgia", serif;
+  font-family: 'Georgia', serif;
 }
 
 i.icons {
+  display: inline-block;
+
+  color: inherit;
   font-family: deveoicons;
   font-size: 14px;
-  font-weight: normal;
-  color: inherit;
   font-style: normal;
+  font-weight: normal;
   text-align: center;
+
   -webkit-font-smoothing: antialiased;
-  display: inline-block;
 
   &.hidden {
     display: none;
@@ -85,7 +86,7 @@ i.icons {
     color: #142630;
   }
   &.grey {
-    color: #8394A0;
+    color: #8394a0;
   }
   &.grey2 {
     color: #9094a3;
@@ -148,9 +149,9 @@ small, .discreet {
   font-size: 0.8667em;
 }
 
-  a.discreet, input.discreet, textarea.discreet {
-    font-size: inherit;
-  }
+a.discreet, input.discreet, textarea.discreet {
+  font-size: inherit;
+}
 
 .highlight {
   font-size: 1.2em;
@@ -162,9 +163,9 @@ h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: normal;
 }
 
-  a.discreet, h2.discreet, h3.discreet, h4.discreet, h5.discreet, h6.discreet {
-    font-weight: inherit;
-  }
+a.discreet, h2.discreet, h3.discreet, h4.discreet, h5.discreet, h6.discreet {
+  font-weight: inherit;
+}
 
 .required label, label.required {
   font-weight: bold;
@@ -175,8 +176,8 @@ h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 a {
-  text-decoration: none;
   color: $default-link-color;
+  text-decoration: none;
 
   &.text {
     text-decoration: underline;
@@ -187,8 +188,8 @@ a {
   }
 
   &:hover {
-    text-decoration: underline;
     color: $default-link-hover-color;
+    text-decoration: underline;
   }
 
   &.alt-link {
@@ -213,19 +214,16 @@ a {
 
 /*Smaller screens*/
 @media only screen and (max-width: 1023px) {
-
   body {
     font-size: rem(11px);
   }
-
 }
 
 /*Mobile*/
 @media handheld, only screen and (max-width: 767px) {
-
   body {
     font-size: rem(11px);
+
     -webkit-text-size-adjust: none;
   }
-
 }

@@ -1,36 +1,41 @@
 .dropdown {
   display: none;
   position: absolute;
-  z-index: 75;
+  min-width: 140px;
   margin-top: rem(10px);
-  white-space: nowrap;
   padding: 0;
+  padding: rem(5px) 0;
+
   border: 1px solid #b3bcc3;
   border-radius: 4px;
-  background-color: #FFF;
-  padding: rem(5px) 0;
-  min-width: 140px;
+
+  background-color: #fff;
+
+  white-space: nowrap;
+
+  z-index: 75;
 
   ul.menu, .menu ul {
-    @include tip-top;
-
+    max-height: 255px;
     margin-bottom: 0;
 
-    max-height: 255px;
     overflow: auto;
 
-    > li {
+    @include tip-top;
 
+    > li {
       &.selected, a:hover {
+        background-color: #f1f1f1;
+
         color: $alt-link-hover-color;
-        background-color: #F1F1F1;
       }
 
       a {
         padding: 8px 15px;
-        line-height: rem(14px);
-        font-weight: bold;
+
         color: $alt-link-color;
+        font-weight: bold;
+        line-height: rem(14px);
 
         &:hover {
           color: $alt-link-hover-color;
@@ -66,12 +71,10 @@
   }
 
   &.right {
-
     ul.menu, .menu ul {
-      &:before,
-      &:after {
-        left: initial;
+      &:before, &:after {
         right: 2px;
+        left: initial;
       }
     }
   }

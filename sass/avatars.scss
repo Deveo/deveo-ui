@@ -1,52 +1,49 @@
 .avatar {
-  position: relative;
-
   display: inline-block;
-
+  position: relative;
   width: 30px;
   height: 30px;
 
-  text-align: center;
-
   border-radius: 50%;
+
+  text-align: center;
 
   img, i {
     width: 100%;
     height: 100%;
 
-    vertical-align: top;
-
     border-radius: 50%;
+
+    vertical-align: top;
   }
 
   i {
+    display: inline-block;
+
+    background-color: #50566a;
+
+    color: #fff;
     font-size: 13px;
     line-height: 31px;
 
-    display: inline-block;
-
     vertical-align: top;
-
-    color: #fff;
-    background-color: #50566a;
 
     &.hidden {
       display: none;
     }
 
     &.private {
-      font-size: 12px;
-      line-height: 20px;
-
       position: absolute;
       right: -5px;
       bottom: -5px;
-
       width: 50%;
       height: 50%;
 
-      color: #b0b0b0;
       background-color: #fff !important;
+
+      color: #b0b0b0;
+      font-size: 12px;
+      line-height: 20px;
     }
   }
 
@@ -69,11 +66,11 @@
       line-height: 20px;
 
       &.private {
-        font-size: 8px;
-        line-height: 12px;
-
         right: -4px;
         bottom: -4px;
+
+        font-size: 8px;
+        line-height: 12px;
       }
     }
   }
@@ -87,12 +84,11 @@
       line-height: 30px;
 
       &.private {
-        line-height: 20px;
-
         right: -10px;
-
         width: 60%;
         height: 60%;
+
+        line-height: 20px;
       }
     }
   }
@@ -106,11 +102,11 @@
       line-height: 80px;
 
       &.private {
-        font-size: 24px;
-        line-height: 40px;
-
         right: -10px;
         bottom: -10px;
+
+        font-size: 24px;
+        line-height: 40px;
       }
     }
   }

@@ -1,17 +1,17 @@
 
 // Labels
 .label {
-  line-height: 1.2;
-
   padding: 10px 5px;
 
+  line-height: 1.2;
   text-align: center;
 
   abbr {
     display: block;
 
-    cursor: default;
     text-decoration: none;
+
+    cursor: default;
   }
 
   em, strong, small {

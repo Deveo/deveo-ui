@@ -4,9 +4,9 @@
 
 .render-error {
   .icon-bot {
-    font-size: 2em;
-
     padding-right: 15px;
+
+    font-size: 2em;
   }
 
   &.task {
@@ -36,23 +36,23 @@
   }
 
   &.circle {
-    vertical-align: middle;
-
     border-radius: 50%;
 
-    > img {
-      vertical-align: middle;
+    vertical-align: middle;
 
+    > img {
       border-radius: 50%;
+
+      vertical-align: middle;
     }
   }
 }
 
 .truncate {
-  overflow: hidden;
-
   width: 100%;
 
-  white-space: nowrap;
   text-overflow: ellipsis;
+  white-space: nowrap;
+
+  overflow: hidden;
 }

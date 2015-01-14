@@ -14,17 +14,20 @@
   }
 
   &.info {
-    color: #6a8496;
     border-color: #a4b2bc;
+
+    color: #6a8496;
   }
 
   &.error {
-    color: #aa6d6e;
     border-color: #d9a5a5;
+
+    color: #aa6d6e;
   }
 
   &.success {
-    color: #62aa95;
     border-color: #96cd9b;
+
+    color: #62aa95;
   }
 }

@@ -7,32 +7,33 @@ form, .form {
 }
 
 input.text, input.password, textarea {
-  line-height: rem(16px);
-
   position: relative;
   position: relative;
-
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
   width: 100%;
   height: rem(36px);
   padding: rem(10px) rem(15px);
 
-  color: #181c1e;
   border: 1px solid #b4bcc3;
   border-radius: 3px;
+
   background: #fff;
+
+  color: #181c1e;
+  line-height: rem(16px);
+
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 
   &.light {
     border-color: #c4cbd1;
   }
 
   &.small {
-    font-size: rem(12px);
-
     height: rem(28px);
     padding: rem(4px) rem(10px);
+
+    font-size: rem(12px);
   }
 
   &.placeholder {
@@ -40,8 +41,9 @@ input.text, input.password, textarea {
   }
 
   &.error {
-    color: inherit;
     border-color: #deb3b4;
+
+    color: inherit;
   }
 
   &:hover {
@@ -54,8 +56,9 @@ input.text, input.password, textarea {
 }
 
 .disabled input.text, .disabled input.password, .disabled textarea, input.text.disabled, input.password.disabled, textarea.disabled {
-  opacity: 0.5;
   color: #ccc;
+
+  opacity: 0.5;
 }
 
 input[type='checkbox'], input[type='radio'] {
@@ -72,15 +75,17 @@ input[type='checkbox'], input[type='radio'] {
 }
 
 :-moz-placeholder {
-  opacity: 1;
   /* Mozilla Firefox 4 to 18 */
   color: #cecece;
+
+  opacity: 1;
 }
 
 ::-moz-placeholder {
-  opacity: 1;
   /* Mozilla Firefox 19+ */
   color: #cecece;
+
+  opacity: 1;
 }
 
 :-ms-input-placeholder {

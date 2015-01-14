@@ -11,12 +11,13 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
   margin: 0;
   padding: 0;
 
-  vertical-align: baseline;
-
   border: 0;
   border-style: solid;
   outline: 0;
+
   background: transparent;
+
+  vertical-align: baseline;
 }
 
 button, input, select, textarea {
@@ -33,17 +34,15 @@ html {
 }
 
 input.text, input.password, select, textarea {
+  color: inherit;
   font-family: inherit;
   line-height: inherit;
-
-  color: inherit;
 }
 
 input[type='text'], [type='password'] {
+  color: inherit;
   font-family: inherit;
   line-height: inherit;
-
-  color: inherit;
 }
 
 button, input, select, textarea, pre, code, kbd, samp {
@@ -122,8 +121,9 @@ del {
 }
 
 abbr[title], dfn[title] {
-  cursor: help;
   text-decoration: underline;
+
+  cursor: help;
 }
 
 /*Embedded content*/
@@ -145,6 +145,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 
   border-width: 0;
   border-style: solid;
+
   background-repeat: no-repeat;
 }
 
@@ -177,12 +178,12 @@ img {
 
 .image img {
   display: block;
-
   max-width: 100%;
 }
 
 pre {
   white-space: pre-wrap;
+
   word-wrap: break-word;
 }
 
@@ -204,16 +205,17 @@ nav ul, nav ol {
   padding-left: 0;
 
   list-style: none;
+
   list-style-image: none;
 }
 
 /*Inline*/
 
 sub, sup {
+  position: relative;
+
   font-size: 75%;
   line-height: 0;
-
-  position: relative;
 
   vertical-align: baseline;
 }
@@ -245,12 +247,13 @@ a:hover {
 table {
   width: 100%;
 
-  border-spacing: 0;
   border-collapse: collapse;
+  border-spacing: 0;
 }
 
 caption, th, td {
   text-align: left;
+
   vertical-align: top;
 }
 

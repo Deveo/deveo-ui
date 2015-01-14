@@ -46,10 +46,11 @@ a.button, a.trigger, a.icon, .menu li > a {
 
   &.effectless:focus {
     outline: none;
-    -webkit-box-shadow: none;
-       -moz-box-shadow: none;
+
             box-shadow: none;
 
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
          -o-box-shadow: none;
   }
 }
