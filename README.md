@@ -13,6 +13,7 @@ First, install project dependencies with
 
     $ npm install
     $ bower install
+    $ gem install scss
 
 then, run [Gulp][gulp] with
 
@@ -38,3 +39,8 @@ This project uses
 [jquery]: http://jquery.com/
 [npm]:    https://www.npmjs.org/
 [sass]:   http://sass-lang.com/
+
+## Useful plugins for Sublime Text
+  * [Sass](https://packagecontrol.io/packages/Sass)
+  * [SublimeLinter](https://packagecontrol.io/packages/SublimeLinter)
+  * [Sublime​Linter-contrib-scss-lint](https://packagecontrol.io/packages/SublimeLinter-contrib-scss-lint)
