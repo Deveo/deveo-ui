@@ -11,9 +11,10 @@ Deveo UI consists of the following:
 
 First, install project dependencies with
 
+    $ gem install bundler
+    $ bundle install
     $ npm install
     $ bower install
-    $ gem install sass
 
 then, run [Gulp][gulp] with
 
