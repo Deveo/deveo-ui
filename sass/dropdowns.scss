@@ -1,46 +1,85 @@
 .dropdown {
-  display: none;
-  position: absolute;
-  min-width: 140px;
-  margin-top: rem(10px);
-  padding: 0;
-  padding: rem(5px) 0;
+  position: relative;
 
-  border: 1px solid #b3bcc3;
-  border-radius: 4px;
+  display: inline-block;
 
-  background-color: #fff;
+  .trigger .icons {
+    &.icon-interaction-down, &.icon-interaction-up {
+      font-size: 10px;
+      padding-left: 0;
+      margin-left: 10px;
+    }
+  }
 
-  white-space: nowrap;
+  &.open .menu {
+    display: block;
+  }
 
-  z-index: 75;
+  &.right .menu {
+    right: 0;
 
-  ul.menu, .menu ul {
-    max-height: 255px;
-    margin-bottom: 0;
+    &:before, &:after {
+      right: 6px;
+      left: initial;
+    }
+  }
 
-    overflow: auto;
+  .secondary {
+    span {
+      &.text {
+        padding-left: 0;
+      }
+    }
+  }
 
+  // TODO: Rename to .dropdown-menu to avoid collisions?
+  .menu {
+    // TODO: Class definition instead of Sass mixin?
     @include tip-top;
 
-    > li {
-      &.selected, a:hover {
-        background-color: #f1f1f1;
+    position: absolute;
+    z-index: 75;
 
-        color: $alt-link-hover-color;
+    display: none;
+
+    margin-top: rem(15px);
+    padding: 5px 0;
+
+    white-space: nowrap;
+
+    border: 1px solid #b3bcc3;
+    border-radius: 4px;
+    background-color: #fff;
+    max-height: 255px;
+    min-width: 140px;
+
+    // TODO: What's this?
+    &.inline > li {
+      &.selected, a:hover {
+        background-color: transparent;
+      }
+    }
+
+    li {
+      // TODO: Do we use .selected somewhere?
+      &.selected, a:hover, label:hover {
+        color: #43454c;
+        background-color: #f1f1f1;
       }
 
-      a {
-        padding: 8px 15px;
-
-        color: $alt-link-color;
+      a, label {
         font-weight: bold;
         line-height: rem(14px);
+        display: block;
+        padding: 8px 15px;
+        color: $alt-link-color;
 
         &:hover {
           color: $alt-link-hover-color;
+          text-decoration: none;
         }
 
+        // TODO: What do we use .disabled for?
         &.disabled {
           color: #8394a0;
 
@@ -48,38 +87,11 @@
             background: transparent;
           }
         }
+      }
 
-        span.avatar {
-          i.icons {
-            padding: 0;
-          }
-        }
-
-        i.icons {
-          padding-right: 10px;
-        }
+      label {
+        padding-left: rem(10px);
       }
     }
-
-    &.inline {
-      > li {
-        &.selected, a:hover {
-          background-color: transparent;
-        }
-      }
-    }
-  }
-
-  &.right {
-    ul.menu, .menu ul {
-      &:before, &:after {
-        right: 2px;
-        left: initial;
-      }
-    }
-  }
-
-  &:hover {
-    text-decoration: none;
   }
 }
