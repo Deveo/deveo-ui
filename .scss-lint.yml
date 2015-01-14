@@ -110,7 +110,7 @@ linters:
     allow_single_line_rule_sets: false
 
   SingleLinePerSelector:
-    enabled: true
+    enabled: false
 
   SpaceAfterComma:
     enabled: true
