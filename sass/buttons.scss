@@ -15,9 +15,7 @@
 
   vertical-align: middle;
 
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 
   &.cancel {
     height: auto;
@@ -45,11 +43,7 @@
 
     text-decoration: none;
 
-            box-shadow: inset 0 1px 1px 0 #d9dee2;
-
-    -webkit-box-shadow: inset 0 1px 1px 0 #d9dee2;
-       -moz-box-shadow: inset 0 1px 1px 0 #d9dee2;
-         -o-box-shadow: inset 0 1px 1px 0 #d9dee2;
+    box-shadow: inset 0 1px 1px 0 #d9dee2;
   }
 
   span.text {
@@ -136,20 +130,12 @@
       }
 
       &:active {
-                box-shadow: none;
-
-        -webkit-box-shadow: none;
-           -moz-box-shadow: none;
-             -o-box-shadow: none;
+        box-shadow: none;
       }
     }
 
     &:active {
-              box-shadow: none;
-
-      -webkit-box-shadow: none;
-         -moz-box-shadow: none;
-           -o-box-shadow: none;
+      box-shadow: none;
     }
   }
 
@@ -169,11 +155,7 @@
     &:active {
       background: $default-link-hover-color;
 
-              box-shadow: inset 0 1px 1px 0 #1f84bd;
-
-      -webkit-box-shadow: inset 0 1px 1px 0 #1f84bd;
-         -moz-box-shadow: inset 0 1px 1px 0 #1f84bd;
-           -o-box-shadow: inset 0 1px 1px 0 #1f84bd;
+      box-shadow: inset 0 1px 1px 0 #1f84bd;
     }
 
     &.disabled:hover {

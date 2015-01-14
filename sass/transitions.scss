@@ -2,55 +2,23 @@
 /*Transitions*/
 
 input.text, input.password, textarea {
-  -webkit-transition-delay: 0;
-     -moz-transition-delay: 0;
-      -ms-transition-delay: 0;
-       -o-transition-delay: 0;
-          transition-delay: 0;
-  -webkit-transition-duration: 0.1s;
-     -moz-transition-duration: 0.1s;
-      -ms-transition-duration: 0.1s;
-       -o-transition-duration: 0.1s;
-          transition-duration: 0.1s;
-  -webkit-transition-property: color, width, height;
-     -moz-transition-property: color, width, height;
-      -ms-transition-property: color, width, height;
-       -o-transition-property: color, width, height;
-          transition-property: color, width, height;
+  transition-delay: 0;
+  transition-duration: 0.1s;
+  transition-property: color, width, height;
 }
 
 a.button, a.trigger, a.icon, .menu li > a {
-  -webkit-transition-delay: 0;
-     -moz-transition-delay: 0;
-      -ms-transition-delay: 0;
-       -o-transition-delay: 0;
-          transition-delay: 0;
-  -webkit-transition-duration: 0.1s;
-     -moz-transition-duration: 0.1s;
-      -ms-transition-duration: 0.1s;
-       -o-transition-duration: 0.1s;
-          transition-duration: 0.1s;
-  -webkit-transition-property: color;
-     -moz-transition-property: color;
-      -ms-transition-property: color;
-       -o-transition-property: color;
-          transition-property: color;
+  transition-delay: 0;
+  transition-duration: 0.1s;
+  transition-property: color;
 }
 
 .effectless {
-  -webkit-transition-property: none;
-     -moz-transition-property: none;
-      -ms-transition-property: none;
-       -o-transition-property: none;
-          transition-property: none;
+  transition-property: none;
 
   &.effectless:focus {
     outline: none;
 
-            box-shadow: none;
-
-    -webkit-box-shadow: none;
-       -moz-box-shadow: none;
-         -o-box-shadow: none;
+    box-shadow: none;
   }
 }

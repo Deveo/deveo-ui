@@ -1,8 +1,6 @@
 /*Box layout*/
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*Basics*/
@@ -28,9 +26,6 @@ button, input, select, textarea {
 
 html {
   font-size: 100%;
-
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
 }
 
 input.text, input.password, select, textarea {
@@ -101,9 +96,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 /*Interaction*/
 
 input[type='search'] {
-  -webkit-box-sizing: content-box;
-     -moz-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 /*Font styles*/
@@ -121,9 +114,9 @@ del {
 }
 
 abbr[title], dfn[title] {
-  text-decoration: underline;
-
   cursor: help;
+
+  text-decoration: underline;
 }
 
 /*Embedded content*/

@@ -21,9 +21,7 @@ input.text, input.password, textarea {
   color: #181c1e;
   line-height: rem(16px);
 
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 
   &.light {
     border-color: #c4cbd1;
@@ -72,20 +70,6 @@ input[type='checkbox'], input[type='radio'] {
 ::-webkit-input-placeholder {
   /* WebKit browsers */
   color: #cecece;
-}
-
-:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: #cecece;
-
-  opacity: 1;
-}
-
-::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  color: #cecece;
-
-  opacity: 1;
 }
 
 :-ms-input-placeholder {
