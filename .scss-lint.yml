@@ -81,7 +81,7 @@ linters:
     enabled: true
 
   PropertySortOrder:
-    enabled: false
+    order: smacss
 
   PropertySpelling:
     enabled: true
