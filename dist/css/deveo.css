@@ -82,8 +82,8 @@ del {
   text-decoration: line-through; }
 
 abbr[title], dfn[title] {
-  cursor: help;
-  text-decoration: underline; }
+  text-decoration: underline;
+  cursor: help; }
 
 /*Embedded content*/
 /*Improves image quality when scaled in IE7*/
@@ -1275,12 +1275,12 @@ a {
     padding-left: 0.625rem; }
 
 .dropdown {
-  position: relative;
-  display: inline-block; }
+  display: inline-block;
+  position: relative; }
   .dropdown .trigger .icons.icon-interaction-down, .dropdown .trigger .icons.icon-interaction-up {
-    font-size: 10px;
+    margin-left: 10px;
     padding-left: 0;
-    margin-left: 10px; }
+    font-size: 10px; }
   .dropdown.open .menu {
     display: block; }
   .dropdown.right .menu {
@@ -1291,17 +1291,17 @@ a {
   .dropdown .secondary span.text {
     padding-left: 0; }
   .dropdown .menu {
-    position: absolute;
-    z-index: 75;
     display: none;
+    position: absolute;
+    min-width: 140px;
+    max-height: 255px;
     margin-top: 0.9375rem;
     padding: 5px 0;
-    white-space: nowrap;
     border: 1px solid #b3bcc3;
     border-radius: 4px;
     background-color: #fff;
-    max-height: 255px;
-    min-width: 140px; }
+    white-space: nowrap;
+    z-index: 75; }
     .dropdown .menu:before, .dropdown .menu:after {
       position: absolute;
       left: 3px;
@@ -1319,14 +1319,14 @@ a {
     .dropdown .menu.inline > li.selected, .dropdown .menu.inline > li a:hover {
       background-color: transparent; }
     .dropdown .menu li.selected, .dropdown .menu li a:hover, .dropdown .menu li label:hover {
-      color: #43454c;
-      background-color: #f1f1f1; }
+      background-color: #f1f1f1;
+      color: #43454c; }
     .dropdown .menu li a, .dropdown .menu li label {
-      font-weight: bold;
-      line-height: 0.875rem;
       display: block;
       padding: 8px 15px;
-      color: #5d5f68; }
+      color: #5d5f68;
+      font-weight: bold;
+      line-height: 0.875rem; }
       .dropdown .menu li a:hover, .dropdown .menu li label:hover {
         color: #181c1e;
         text-decoration: none; }
@@ -2078,60 +2078,51 @@ ul.menu.inline > li > a, .menu ul.inline > li > a {
 .menu.icons li a {
   padding: 5px 10px 5px 30px; }
 
-.stack h5 {
-  margin: 0; }
-.stack.card {
-  padding: 20px;
-  border-radius: 5px;
-  background: #fff; }
-.stack .item {
-  width: 240px;
-  margin-right: 25px;
-  margin-bottom: 20px;
-  float: left;
-  clear: right; }
-  .stack .item.small {
-    width: 200px; }
-  .stack .item.medium {
-    width: 220px; }
-  .stack .item a:hover {
-    color: #181c1e; }
-  .stack .item .block {
-    display: block;
-    padding: 0; }
-  .stack .item .push .content {
-    margin-left: 35px; }
-  .stack .item .pull {
-    width: 20px;
-    height: 20px; }
-  .stack .item .content .title {
-    margin-bottom: 5px;
-    font-size: 14px;
-    font-weight: bold; }
-  .stack .item .content .details {
-    color: #5d5f68; }
-    .stack .item .content .details i.icons {
-      color: #abafba;
-      font-size: 12px; }
-    .stack .item .content .details .trigger i {
-      padding-left: 0.3125rem;
-      color: #5d5f68;
-      font-size: 10px; }
-
-.stack-fixed a {
-  min-height: 105px;
-  max-height: 105px;
-  padding: 30px 30px 0 30px; }
-
-.stack-compact {
-  padding: 20px;
+.stack {
+  padding: 20px 20px 0;
   border-radius: 5px;
   background-color: #fff; }
-  .stack-compact .item, .stack-compact .item:hover {
-    border: none; }
-  .stack-compact .item {
-    width: 260px;
-    margin: 20px 0 0 0; }
-    .stack-compact .item .content .title {
+  .stack.card {
+    padding: 0;
+    background-color: transparent; }
+    .stack.card .item {
+      padding: 20px;
+      border-radius: 5px;
+      background: #fff; }
+  .stack .item, .stack .item:hover {
+    border: 0; }
+  .stack .item {
+    width: 240px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    float: left;
+    clear: right; }
+    .stack .item a:hover {
+      color: #181c1e; }
+    .stack .item .block {
       display: block;
-      padding: 0 30px 0 0; }
+      padding: 0; }
+    .stack .item .push .content {
+      margin-left: 50px; }
+    .stack .item .pull {
+      width: 30px;
+      height: 30px; }
+      .stack .item .pull .avatar {
+        margin-top: 5px; }
+        .stack .item .pull .avatar.tiny {
+          margin-top: 4px; }
+    .stack .item .content .title {
+      font-size: 14px;
+      font-weight: bold; }
+    .stack .item .content .details {
+      margin-top: 5px;
+      color: #5d5f68; }
+      .stack .item .content .details i.icons {
+        color: #abafba;
+        font-size: 12px; }
+      .stack .item .content .details .trigger i {
+        padding-left: 0.3125rem;
+        color: #5d5f68;
+        font-size: 10px; }
+      .stack .item .content .details .disabled:hover {
+        color: #5d5f68; }
