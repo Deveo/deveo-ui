@@ -13,7 +13,7 @@ First, install project dependencies with
 
     $ npm install
     $ bower install
-    $ gem install scss
+    $ gem install sass
 
 then, run [Gulp][gulp] with
 
