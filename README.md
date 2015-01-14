@@ -44,4 +44,5 @@ This project uses
 ## Useful plugins for Sublime Text
   * [Sass](https://packagecontrol.io/packages/Sass)
   * [SublimeLinter](https://packagecontrol.io/packages/SublimeLinter)
+  * [SublimeLinter-contrib-jshint](https://packagecontrol.io/packages/SublimeLinter-contrib-jslint)
   * [Sublime​Linter-contrib-scss-lint](https://packagecontrol.io/packages/SublimeLinter-contrib-scss-lint)
