@@ -1,13 +1,13 @@
 .dropdown {
-  position: relative;
-
   display: inline-block;
+  position: relative;
 
   .trigger .icons {
     &.icon-interaction-down, &.icon-interaction-up {
-      font-size: 10px;
-      padding-left: 0;
       margin-left: 10px;
+      padding-left: 0;
+
+      font-size: 10px;
     }
   }
 
@@ -37,21 +37,21 @@
     // TODO: Class definition instead of Sass mixin?
     @include tip-top;
 
-    position: absolute;
-    z-index: 75;
-
     display: none;
-
+    position: absolute;
+    min-width: 140px;
+    max-height: 255px;
     margin-top: rem(15px);
     padding: 5px 0;
 
-    white-space: nowrap;
-
     border: 1px solid #b3bcc3;
     border-radius: 4px;
+
     background-color: #fff;
-    max-height: 255px;
-    min-width: 140px;
+
+    white-space: nowrap;
+
+    z-index: 75;
 
     // TODO: What's this?
     &.inline > li {
@@ -63,16 +63,18 @@
     li {
       // TODO: Do we use .selected somewhere?
       &.selected, a:hover, label:hover {
-        color: #43454c;
         background-color: #f1f1f1;
+
+        color: #43454c;
       }
 
       a, label {
-        font-weight: bold;
-        line-height: rem(14px);
         display: block;
         padding: 8px 15px;
+
         color: $alt-link-color;
+        font-weight: bold;
+        line-height: rem(14px);
 
         &:hover {
           color: $alt-link-hover-color;
