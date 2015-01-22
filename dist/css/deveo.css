@@ -1297,6 +1297,7 @@ a {
     max-height: 255px;
     margin-top: 0.9375rem;
     padding: 5px 0;
+    overflow-x: scroll;
     border: 1px solid #b3bcc3;
     border-radius: 4px;
     background-color: #fff;
