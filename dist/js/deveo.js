@@ -1,135 +1,146 @@
-(function () {
+/*
+ * jQuery dropdown: A simple dropdown plugin
+ *
+ * Copyright A Beautiful Site, LLC. (http://www.abeautifulsite.net/)
+ *
+ * Licensed under the MIT license: http://opensource.org/licenses/MIT
+ *
+*/
+(function ($) {
 
     "use strict";
 
-    /**
-     * Deveo Dropdown
-     * @param {Object} element The targeted DOM element object
-     * @constructor
-     */
-    var Dropdown = function (element) {
-        this.element = $(element);
-        this.trigger = this.element.find('.trigger');
-        this.menu    = this.element.find('.menu');
-        this.icon    = this.trigger.find('i:last');
+    $.extend($.fn, {
+        dropdown: function (method, data) {
+            switch (method) {
+                case 'show':
+                    show(null, $(this));
+                    return $(this);
+                case 'hide':
+                    hide();
+                    return $(this);
+                case 'attach':
+                    return $(this).attr('data-dropdown', data);
+                case 'detach':
+                    hide();
+                    return $(this).removeAttr('data-dropdown');
+                case 'disable':
+                    return $(this).addClass('dropdown-disabled');
+                case 'enable':
+                    hide();
+                    return $(this).removeClass('dropdown-disabled');
+            }
+        }
+    });
 
-        this.init();
-    };
+    function show(event, object) {
+        var trigger = event ? $(this) : object,
+            dropdown = $(trigger.attr('data-dropdown')),
+            isOpen = trigger.hasClass('dropdown-open');
 
-    /**
-     * Initialize the dropdown
-     */
-    Dropdown.prototype.init = function () {
-        this.trigger.click($.proxy(this.toggle, this));
-    };
+        // In some cases we don't want to show it
+        if (event) {
+            if ($(event.target).hasClass('dropdown-ignore')) return;
 
-    /**
-     * Toggle the dropdown
-     */
-    Dropdown.prototype.toggle = function () {
-        event.preventDefault();
-        event.stopPropagation();
-
-        closeAllBut(getDropdown(event.target));
-
-        this.element.toggleClass('open');
-        this.icon.toggleClass('icon-interaction-down icon-interaction-up');
-    };
-
-    /**
-     * Close the dropdown
-     */
-    Dropdown.prototype.close = function () {
-        this.element.removeClass('open');
-        this.icon.removeClass('icon-interaction-up').addClass('icon-interaction-down');
-    };
-
-    /**
-     * Close all but the given dropdown
-     * @param {Object} dropdown The dropdown that should not be closed
-     */
-    function closeAllBut (dropdown) {
-        $('.dropdown.open').not(dropdown).dropdown('close');
-    }
-
-    /**
-     * Close all open dropdowns
-     */
-    function closeAll () {
-        $('.dropdown.open').dropdown('close');
-    }
-
-    /**
-     * Determine which dropdowns to close when a click event occurs
-     */
-    function close () {
-        var target   = event.target,
-            dropdown = getDropdown(target);
-
-        if (!dropdown || dropdown.length && isClosingElement(target)) {
-            closeAll();
+            event.preventDefault();
+            event.stopPropagation();
         } else {
-            closeAllBut(dropdown);
+            if (trigger !== object.target && $(object.target).hasClass('dropdown-ignore')) return;
+        }
+        hide();
+
+        if (isOpen || trigger.hasClass('dropdown-disabled')) return;
+
+        // Show it
+        trigger.addClass('dropdown-open');
+
+        // Toggle interaction icon
+        trigger.find('i:last')
+            .removeClass('icon-interaction-down')
+            .addClass('icon-interaction-up');
+
+        dropdown
+            .data('dropdown-trigger', trigger)
+            .show();
+
+        // Position it
+        position();
+
+        // Trigger the show callback
+        dropdown
+            .trigger('show', {
+                dropdown: dropdown,
+                trigger: trigger
+            });
+    }
+
+    function hide(event) {
+        // In some cases we don't hide them
+        var targetGroup = event ? $(event.target).parents().addBack() : null;
+
+        // Are we clicking anywhere in a dropdown?
+        if (targetGroup && targetGroup.is('.dropdown')) {
+            // Is it a dropdown menu?
+            if (targetGroup.is('.dropdown-menu')) {
+                // Did we click on an option? If so close it.
+                if (!targetGroup.is('A')) return;
+            } else {
+                // Nope, it's a panel. Leave it open.
+                return;
+            }
+        }
+
+        // Hide any dropdown that may be showing
+        $(document).find('.dropdown:visible').each(function () {
+            var dropdown = $(this);
+            dropdown
+                .hide()
+                .removeData('dropdown-trigger')
+                .trigger('hide', { dropdown: dropdown });
+        });
+
+        var trigger = $(document).find('.dropdown-open');
+
+        // Toggle interaction icon
+        trigger.find('i:last')
+            .removeClass('icon-interaction-up')
+            .addClass('icon-interaction-down');
+
+        // Remove all dropdown-open classes
+        trigger.removeClass('dropdown-open');
+    }
+
+    function position() {
+        var dropdown = $('.dropdown:visible').eq(0),
+            trigger = dropdown.data('dropdown-trigger'),
+            hOffset = trigger ? parseInt(trigger.attr('data-horizontal-offset') || 0, 10) : null,
+            vOffset = trigger ? parseInt(trigger.attr('data-vertical-offset') || 0, 10) : null;
+
+        if (dropdown.length === 0 || !trigger) return;
+
+        // Position the dropdown relative-to-parent...
+        if (dropdown.hasClass('dropdown-relative')) {
+            dropdown.css({
+                left: dropdown.hasClass('dropdown-anchor-right') ?
+                    trigger.position().left - (dropdown.outerWidth(true) - trigger.outerWidth(true)) - parseInt(trigger.css('margin-right'), 10) + hOffset :
+                    trigger.position().left + parseInt(trigger.css('margin-left'), 10) + hOffset,
+                top: trigger.position().top + trigger.outerHeight(true) - parseInt(trigger.css('margin-top'), 10) + vOffset
+            });
+        } else {
+            // ...or relative to document
+            dropdown.css({
+                left: dropdown.hasClass('dropdown-anchor-right') ?
+                    trigger.offset().left - (dropdown.outerWidth() - trigger.outerWidth()) + hOffset : trigger.offset().left + hOffset,
+                top: trigger.offset().top + trigger.outerHeight() + vOffset
+            });
         }
     }
 
-    /**
-     * Get a dropdown element for an element
-     * @param  {Object} element The element to get a dropdown for
-     * @return {Object}         A dropdown element or empty array if none was
-     *                          found
-     */
-    function getDropdown (element) {
-        element = $(element);
-        return element.hasClass('dropdown') ?
-               element :
-               element.parents('.dropdown');
-    }
+    $(document).on('click.dropdown', '[data-dropdown]', show);
+    $(document).on('click.dropdown', hide);
+    $(window).on('resize', position);
 
-    /**
-     * Determine whether an element is of menu-closing type
-     * @param  {Object}  element The element to check
-     * @return {Boolean}         True if yes, false if no
-     */
-    function isClosingElement (element) {
-        return $(element).is('a');
-    }
-
-    /**
-     * Initialize and store a new instance of the dropdown to the target element
-     * @param  {Object} element The targeted DOM element object
-     * @return {Object}         The dropdown instance
-     */
-    function initializePlugin (element) {
-        var plugin = new Dropdown(element);
-        $(element).data('plugin', plugin);
-        return plugin;
-    }
-
-    /**
-     * Get the stored dropdown or initialize a new one
-     * @param  {Object} element The targeted DOM element object
-     * @return {Object}         The dropdown instance
-     */
-    function getPlugin (element) {
-        return $(element).data('plugin') || initializePlugin(element);
-    }
-
-    $.fn.dropdown = function (method) {
-        return this.each(function () {
-            if (typeof method === 'string') {
-                var plugin = getPlugin(this);
-                plugin[method].apply(plugin);
-            } else {
-                initializePlugin(this);
-            }
-        });
-    };
-
-    // Close open dropdowns when clicking anywhere in the document
-    $(document).click(close);
-
-})();
+})(jQuery);
 
 (function () {
 

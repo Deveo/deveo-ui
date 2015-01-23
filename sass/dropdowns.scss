@@ -1,100 +1,77 @@
+[data-dropdown] {
+  .icons:last-of-type {
+    margin-left: 10px;
+    font-size: 11px;
+  }
+}
+
 .dropdown {
+  display: none;
+  position: absolute;
+  margin-top: 10px;
+}
+
+.dropdown:before {
   display: inline-block;
-  position: relative;
+  position: absolute;
+  top: -6px;
+  left: 9px;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #b3bcc3;
+  border-left: 7px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  content: '';
+}
 
-  .trigger .icons {
-    &.icon-interaction-down, &.icon-interaction-up {
-      margin-left: 10px;
-      padding-left: 0;
+.dropdown:after {
+  display: inline-block;
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #fff;
+  border-left: 6px solid transparent;
+  content: '';
+}
 
-      font-size: 10px;
-    }
-  }
+.dropdown-menu {
+  min-width: 150px;
+  max-width: 500px;
+  max-height: 250px;
+  margin-top: 0;
+  padding: 5px 0;
+  border: 1px solid #b3bcc3;
+  border-radius: 3px;
+  background-color: #fff;
+  list-style: none;
+  overflow: auto;
 
-  &.open .menu {
-    display: block;
-  }
-
-  &.right .menu {
-    right: 0;
-
-    &:before, &:after {
-      right: 6px;
-      left: initial;
-    }
-  }
-
-  .secondary {
-    span {
-      &.text {
-        padding-left: 0;
-      }
-    }
-  }
-
-  // TODO: Rename to .dropdown-menu to avoid collisions?
-  .menu {
-    // TODO: Class definition instead of Sass mixin?
-    @include tip-top;
-
-    display: none;
-    position: absolute;
-    min-width: 140px;
-    max-height: 255px;
-    margin-top: rem(15px);
-    padding: 5px 0;
-    overflow-x: scroll;
-
-    border: 1px solid #b3bcc3;
-    border-radius: 4px;
-
-    background-color: #fff;
-
-    white-space: nowrap;
-
-    z-index: 75;
-
-    // TODO: What's this?
-    &.inline > li {
-      &.selected, a:hover {
-        background-color: transparent;
-      }
+  > li {
+    &:hover {
+      background-color: #f1f1f1;
     }
 
-    li {
-      // TODO: Do we use .selected somewhere?
-      &.selected, a:hover, label:hover {
-        background-color: #f1f1f1;
+    a, label {
+      display: block;
+      padding: 8px 16px;
+      cursor: pointer;
+      color: $alt-link-color;
+      font-weight: bold;
+    }
 
-        color: #43454c;
-      }
-
-      a, label {
-        display: block;
-        padding: 8px 15px;
-
-        color: $alt-link-color;
-        font-weight: bold;
-        line-height: rem(14px);
-
-        &:hover {
-          color: $alt-link-hover-color;
-          text-decoration: none;
-        }
-
-        // TODO: What do we use .disabled for?
-        &.disabled {
-          color: #8394a0;
-
-          &:hover {
-            background: transparent;
-          }
-        }
-      }
-
-      label {
-        padding-left: rem(10px);
-      }
+    a:hover {
+      color: $alt-link-hover-color;
+      text-decoration: none;
     }
   }
+}
+
+.dropdown.dropdown-right:before {
+  right: 9px;
+  left: auto;
+}
+
+.dropdown.dropdown-right:after {
+  right: 10px;
+  left: auto;
 }
