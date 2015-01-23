@@ -47,19 +47,16 @@
   overflow: auto;
 
   > li {
-    &:hover {
-      background-color: #f1f1f1;
-    }
-
-    a, label {
+    > a, > label {
       display: block;
-      padding: 8px 16px;
+      padding: 10px 20px;
       cursor: pointer;
       color: $alt-link-color;
       font-weight: bold;
     }
 
-    a:hover {
+    > a:hover, > label:hover {
+      background-color: #f1f1f1;
       color: $alt-link-hover-color;
       text-decoration: none;
     }

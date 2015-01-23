@@ -1427,15 +1427,14 @@ a {
   background-color: #fff;
   list-style: none;
   overflow: auto; }
-  .dropdown-menu > li:hover {
-    background-color: #f1f1f1; }
-  .dropdown-menu > li a, .dropdown-menu > li label {
+  .dropdown-menu > li > a, .dropdown-menu > li > label {
     display: block;
-    padding: 8px 16px;
+    padding: 10px 20px;
     cursor: pointer;
     color: #5d5f68;
     font-weight: bold; }
-  .dropdown-menu > li a:hover {
+  .dropdown-menu > li > a:hover, .dropdown-menu > li > label:hover {
+    background-color: #f1f1f1;
     color: #181c1e;
     text-decoration: none; }
 
