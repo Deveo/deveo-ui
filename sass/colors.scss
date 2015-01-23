@@ -39,14 +39,6 @@ a:hover {
   color: $default-link-hover-color;
 }
 
-.menu a {
-  color: $alt-link-color;
-
-  &:hover {
-    color: $alt-link-hover-color;
-  }
-}
-
 a.discreet {
   color: inherit;
 }

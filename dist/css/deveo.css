@@ -412,11 +412,6 @@ a {
 a:hover {
   color: #33aff6; }
 
-.menu a {
-  color: #5d5f68; }
-  .menu a:hover {
-    color: #181c1e; }
-
 a.discreet {
   color: inherit; }
 
@@ -2104,100 +2099,53 @@ a {
 .label {
   background: #000; }
 
-/*Menu layouts*/
-.menu ul, .menu ol, ul.menu, ol.menu {
-  list-style: none; }
-
-.menu ul, .menu ol, ul.menu, ol.menu {
-  padding-left: 0; }
-
-.menu ul.left {
-  float: left;
-  clear: right; }
-
-.menu ul.right, .menu ul.last {
-  float: right;
-  clear: right; }
-
-ul.menu.images > li {
-  min-height: 30px;
-  margin: 5px 5px 10px 5px; }
-  ul.menu.images > li > a {
-    display: block;
-    min-height: 30px;
-    padding: 0 10px 0 0; }
-    ul.menu.images > li > a > img, ul.menu.images > li > a > span {
-      display: inline-block; }
-    ul.menu.images > li > a > span {
-      padding-top: 0.4em; }
-
-/*List layouts*/
-ul.breathe {
+.menu {
   padding-left: 0;
   list-style: none; }
-  ul.breathe li {
-    margin-top: 0.6em;
-    margin-bottom: 0.6em; }
-  ul.breathe.menu li {
-    margin-top: 0;
-    margin-bottom: 0; }
-    ul.breathe.menu li a {
-      padding: 0.5em 10px; }
-
-/*Inline list layouts*/
-ul.inline, ol.inline {
-  padding-left: 0;
-  list-style: none; }
-
-ul.inline > li, ol.inline > li, ul.inline > li > a, ol.inline > li > a {
-  display: inline-block; }
-
-ul.inline > li, ol.inline > li {
-  margin-right: 1em; }
-
-ul.inline.right > li, ol.inline.right > li {
-  margin-right: 0;
-  margin-left: 1em; }
-
-dl.inline > dt, dl.inline > dd {
-  float: left;
-  clear: right; }
-
-dl.inline > dt {
-  margin-top: 0; }
-
-ul.stack {
-  padding-left: 0;
-  list-style: none; }
-
-/*All menus*/
-.menu li, .menu li a {
-  display: block; }
-
-.menu li.hidden {
-  display: none; }
-
-.menu li a {
-  padding: 5px 10px 5px 5px; }
-
-/*Inline menus layout*/
-ul.menu.inline > li > a, .menu ul.inline > li > a {
-  padding: 0; }
-
-/*Condensed menu layout*/
-.menu.condensed li a {
-  padding-top: 2px;
-  padding-bottom: 2px; }
-
-/*Menus with icons*/
-.menu.icons li a {
-  padding: 5px 10px 5px 30px; }
-
-ul.menu > li a:hover, .menu ul > li a:hover, ol.menu > li a:hover, .menu ol > li a:hover {
-  background-color: #e7e9eb; }
-
-ul.menu ul, .menu ul ul, ol.menu ul, .menu ol ul, ul.menu ol, .menu ul ol, ol.menu ol, .menu ol ol {
-  background: transparent; }
+  .menu li {
+    margin: 8px 0; }
+    .menu li, .menu li a {
+      display: block; }
+  .menu.menu-inline li {
+    display: inline-block;
+    margin-right: 1em; }
+  .menu.menu-right > li {
+    margin-right: 0;
+    margin-left: 1em; }
+  .menu.menu-tabs > li {
+    display: inline-block;
+    margin: 0;
+    border-top: 4px solid #fafafa;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #fafafa; }
+    .menu.menu-tabs > li.active {
+      border-top: 4px solid #da8572;
+      background-color: #fff; }
+    .menu.menu-tabs > li.active a, .menu.menu-tabs > li.active a:hover {
+      color: #da8572; }
+    .menu.menu-tabs > li a {
+      padding: 10px 25px;
+      color: #5d5f68;
+      text-decoration: none; }
+    .menu.menu-tabs > li a:hover {
+      color: #181c1e; }
+  .menu.menu-tabs-alt {
+    padding: 0 20px; }
+  .menu.menu-tabs-alt > li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    border-bottom: 2px solid transparent; }
+    .menu.menu-tabs-alt > li.active {
+      border-color: #da8572; }
+    .menu.menu-tabs-alt > li.active a, .menu.menu-tabs-alt > li.active a:hover {
+      color: #da8572; }
+    .menu.menu-tabs-alt > li a {
+      color: #5d5f68;
+      line-height: 43px;
+      text-decoration: none; }
+    .menu.menu-tabs-alt > li a:hover {
+      color: #181c1e; }
 
 .stack {
   padding: 20px 20px 0;
