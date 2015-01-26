@@ -39,30 +39,6 @@ a:hover {
   color: $default-link-hover-color;
 }
 
-.menu a {
-  color: $alt-link-color;
-
-  &:hover {
-    color: $alt-link-hover-color;
-  }
-}
-
 a.discreet {
   color: inherit;
-}
-
-// Menus
-
-ul.menu, .menu ul, ol.menu, .menu ol {
-  > li {
-    a {
-      &:hover {
-        background-color: #e7e9eb;
-      }
-    }
-  }
-}
-
-ul.menu ul, .menu ul ul, ol.menu ul, .menu ol ul, ul.menu ol, .menu ul ol, ol.menu ol, .menu ol ol {
-  background: transparent;
 }

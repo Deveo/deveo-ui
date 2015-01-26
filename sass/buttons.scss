@@ -67,10 +67,6 @@
       font-size: 12px;
     }
 
-    &.trigger {
-      padding: 4px 10px 4px 10px;
-    }
-
     span.text {
       padding: 0 0 0 6px;
     }
@@ -206,12 +202,5 @@
 
   &.hidden {
     display: none;
-  }
-
-  i.icons {
-    &.icon-interaction-down, &.icon-interaction-right {
-      padding-top: rem(1px);
-      padding-left: rem(10px);
-    }
   }
 }

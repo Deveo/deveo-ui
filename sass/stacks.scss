@@ -1,14 +1,26 @@
 .stack {
-  h5 {
-    margin: 0;
-  }
+  padding: 20px 20px 0;
+
+  border-radius: 5px;
+
+  background-color: #fff;
 
   &.card {
-    padding: 20px;
+    padding: 0;
 
-    border-radius: 5px;
+    background-color: transparent;
 
-    background: #fff;
+    .item {
+      padding: 20px;
+
+      border-radius: 5px;
+
+      background: #fff;
+    }
+  }
+
+  .item, .item:hover {
+    border: 0;
   }
 
   .item {
@@ -17,14 +29,6 @@
     margin-bottom: 20px;
     float: left;
     clear: right;
-
-    &.small {
-      width: 200px;
-    }
-
-    &.medium {
-      width: 220px;
-    }
 
     a {
       &:hover {
@@ -38,22 +42,30 @@
     }
 
     .push .content {
-      margin-left: 35px;
+      margin-left: 50px;
     }
 
     .pull {
-      width: 20px;
-      height: 20px;
+      width: 30px;
+      height: 30px;
+
+      .avatar {
+        margin-top: 5px;
+
+        &.tiny {
+          margin-top: 4px;
+        }
+      }
     }
 
     .content .title {
-      margin-bottom: 5px;
-
       font-size: 14px;
       font-weight: bold;
     }
 
     .content .details {
+      margin-top: 5px;
+
       color: #5d5f68;
 
       i.icons {
@@ -67,36 +79,10 @@
         color: #5d5f68;
         font-size: 10px;
       }
-    }
-  }
-}
 
-.stack-fixed {
-  a {
-    min-height: 105px;
-    max-height: 105px;
-    padding: 30px 30px 0 30px;
-  }
-}
-
-.stack-compact {
-  padding: 20px;
-
-  border-radius: 5px;
-
-  background-color: #fff;
-
-  .item, .item:hover {
-    border: none;
-  }
-
-  .item {
-    width: 260px;
-    margin: 20px 0 0 0;
-
-    .content .title {
-      display: block;
-      padding: 0 30px 0 0;
+      .disabled:hover {
+        color: $alt-link-color;
+      }
     }
   }
 }
