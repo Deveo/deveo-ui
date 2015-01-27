@@ -2138,7 +2138,7 @@ a {
     margin: 8px 0; }
     .menu li, .menu li a {
       display: block; }
-  .menu.menu-inline li {
+  .menu.menu-inline > li {
     display: inline-block;
     margin-right: 1em; }
   .menu.menu-right > li {
