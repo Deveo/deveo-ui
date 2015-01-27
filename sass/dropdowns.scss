@@ -1,8 +1,6 @@
-[data-dropdown] {
-  .icons:last-of-type {
-    margin-left: 10px;
-    font-size: 11px;
-  }
+[data-dropdown] > .icons:last-of-type {
+  margin-left: 10px;
+  font-size: 11px;
 }
 
 .dropdown {
@@ -46,20 +44,18 @@
   list-style: none;
   overflow: auto;
 
-  > li {
-    > a, > label {
-      display: block;
-      padding: 10px 20px;
-      cursor: pointer;
-      color: $alt-link-color;
-      font-weight: bold;
-    }
+  > li > a, > label {
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: $alt-link-color;
+    font-weight: bold;
+  }
 
-    > a:hover, > label:hover {
-      background-color: #f1f1f1;
-      color: $alt-link-hover-color;
-      text-decoration: none;
-    }
+  > a:hover, > label:hover {
+    background-color: #f1f1f1;
+    color: $alt-link-hover-color;
+    text-decoration: none;
   }
 }
 
