@@ -2126,40 +2126,53 @@ a {
   .menu.menu-right > li {
     margin-right: 0;
     margin-left: 1em; }
-  .menu.menu-tabs > li {
+  .menu .menu-tab-list {
+    margin: 0; }
+  .menu .menu-tab-panel {
+    display: none;
+    padding: 25px;
+    background-color: #fff; }
+    .menu .menu-tab-panel.active {
+      display: inline-block;
+      width: 100%; }
+  .menu.menu-tabs .menu-tab {
     display: inline-block;
     margin: 0;
     border-top: 4px solid #fafafa;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     background-color: #fafafa; }
-    .menu.menu-tabs > li.active {
+    .menu.menu-tabs .menu-tab.active {
       border-top: 4px solid #da8572;
       background-color: #fff; }
-    .menu.menu-tabs > li.active a, .menu.menu-tabs > li.active a:hover {
+    .menu.menu-tabs .menu-tab.active a, .menu.menu-tabs .menu-tab.active a:hover {
       color: #da8572; }
-    .menu.menu-tabs > li a {
+    .menu.menu-tabs .menu-tab a {
       padding: 10px 25px;
       color: #5d5f68;
       text-decoration: none; }
-    .menu.menu-tabs > li a:hover {
+    .menu.menu-tabs .menu-tab a:hover {
       color: #181c1e; }
+  .menu.menu-tabs .menu-tab-panel {
+    border-radius: 0 5px 5px; }
   .menu.menu-tabs-alt {
-    padding: 0 20px; }
-  .menu.menu-tabs-alt > li {
+    background-color: #fff; }
+  .menu.menu-tabs-alt .menu-tab-list {
+    padding: 0 25px; }
+  .menu.menu-tabs-alt .menu-tab {
     display: inline-block;
     margin: 0 20px 0 0;
     border-bottom: 2px solid transparent; }
-    .menu.menu-tabs-alt > li.active {
-      border-color: #da8572; }
-    .menu.menu-tabs-alt > li.active a, .menu.menu-tabs-alt > li.active a:hover {
-      color: #da8572; }
-    .menu.menu-tabs-alt > li a {
+    .menu.menu-tabs-alt .menu-tab a {
       color: #5d5f68;
       line-height: 43px;
       text-decoration: none; }
-    .menu.menu-tabs-alt > li a:hover {
+    .menu.menu-tabs-alt .menu-tab a:hover {
       color: #181c1e; }
+    .menu.menu-tabs-alt .menu-tab.active {
+      border-color: #da8572; }
+    .menu.menu-tabs-alt .menu-tab.active a, .menu.menu-tabs-alt .menu-tab.active a:hover {
+      color: #da8572; }
 
 .stack {
   padding: 20px 20px 0;
