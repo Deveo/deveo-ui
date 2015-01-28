@@ -20,6 +20,28 @@
     margin-left: 1em;
   }
 
+  // Stack Menu
+
+  &.menu-stack {
+    background-color: #fff;
+  }
+
+  &.menu-stack > li, &.menu-stack > li {
+    a, label {
+      display: block;
+      padding: 10px 25px;
+      cursor: pointer;
+      color: $alt-link-color;
+      font-weight: bold;
+    }
+
+    a:hover, label:hover {
+      background-color: #f1f1f1;
+      color: $alt-link-hover-color;
+      text-decoration: none;
+    }
+  }
+
   // Tab Menus
 
   .menu-tab-list {
@@ -28,7 +50,6 @@
 
   .menu-tab-panel {
     display: none;
-    padding: 25px;
     background-color: #fff;
 
     &.active {

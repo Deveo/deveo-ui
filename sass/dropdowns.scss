@@ -44,20 +44,6 @@
   background-color: #fff;
   list-style: none;
   overflow: auto;
-
-  > li > a, > li > label {
-    display: block;
-    padding: 10px 20px;
-    cursor: pointer;
-    color: $alt-link-color;
-    font-weight: bold;
-
-    &:hover {
-      background-color: #f1f1f1;
-      color: $alt-link-hover-color;
-      text-decoration: none;
-    }
-  }
 }
 
 .dropdown.dropdown-right:before {
