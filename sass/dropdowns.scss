@@ -1,6 +1,5 @@
 [data-dropdown] {
-  .icons:last-of-type {
-    margin-left: 10px;
+  > .icons:last-of-type {
     font-size: 11px;
   }
 }

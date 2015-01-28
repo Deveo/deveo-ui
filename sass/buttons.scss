@@ -12,15 +12,6 @@
   // Icon styles
   > .icons {
     line-height: initial;
-    margin-right: 8px;
-  }
-
-  > .icons:nth-of-type(2) {
-    margin-left: 8px;
-  }
-
-  &.button-icon-only > .icons {
-    margin: 0;
   }
 
   // State styles
@@ -45,12 +36,7 @@
     line-height: 26px;
 
     > .icons {
-      margin-right: 6px;
       font-size: 12px;
-    }
-
-    &.button-icon-only > .icons {
-      margin: 0;
     }
   }
 
@@ -60,12 +46,7 @@
     line-height: 20px;
 
     > .icons {
-      margin-right: 4px;
       font-size: 9px;
-    }
-
-    &.button-icon-only > .icons {
-      margin: 0;
     }
   }
 
