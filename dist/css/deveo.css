@@ -1407,7 +1407,8 @@ a {
 .dropdown {
   display: none;
   position: absolute;
-  margin-top: 10px; }
+  margin-top: 10px;
+  z-index: 9999; }
 
 .dropdown:before {
   display: inline-block;
@@ -1441,16 +1442,16 @@ a {
   background-color: #fff;
   list-style: none;
   overflow: auto; }
-  .dropdown-menu > li > a, .dropdown-menu > label {
+  .dropdown-menu > li > a, .dropdown-menu > li > label {
     display: block;
     padding: 10px 20px;
     cursor: pointer;
     color: #5d5f68;
     font-weight: bold; }
-  .dropdown-menu > a:hover, .dropdown-menu > label:hover {
-    background-color: #f1f1f1;
-    color: #181c1e;
-    text-decoration: none; }
+    .dropdown-menu > li > a:hover, .dropdown-menu > li > label:hover {
+      background-color: #f1f1f1;
+      color: #181c1e;
+      text-decoration: none; }
 
 .dropdown.dropdown-right:before {
   right: 9px;
