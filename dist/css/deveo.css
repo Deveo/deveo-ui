@@ -1311,7 +1311,10 @@ a {
   font-size: 14px;
   font-weight: bold;
   line-height: 34px; }
+  .button.button-icon-only .icons:first-of-type {
+    margin-right: 0; }
   .button > .icons {
+    margin-right: 5px;
     line-height: initial; }
   .button:hover, .button:active {
     border-color: #98a1a7;
@@ -1325,12 +1328,16 @@ a {
     padding: 0 16px;
     font-size: 12px;
     line-height: 26px; }
+    .button.button-small.button-icon-only .icons:first-of-type {
+      margin-right: 0; }
     .button.button-small > .icons {
       font-size: 12px; }
   .button.button-xsmall {
     padding: 0 10px;
     font-size: 11px;
     line-height: 20px; }
+    .button.button-xsmall.button-icon-only .icons:first-of-type {
+      margin-right: 0; }
     .button.button-xsmall > .icons {
       font-size: 9px; }
   .button.button-primary {
@@ -1382,18 +1389,11 @@ a {
   .button.button-avatar > .avatar {
     width: 30px;
     height: 30px;
-    margin-right: 8px;
+    margin-right: 5px;
     line-height: 30px; }
-  .button.button-avatar > .icons:last-of-type {
-    margin-right: 0;
-    margin-left: 8px;
-    vertical-align: middle; }
-  .button.button-avatar.button-small > .icons:last-of-type {
-    margin-left: 6px; }
   .button.button-avatar.button-small > .avatar {
     width: 20px;
     height: 20px;
-    margin-right: 6px;
     font-size: 10px;
     line-height: 20px; }
   .button.button-avatar.button-small > .avatar i {
@@ -1401,7 +1401,8 @@ a {
     line-height: inherit; }
 
 [data-dropdown] > .icons:last-of-type {
-  margin-left: 10px;
+  margin-right: 0;
+  margin-left: 5px;
   font-size: 11px; }
 
 .dropdown {
