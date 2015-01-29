@@ -1,151 +1,117 @@
 .avatar {
   display: inline-block;
-  position: relative;
   width: 30px;
   height: 30px;
+  line-height: 30px;
 
-  border-radius: 50%;
-
-  text-align: center;
-
-  img, i {
+  img, i, .initials {
     width: 100%;
     height: 100%;
-
     border-radius: 50%;
-
     vertical-align: top;
   }
 
-  i {
-    display: inline-block;
-
-    background-color: #50566a;
-
+  i, .initials {
+    background-color: #d4d4d4;
     color: #fff;
-    font-size: 13px;
-    line-height: 31px;
-
-    vertical-align: top;
-
-    &.hidden {
-      display: none;
-    }
-
-    &.private {
-      position: absolute;
-      right: -5px;
-      bottom: -5px;
-      width: 50%;
-      height: 50%;
-
-      background-color: #fff !important;
-
-      color: #b0b0b0;
-      font-size: 12px;
-      line-height: 20px;
-    }
+    line-height: inherit;
   }
 
-  &.mini {
-    width: 15px;
-    height: 15px;
-
-    i {
-      font-size: 8px;
-      line-height: 15px;
-    }
+  .initials {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
   }
 
-  &.tiny {
+  // Avatar Sizes
+
+  &.avatar-small {
     width: 20px;
     height: 20px;
+    line-height: 20px;
 
-    i {
+    i, .initials {
       font-size: 10px;
-      line-height: 20px;
-
-      &.private {
-        right: -4px;
-        bottom: -4px;
-
-        font-size: 8px;
-        line-height: 12px;
-      }
     }
   }
 
-  &.small {
-    width: 30px;
-    height: 30px;
+  &.avatar-large {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
 
-    i {
-      font-size: 12px;
-      line-height: 30px;
-
-      &.private {
-        right: -10px;
-        width: 60%;
-        height: 60%;
-
-        line-height: 20px;
-      }
-    }
-  }
-
-  &.medium {
-    width: 80px;
-    height: 80px;
-
-    i {
+    i, .initials {
       font-size: 30px;
-      line-height: 80px;
-
-      &.private {
-        right: -10px;
-        bottom: -10px;
-
-        font-size: 24px;
-        line-height: 40px;
-      }
     }
   }
 
-  &.large {
-    width: 100px;
-    height: 100px;
+  // Project & Alternative Avatars
 
+  &.avatar-project, &.avatar-alt {
     i {
-      font-size: 30px;
-      line-height: 100px;
+      background-color: #50566a;
+      color: #fff;
     }
   }
 
-  &.default-alt i {
-    background-color: #d4d4d4;
+  // Project Avatar Colors
+
+  &.avatar-project .initials {
+    &.blue {
+      background-color: #3589c4;
+    }
+
+    &.green {
+      background-color: #abce00;
+    }
+
+    &.red {
+      background-color: #e5163d;
+    }
+
+    &.orange {
+      background-color: #ff9500;
+    }
+
+    &.turquoise {
+      background-color: #00d9a3;
+    }
+
+    &.purple {
+      background-color: #623494;
+    }
+  }
+}
+
+// Lock Icon for Private Projects
+
+&.avatar-project {
+  position: relative;
+
+  i:last-of-type:not(:only-of-type) {
+    position: absolute;
+    right: -6px;
+    bottom: -5px;
+    width: 50%;
+    height: 50%;
+    background-color: #fff;
+    color: #b0b0b0;
+    font-size: 9px;
+    line-height: 15px;
   }
 
-  &.blue i {
-    background-color: #3589c4;
+  &.avatar-small i:last-of-type:not(:only-of-type) {
+    right: -5px;
+    bottom: -4px;
+    font-size: 6px;
+    line-height: 10px;
   }
 
-  &.green i {
-    background-color: #abce00;
-  }
-
-  &.red i {
-    background-color: #e5163d;
-  }
-
-  &.orange i {
-    background-color: #ff9500;
-  }
-
-  &.turquoise i {
-    background-color: #00d9a3;
-  }
-
-  &.purple i {
-    background-color: #623494;
+  &.avatar-large i:last-of-type:not(:only-of-type) {
+    right: -14px;
+    bottom: -8px;
+    font-size: 19px;
+    line-height: 30px;
   }
 }
