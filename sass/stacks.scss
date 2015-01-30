@@ -9,23 +9,14 @@
     margin-bottom: 20px;
     float: left;
     clear: right;
-
-    a:hover {
-      color: $alt-link-hover-color;
-    }
-
-    .block {
-      display: block;
-      padding: 0;
-    }
   }
 
   // Left side
 
   .pull {
     width: 30px;
-    margin-left: -100%;
     margin-top: 5px;
+    margin-left: -100%;
     float: left;
     clear: none;
   }
@@ -42,11 +33,13 @@
     margin-left: 50px;
   }
 
+  .title, .details {
+    @extend .truncate;
+  }
+
   .title {
     font-size: 14px;
     font-weight: bold;
-
-    @extend .truncate
   }
 
   .details {
@@ -54,8 +47,8 @@
     color: #5d5f68;
 
     > i, > span:not(:only-child) {
-      font-size: 12px;
       color: #919aa1;
+      font-size: 12px;
     }
 
     > i {
@@ -63,8 +56,8 @@
     }
 
     > span:not(:only-child) {
-      margin-left: 4px;
       margin-right: 8px;
+      margin-left: 4px;
     }
   }
 
