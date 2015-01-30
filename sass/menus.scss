@@ -10,7 +10,7 @@
     }
   }
 
-  &.menu-inline li {
+  &.menu-inline > li {
     display: inline-block;
     margin-right: 1em;
   }
@@ -20,7 +20,47 @@
     margin-left: 1em;
   }
 
-  &.menu-tabs > li {
+  // Stack Menu
+
+  &.menu-stack {
+    background-color: #fff;
+  }
+
+  &.menu-stack > li, &.menu-stack > li {
+    a, label {
+      display: block;
+      padding: 10px 25px;
+      cursor: pointer;
+      color: $alt-link-color;
+      font-weight: bold;
+    }
+
+    a:hover, label:hover {
+      background-color: #f1f1f1;
+      color: $alt-link-hover-color;
+      text-decoration: none;
+    }
+  }
+
+  // Tab Menus
+
+  .menu-tab-list {
+    margin: 0;
+  }
+
+  .menu-tab-panel {
+    display: none;
+    background-color: #fff;
+
+    &.active {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+  // Normal Tab Menu
+
+  &.menu-tabs .menu-tab {
     display: inline-block;
     margin: 0;
     border-top: 4px solid #fafafa;
@@ -48,22 +88,24 @@
     }
   }
 
-  &.menu-tabs-alt {
-    padding: 0 20px;
+  &.menu-tabs .menu-tab-panel {
+    border-radius: 0 5px 5px;
   }
 
-  &.menu-tabs-alt > li {
+  // Alternative Tab Menu
+
+  &.menu-tabs-alt {
+    background-color: #fff;
+  }
+
+  &.menu-tabs-alt .menu-tab-list {
+    padding: 0 25px;
+  }
+
+  &.menu-tabs-alt .menu-tab {
     display: inline-block;
     margin: 0 20px 0 0;
     border-bottom: 2px solid transparent;
-
-    &.active {
-      border-color: #da8572;
-    }
-
-    &.active a, &.active a:hover {
-      color: #da8572;
-    }
 
     a {
       color: #5d5f68;
@@ -73,6 +115,14 @@
 
     a:hover {
       color: #181c1e;
+    }
+
+    &.active {
+      border-color: #da8572;
+    }
+
+    &.active a, &.active a:hover {
+      color: #da8572;
     }
   }
 }

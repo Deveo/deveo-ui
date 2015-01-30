@@ -10,7 +10,12 @@
   line-height: 34px;
 
   // Icon styles
+  &.button-icon-only .icons:first-of-type {
+    margin-right: 0;
+  }
+
   > .icons {
+    margin-right: 5px;
     line-height: initial;
   }
 
@@ -35,6 +40,10 @@
     font-size: 12px;
     line-height: 26px;
 
+    &.button-icon-only .icons:first-of-type {
+      margin-right: 0;
+    }
+
     > .icons {
       font-size: 12px;
     }
@@ -44,6 +53,10 @@
     padding: 0 10px;
     font-size: 11px;
     line-height: 20px;
+
+    &.button-icon-only .icons:first-of-type {
+      margin-right: 0;
+    }
 
     > .icons {
       font-size: 9px;
@@ -121,24 +134,13 @@
     > .avatar {
       width: 30px;
       height: 30px;
-      margin-right: 8px;
+      margin-right: 5px;
       line-height: 30px;
-    }
-
-    > .icons:last-of-type {
-      margin-right: 0;
-      margin-left: 8px;
-      vertical-align: middle;
-    }
-
-    &.button-small > .icons:last-of-type {
-      margin-left: 6px;
     }
 
     &.button-small > .avatar {
       width: 20px;
       height: 20px;
-      margin-right: 6px;
       font-size: 10px;
       line-height: 20px;
     }

@@ -1,13 +1,14 @@
-[data-dropdown] {
-  > .icons:last-of-type {
-    font-size: 11px;
-  }
+[data-dropdown] > .icons:last-of-type {
+  margin-right: 0;
+  margin-left: 5px;
+  font-size: 11px;
 }
 
 .dropdown {
   display: none;
   position: absolute;
   margin-top: 10px;
+  z-index: 9999;
 }
 
 .dropdown:before {
@@ -44,22 +45,6 @@
   background-color: #fff;
   list-style: none;
   overflow: auto;
-
-  > li {
-    > a, > label {
-      display: block;
-      padding: 10px 20px;
-      cursor: pointer;
-      color: $alt-link-color;
-      font-weight: bold;
-    }
-
-    > a:hover, > label:hover {
-      background-color: #f1f1f1;
-      color: $alt-link-hover-color;
-      text-decoration: none;
-    }
-  }
 }
 
 .dropdown.dropdown-right:before {
