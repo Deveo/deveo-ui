@@ -188,20 +188,16 @@ a {
   color: $default-link-color;
   text-decoration: none;
 
-  &.text {
-    text-decoration: underline;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
-
   &:hover {
     color: $default-link-hover-color;
     text-decoration: underline;
   }
 
-  &.alt-link {
+  &.link-alt-hover:hover {
+    text-decoration: none;
+  }
+
+  &.link-alt {
     color: $alt-link-color;
 
     &:hover {
