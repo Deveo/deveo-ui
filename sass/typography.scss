@@ -204,6 +204,12 @@ a {
       color: $alt-link-hover-color;
     }
   }
+
+  &.link-inherit {
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: inherit;
+  }
 }
 
 .trigger, .profile, .undo {
