@@ -543,7 +543,7 @@ body {
       border-radius: 50%;
       vertical-align: middle; }
 
-.truncate {
+.truncate, .stack .title, .stack .details {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1161,17 +1161,19 @@ a.discreet, h2.discreet, h3.discreet, h4.discreet, h5.discreet, h6.discreet {
 a {
   color: #269fe5;
   text-decoration: none; }
-  a.text {
-    text-decoration: underline; }
-    a.text:hover {
-      text-decoration: none; }
   a:hover {
     color: #33aff6;
     text-decoration: underline; }
-  a.alt-link {
+  a.link-alt-hover:hover {
+    text-decoration: none; }
+  a.link-alt {
     color: #5d5f68; }
-    a.alt-link:hover {
+    a.link-alt:hover {
       color: #181c1e; }
+  a.link-inherit {
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: inherit; }
 
 .trigger, .profile, .undo {
   color: #5d5f68; }
@@ -1355,26 +1357,18 @@ a {
       border-left: 0;
       background-color: #f7f7f7;
       color: #5d5f68; }
-  .button.button-secondary, .button.button-avatar {
-    padding-right: 0;
-    padding-left: 0;
+  .button.button-secondary {
+    padding: 0;
     border: transparent;
-    background: transparent; }
-    .button.button-secondary:active, .button.button-avatar:active {
-      box-shadow: none; }
-  .button.button-avatar > .avatar {
-    width: 30px;
-    height: 30px;
-    margin-right: 5px;
-    line-height: 30px; }
-  .button.button-avatar.button-small > .avatar {
-    width: 20px;
-    height: 20px;
-    font-size: 10px;
-    line-height: 20px; }
-  .button.button-avatar.button-small > .avatar i {
-    font-size: 10px;
+    background: transparent;
+    font-weight: inherit;
     line-height: inherit; }
+    .button.button-secondary:active {
+      box-shadow: none; }
+    .button.button-secondary .avatar {
+      margin-right: 5px; }
+    .button.button-secondary.button-icon-only .avatar {
+      margin-right: 0; }
 
 [data-dropdown] > .icons:last-of-type {
   margin-right: 0;
@@ -2156,47 +2150,46 @@ a {
   padding: 20px 20px 0;
   border-radius: 5px;
   background-color: #fff; }
-  .stack.card {
-    padding: 0;
-    background-color: transparent; }
-    .stack.card .item {
-      padding: 20px;
-      border-radius: 5px;
-      background: #fff; }
-  .stack .item, .stack .item:hover {
-    border: 0; }
   .stack .item {
     width: 240px;
     margin-right: 25px;
     margin-bottom: 20px;
     float: left;
     clear: right; }
-    .stack .item a:hover {
-      color: #181c1e; }
-    .stack .item .block {
-      display: block;
-      padding: 0; }
-    .stack .item .push .content {
-      margin-left: 50px; }
-    .stack .item .pull {
-      width: 30px;
-      height: 30px; }
-      .stack .item .pull .avatar {
-        margin-top: 5px; }
-        .stack .item .pull .avatar.tiny {
-          margin-top: 4px; }
-    .stack .item .content .title {
-      font-size: 14px;
-      font-weight: bold; }
-    .stack .item .content .details {
-      margin-top: 5px;
-      color: #5d5f68; }
-      .stack .item .content .details i.icons {
-        color: #abafba;
-        font-size: 12px; }
-      .stack .item .content .details .trigger i {
-        padding-left: 0.3125rem;
-        color: #5d5f68;
-        font-size: 10px; }
-      .stack .item .content .details .disabled:hover {
-        color: #5d5f68; }
+  .stack .pull {
+    width: 30px;
+    margin-top: 5px;
+    margin-left: -100%;
+    float: left;
+    clear: none; }
+  .stack .push {
+    width: 100%;
+    float: left;
+    clear: none; }
+  .stack .content {
+    margin-left: 50px; }
+  .stack .title {
+    font-size: 14px;
+    font-weight: bold; }
+  .stack .details {
+    margin-top: 5px;
+    color: #5d5f68; }
+    .stack .details > i, .stack .details > span:not(:only-child) {
+      color: #919aa1;
+      font-size: 12px; }
+    .stack .details > i {
+      vertical-align: top; }
+    .stack .details > span:not(:only-child) {
+      margin-right: 8px;
+      margin-left: 4px; }
+  .stack.stack-card {
+    padding: 0;
+    background-color: transparent; }
+    .stack.stack-card .item {
+      padding: 20px;
+      border-radius: 5px;
+      background: #fff; }
+  .stack.stack-inline .pull {
+    margin-top: 0; }
+  .stack.stack-inline .content {
+    line-height: 30px; }
