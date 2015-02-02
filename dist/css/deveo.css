@@ -1212,6 +1212,7 @@ a {
 
 .avatar {
   display: inline-block;
+  position: relative;
   width: 30px;
   height: 30px;
   line-height: 30px; }
@@ -1241,25 +1242,21 @@ a {
     line-height: 60px; }
     .avatar.avatar-large i, .avatar.avatar-large .initials {
       font-size: 30px; }
-  .avatar.avatar-project i, .avatar.avatar-alt i {
-    background-color: #50566a;
-    color: #fff; }
-  .avatar.avatar-project .initials.blue {
+  .avatar.avatar-alt i, .avatar.avatar-alt .initials {
+    background-color: #50566a; }
+  .avatar.blue i, .avatar.blue .initials {
     background-color: #3589c4; }
-  .avatar.avatar-project .initials.green {
+  .avatar.green i, .avatar.green .initials {
     background-color: #abce00; }
-  .avatar.avatar-project .initials.red {
+  .avatar.red i, .avatar.red .initials {
     background-color: #e5163d; }
-  .avatar.avatar-project .initials.orange {
+  .avatar.orange i, .avatar.orange .initials {
     background-color: #ff9500; }
-  .avatar.avatar-project .initials.turquoise {
+  .avatar.turquoise i, .avatar.turquoise .initials {
     background-color: #00d9a3; }
-  .avatar.avatar-project .initials.purple {
+  .avatar.purple i, .avatar.purple .initials {
     background-color: #623494; }
-
-.avatar-project {
-  position: relative; }
-  .avatar-project i:last-of-type:not(:only-of-type) {
+  .avatar i:last-of-type:not(:only-of-type) {
     position: absolute;
     right: -6px;
     bottom: -5px;
@@ -1269,12 +1266,12 @@ a {
     color: #b0b0b0;
     font-size: 9px;
     line-height: 15px; }
-  .avatar-project.avatar-small i:last-of-type:not(:only-of-type) {
+  .avatar.avatar-small i:last-of-type:not(:only-of-type) {
     right: -5px;
     bottom: -4px;
     font-size: 6px;
     line-height: 10px; }
-  .avatar-project.avatar-large i:last-of-type:not(:only-of-type) {
+  .avatar.avatar-large i:last-of-type:not(:only-of-type) {
     right: -14px;
     bottom: -8px;
     font-size: 19px;

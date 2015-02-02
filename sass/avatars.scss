@@ -1,5 +1,6 @@
 .avatar {
   display: inline-block;
+  position: relative;
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -46,48 +47,51 @@
     }
   }
 
-  // Project & Alternative Avatars
+  // Avatar Colors
 
-  &.avatar-project, &.avatar-alt {
-    i {
+  &.avatar-alt {
+    i, .initials {
       background-color: #50566a;
-      color: #fff;
     }
   }
 
-  // Project Avatar Colors
-
-  &.avatar-project .initials {
-    &.blue {
+  &.blue {
+    i, .initials {
       background-color: #3589c4;
     }
+  }
 
-    &.green {
+  &.green {
+    i, .initials {
       background-color: #abce00;
     }
+  }
 
-    &.red {
+  &.red {
+    i, .initials {
       background-color: #e5163d;
     }
+  }
 
-    &.orange {
+  &.orange {
+    i, .initials {
       background-color: #ff9500;
     }
+  }
 
-    &.turquoise {
+  &.turquoise {
+    i, .initials {
       background-color: #00d9a3;
     }
+  }
 
-    &.purple {
+  &.purple {
+    i, .initials {
       background-color: #623494;
     }
   }
-}
 
-// Lock Icon for Private Projects
-
-&.avatar-project {
-  position: relative;
+  // Second avatar icon (e.g. private project lock)
 
   i:last-of-type:not(:only-of-type) {
     position: absolute;
