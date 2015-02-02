@@ -57,28 +57,28 @@
 
   // Project Avatar Colors
 
-  &.avatar-project .initials {
-    &.blue {
+  &.avatar-project {
+    &.avatar-blue i, &.avatar-blue .initials {
       background-color: #3589c4;
     }
 
-    &.green {
+    &.avatar-green i, &.avatar-green .initials {
       background-color: #abce00;
     }
 
-    &.red {
+    &.avatar-red i, &.avatar-red .initials {
       background-color: #e5163d;
     }
 
-    &.orange {
+    &.avatar-orange i, &.avatar-orange .initials {
       background-color: #ff9500;
     }
 
-    &.turquoise {
+    &.avatar-turquoise i, &.avatar-turquoise .initials {
       background-color: #00d9a3;
     }
 
-    &.purple {
+    &.avatar-purple i, &.avatar-purple .initials {
       background-color: #623494;
     }
   }
