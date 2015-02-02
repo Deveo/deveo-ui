@@ -1244,17 +1244,17 @@ a {
   .avatar.avatar-project i, .avatar.avatar-alt i {
     background-color: #50566a;
     color: #fff; }
-  .avatar.avatar-project .initials.blue {
+  .avatar.avatar-project.avatar-blue i, .avatar.avatar-project.avatar-blue .initials {
     background-color: #3589c4; }
-  .avatar.avatar-project .initials.green {
+  .avatar.avatar-project.avatar-green i, .avatar.avatar-project.avatar-green .initials {
     background-color: #abce00; }
-  .avatar.avatar-project .initials.red {
+  .avatar.avatar-project.avatar-red i, .avatar.avatar-project.avatar-red .initials {
     background-color: #e5163d; }
-  .avatar.avatar-project .initials.orange {
+  .avatar.avatar-project.avatar-orange i, .avatar.avatar-project.avatar-orange .initials {
     background-color: #ff9500; }
-  .avatar.avatar-project .initials.turquoise {
+  .avatar.avatar-project.avatar-turquoise i, .avatar.avatar-project.avatar-turquoise .initials {
     background-color: #00d9a3; }
-  .avatar.avatar-project .initials.purple {
+  .avatar.avatar-project.avatar-purple i, .avatar.avatar-project.avatar-purple .initials {
     background-color: #623494; }
 
 .avatar-project {
