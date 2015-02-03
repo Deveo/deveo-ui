@@ -127,6 +127,10 @@
   }
 
   &.menu-sidebar {
+    li {
+      margin: 0;
+    }
+
     a {
       padding-left: 20px;
       color: $alt-link-color;
