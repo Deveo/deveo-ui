@@ -119,35 +119,23 @@
     }
   }
 
-  &.button-secondary, &.button-avatar {
-    padding-right: 0;
-    padding-left: 0;
+  &.button-secondary {
+    padding: 0;
     border: transparent;
     background: transparent;
+    font-weight: inherit;
+    line-height: inherit;
 
     &:active {
       box-shadow: none;
     }
-  }
 
-  &.button-avatar {
-    > .avatar {
-      width: 30px;
-      height: 30px;
+    .avatar {
       margin-right: 5px;
-      line-height: 30px;
     }
 
-    &.button-small > .avatar {
-      width: 20px;
-      height: 20px;
-      font-size: 10px;
-      line-height: 20px;
-    }
-
-    &.button-small > .avatar i {
-      font-size: 10px;
-      line-height: inherit;
+    &.button-icon-only .avatar {
+      margin-right: 0;
     }
   }
 }

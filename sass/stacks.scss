@@ -1,27 +1,7 @@
 .stack {
   padding: 20px 20px 0;
-
   border-radius: 5px;
-
   background-color: #fff;
-
-  &.card {
-    padding: 0;
-
-    background-color: transparent;
-
-    .item {
-      padding: 20px;
-
-      border-radius: 5px;
-
-      background: #fff;
-    }
-  }
-
-  .item, .item:hover {
-    border: 0;
-  }
 
   .item {
     width: 240px;
@@ -29,60 +9,80 @@
     margin-bottom: 20px;
     float: left;
     clear: right;
+  }
 
-    a {
-      &:hover {
-        color: #181c1e;
-      }
+  // Left side
+
+  .pull {
+    width: 30px;
+    margin-top: 5px;
+    margin-left: -100%;
+    float: left;
+    clear: none;
+  }
+
+  // Right side
+
+  .push {
+    width: 100%;
+    float: left;
+    clear: none;
+  }
+
+  .content {
+    margin-left: 50px;
+  }
+
+  .title, .details {
+    @extend .truncate;
+  }
+
+  .title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .details {
+    margin-top: 5px;
+    color: #5d5f68;
+
+    > i, > span:not(:only-child) {
+      color: #919aa1;
+      font-size: 12px;
     }
 
-    .block {
-      display: block;
-      padding: 0;
+    > i {
+      vertical-align: top;
     }
 
-    .push .content {
-      margin-left: 50px;
+    > span:not(:only-child) {
+      margin-right: 8px;
+      margin-left: 4px;
     }
+  }
 
+  // Card Stack
+
+  &.stack-card {
+    padding: 0;
+    background-color: transparent;
+
+    .item {
+      padding: 20px;
+      border-radius: 5px;
+      background: #fff;
+    }
+  }
+
+  // Inline Stack
+
+  &.stack-inline {
     .pull {
-      width: 30px;
-      height: 30px;
-
-      .avatar {
-        margin-top: 5px;
-
-        &.tiny {
-          margin-top: 4px;
-        }
-      }
+      margin-top: 0;
     }
 
-    .content .title {
-      font-size: 14px;
-      font-weight: bold;
-    }
-
-    .content .details {
-      margin-top: 5px;
-
-      color: #5d5f68;
-
-      i.icons {
-        color: #abafba;
-        font-size: 12px;
-      }
-
-      .trigger i {
-        padding-left: rem(5px);
-
-        color: #5d5f68;
-        font-size: 10px;
-      }
-
-      .disabled:hover {
-        color: $alt-link-color;
-      }
+    .content {
+      line-height: 30px;
     }
   }
 }

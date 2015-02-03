@@ -125,4 +125,33 @@
       color: #da8572;
     }
   }
+
+  &.menu-sidebar {
+    li {
+      margin: 0;
+    }
+
+    a {
+      padding-left: 20px;
+      color: $alt-link-color;
+      line-height: 40px;
+      text-transform: uppercase;
+    }
+
+    a:hover {
+      background-color: #e7e9eb;
+      text-decoration: none;
+    }
+
+    .active a {
+      color: #da8572;
+    }
+
+    i {
+      width: 20px;
+      margin-right: 10px;
+      font-size: 15px;
+      text-align: center;
+    }
+  }
 }

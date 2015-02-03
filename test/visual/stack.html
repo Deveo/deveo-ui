@@ -16,6 +16,10 @@
         border-bottom: 1px solid #e3e6e7;
         font-size: 14px;
       }
+
+      section {
+        width: 95%;
+      }
     </style>
   </head>
 
@@ -27,8 +31,9 @@
         <li><a href="avatar.html">Avatar</a></li>
         <li><a href="button.html">Button</a></li>
         <li><a href="dropdown.html">Dropdown</a></li>
-        <li><a href="stack.html">Stack</a></li>
         <li><a href="menu.html">Menu</a></li>
+        <li><a href="stack.html">Stack</a></li>
+        <li><a href="typography.html">Typography</a></li>
       </ul>
     </div>
 
@@ -38,19 +43,19 @@
 
         <div class="stack clearfix">
           <div class="item">
-            <a href="" class="fixed discreet clearfix">
+            <a href="#" class="link-alt">
               <div class="push">
                 <div class="content">
-                  <div class="title truncate">Title</div>
-                  <div class="details truncate">
+                  <div class="title">Title</div>
+                  <div class="details">
                     <span>Details</span>
                   </div>
                 </div>
               </div>
 
               <div class="pull">
-                <div class="avatar small default">
-                  <i class="icons icon-app light"></i>
+                <div class="avatar avatar-alt">
+                  <i class="icons icon-app"></i>
                 </div>
               </div>
             </a>
@@ -61,31 +66,116 @@
       <section>
         <h4>Card</h4>
 
-        <div class="stack card clearfix">
+        <div class="stack stack-card clearfix">
           <div class="item">
-            <a href="" class="fixed discreet clearfix">
+            <a href="#" class="link-alt">
               <div class="push">
                 <div class="content">
-                  <div class="title truncate">Title</div>
-                  <div class="details condensed truncate">
+                  <div class="title">Title</div>
+                  <div class="details condensed">
                     <span>Details</span>
                   </div>
                 </div>
               </div>
 
               <div class="pull">
-                <div class="avatar small default">
-                  <i class="icons icon-app light"></i>
+                <div class="avatar avatar-alt">
+                  <i class="icons icon-app"></i>
                 </div>
               </div>
             </a>
           </div>
         </div>
       </section>
+
+      <section>
+        <h4>Inline</h4>
+
+        <div class="stack stack-inline clearfix">
+          <div class="item">
+            <a href="#" class="link-alt">
+              <div class="push">
+                <div class="content">
+                  <div class="title">Title</div>
+                </div>
+              </div>
+
+              <div class="pull">
+                <div class="avatar">
+                  <i class="icons icon-user-outline"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h4>Other examples</h4>
+
+        <div class="stack clearfix">
+          <div class="item">
+            <a href="#" class="link-alt">
+              <div class="push">
+                <div class="content">
+                  <div class="title">Title</div>
+                  <div class="details">
+                    <i class="icons icon-user-outline"></i>
+                    <span>24</span>
+                    <i class="icons icon-bot"></i>
+                    <span>3</span>
+                    <i class="icons icon-repository-outline"></i>
+                    <span>12</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pull">
+                <div class="avatar avatar-project">
+                  <i class="icons icon-project"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="stack stack-card clearfix">
+          <div class="item">
+            <div class="push">
+              <div class="content">
+                <a href="#" class="title link-alt link-alt-hover" title="John Doe">John Doe</a>
+                <div class="details">
+                  <a href="#" class="link-alt link-alt-hover" data-dropdown="#dropdown-secondary">Trigger text<i class="icons icon-interaction-down"></i>
+                  </a>
+                  <div class="dropdown" id="dropdown-secondary">
+                    <div class="dropdown-menu">
+                      <ul class="menu menu-stack">
+                        <li><a href="">Item 1</a></li>
+                        <li><a href="">Item 2</a></li>
+                        <li><a href="">Item 3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pull">
+              <a href="#" class="avatar" title="John Doe">
+                <span class="initials">JD</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br>
     </div>
 
     <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../../js/fit.js"></script>
+    <script src="../../js/dropdown.js"></script>
 
     <script>
       $(function () {
