@@ -2147,6 +2147,23 @@ a {
       border-color: #da8572; }
     .menu.menu-tabs-alt .menu-tab.active a, .menu.menu-tabs-alt .menu-tab.active a:hover {
       color: #da8572; }
+  .menu.menu-sidebar li {
+    margin: 0; }
+  .menu.menu-sidebar a {
+    padding-left: 20px;
+    color: #5d5f68;
+    line-height: 40px;
+    text-transform: uppercase; }
+  .menu.menu-sidebar a:hover {
+    background-color: #e7e9eb;
+    text-decoration: none; }
+  .menu.menu-sidebar .active a {
+    color: #da8572; }
+  .menu.menu-sidebar i {
+    width: 20px;
+    margin-right: 10px;
+    font-size: 15px;
+    text-align: center; }
 
 .stack {
   padding: 20px 20px 0;
