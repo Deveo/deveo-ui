@@ -126,6 +126,8 @@
     }
   }
 
+  // Sidebar Menu
+
   &.menu-sidebar {
     li {
       margin: 0;
@@ -152,6 +154,18 @@
       margin-right: 10px;
       font-size: 15px;
       text-align: center;
+    }
+
+    // Sidebar Menu Sub-item
+
+    ul a {
+      padding-left: 50px;
+      text-transform: initial;
+    }
+
+    ul i {
+      margin-right: 0;
+      font-size: 11px;
     }
   }
 }

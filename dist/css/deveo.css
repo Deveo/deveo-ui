@@ -2164,6 +2164,12 @@ a {
     margin-right: 10px;
     font-size: 15px;
     text-align: center; }
+  .menu.menu-sidebar ul a {
+    padding-left: 50px;
+    text-transform: initial; }
+  .menu.menu-sidebar ul i {
+    margin-right: 0;
+    font-size: 11px; }
 
 .stack {
   padding: 20px 20px 0;
