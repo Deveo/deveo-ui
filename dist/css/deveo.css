@@ -1410,7 +1410,7 @@ a {
   border-radius: 3px;
   background-color: #fff;
   list-style: none; }
-  .dropdown-menu .menu {
+  .dropdown-menu ul {
     max-width: 500px;
     max-height: 230px;
     margin-bottom: 0;
