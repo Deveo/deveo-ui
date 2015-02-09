@@ -2149,8 +2149,6 @@ a {
       border-color: #da8572; }
     .menu.menu-tabs-alt .menu-tab.active a, .menu.menu-tabs-alt .menu-tab.active a:hover {
       color: #da8572; }
-  .menu.menu-sidebar li {
-    margin: 0; }
   .menu.menu-sidebar a {
     padding-left: 20px;
     color: #5d5f68;
@@ -2163,15 +2161,19 @@ a {
     color: #da8572; }
   .menu.menu-sidebar i {
     width: 20px;
-    margin-right: 10px;
+    margin-right: 15px;
     font-size: 15px;
     text-align: center; }
+  .menu.menu-sidebar ul {
+    margin: 0; }
   .menu.menu-sidebar ul a {
-    padding-left: 50px;
+    padding-left: 55px;
     text-transform: initial; }
   .menu.menu-sidebar ul i {
+    width: 20px;
     margin-right: 0;
-    font-size: 11px; }
+    font-size: 11px;
+    text-align: left; }
 
 .stack {
   padding: 20px 20px 0;

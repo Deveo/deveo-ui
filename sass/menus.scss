@@ -133,10 +133,6 @@
   // Sidebar Menu
 
   &.menu-sidebar {
-    li {
-      margin: 0;
-    }
-
     a {
       padding-left: 20px;
       color: $alt-link-color;
@@ -155,21 +151,27 @@
 
     i {
       width: 20px;
-      margin-right: 10px;
+      margin-right: 15px;
       font-size: 15px;
       text-align: center;
     }
 
     // Sidebar Menu Sub-item
 
+    ul {
+      margin: 0;
+    }
+
     ul a {
-      padding-left: 50px;
+      padding-left: 55px;
       text-transform: initial;
     }
 
     ul i {
+      width: 20px;
       margin-right: 0;
       font-size: 11px;
+      text-align: left;
     }
   }
 }
