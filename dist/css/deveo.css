@@ -2157,7 +2157,7 @@ a {
   .menu.menu-sidebar a:hover {
     background-color: #e7e9eb;
     text-decoration: none; }
-  .menu.menu-sidebar .active a {
+  .menu.menu-sidebar .active > a {
     color: #da8572; }
   .menu.menu-sidebar i {
     width: 20px;
