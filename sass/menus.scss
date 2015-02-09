@@ -3,7 +3,7 @@
   list-style: none;
 
   li {
-    margin: 8px 0;
+    margin: 0;
 
     &, a {
       display: block;
@@ -29,7 +29,7 @@
   &.menu-stack > li, &.menu-stack > li {
     a, label {
       display: block;
-      padding: 10px 25px;
+      padding: 5px 15px;
       cursor: pointer;
       color: $alt-link-color;
       font-weight: bold;
