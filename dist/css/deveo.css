@@ -2083,6 +2083,8 @@ a {
     margin: 0; }
     .menu li, .menu li a {
       display: block; }
+    .menu li .avatar {
+      margin-right: 10px; }
   .menu.menu-inline > li {
     display: inline-block;
     margin-right: 1em; }
@@ -2095,8 +2097,7 @@ a {
     display: block;
     padding: 5px 15px;
     cursor: pointer;
-    color: #5d5f68;
-    font-weight: bold; }
+    color: #5d5f68; }
   .menu.menu-stack > li a:hover, .menu.menu-stack > li label:hover, .menu.menu-stack > li a:hover, .menu.menu-stack > li label:hover {
     background-color: #f1f1f1;
     color: #181c1e;
@@ -2132,14 +2133,15 @@ a {
   .menu.menu-tabs-alt {
     background-color: #fff; }
   .menu.menu-tabs-alt .menu-tab-list {
-    padding: 0 25px; }
+    margin-bottom: 5px;
+    padding: 0 15px; }
   .menu.menu-tabs-alt .menu-tab {
     display: inline-block;
     margin: 0 20px 0 0;
     border-bottom: 2px solid transparent; }
     .menu.menu-tabs-alt .menu-tab a {
       color: #5d5f68;
-      line-height: 43px;
+      line-height: 30px;
       text-decoration: none; }
     .menu.menu-tabs-alt .menu-tab a:hover {
       color: #181c1e; }
