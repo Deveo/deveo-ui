@@ -2159,12 +2159,15 @@ a {
     text-decoration: none; }
   .menu.menu-sidebar .active > a {
     color: #da8572; }
+  .menu.menu-sidebar .active > ul {
+    display: block; }
   .menu.menu-sidebar i {
     width: 20px;
     margin-right: 15px;
     font-size: 15px;
     text-align: center; }
   .menu.menu-sidebar ul {
+    display: none;
     margin: 0; }
   .menu.menu-sidebar ul a {
     padding-left: 55px;
