@@ -550,7 +550,6 @@ body {
   overflow: hidden; }
 
 form .error, .form .error {
-  display: none;
   color: #ca4b4b; }
 
 input.text, input.password, textarea {
@@ -2149,8 +2148,6 @@ a {
       border-color: #da8572; }
     .menu.menu-tabs-alt .menu-tab.active a, .menu.menu-tabs-alt .menu-tab.active a:hover {
       color: #da8572; }
-  .menu.menu-sidebar li {
-    margin: 0; }
   .menu.menu-sidebar a {
     padding-left: 20px;
     color: #5d5f68;
@@ -2159,19 +2156,26 @@ a {
   .menu.menu-sidebar a:hover {
     background-color: #e7e9eb;
     text-decoration: none; }
-  .menu.menu-sidebar .active a {
+  .menu.menu-sidebar .active > a {
     color: #da8572; }
+  .menu.menu-sidebar .active > ul {
+    display: block; }
   .menu.menu-sidebar i {
     width: 20px;
-    margin-right: 10px;
+    margin-right: 15px;
     font-size: 15px;
     text-align: center; }
+  .menu.menu-sidebar ul {
+    display: none;
+    margin: 0; }
   .menu.menu-sidebar ul a {
-    padding-left: 50px;
+    padding-left: 55px;
     text-transform: initial; }
   .menu.menu-sidebar ul i {
+    width: 20px;
     margin-right: 0;
-    font-size: 11px; }
+    font-size: 11px;
+    text-align: left; }
 
 .stack {
   padding: 20px 20px 0;
