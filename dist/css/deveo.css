@@ -1412,7 +1412,7 @@ a {
   list-style: none; }
   .dropdown-menu ul {
     max-width: 500px;
-    max-height: 240px;
+    max-height: 320px;
     margin-bottom: 0;
     overflow: auto; }
 
@@ -2133,7 +2133,7 @@ a {
   .menu.menu-tabs-alt {
     background-color: #fff; }
   .menu.menu-tabs-alt .menu-tab-list {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding: 0 15px; }
   .menu.menu-tabs-alt .menu-tab {
     display: inline-block;

@@ -72,12 +72,12 @@
     background-color: #fafafa;
 
     &.active {
-      border-top: 4px solid #da8572;
+      border-top: 4px solid #cb6654;
       background-color: #fff;
     }
 
     &.active a, &.active a:hover {
-      color: #da8572;
+      color: #cb6654;
     }
 
     a {
@@ -102,7 +102,7 @@
   }
 
   &.menu-tabs-alt .menu-tab-list {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding: 0 15px;
   }
 
@@ -122,11 +122,11 @@
     }
 
     &.active {
-      border-color: #da8572;
+      border-color: #cb6654;
     }
 
     &.active a, &.active a:hover {
-      color: #da8572;
+      color: #cb6654;
     }
   }
 
@@ -150,7 +150,7 @@
     }
 
     .active a {
-      color: #da8572;
+      color: #cb6654;
     }
 
     i {
