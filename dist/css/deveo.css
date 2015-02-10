@@ -550,7 +550,6 @@ body {
   overflow: hidden; }
 
 form .error, .form .error {
-  display: none;
   color: #ca4b4b; }
 
 input.text, input.password, textarea {
