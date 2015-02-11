@@ -1175,6 +1175,12 @@ a {
     color: #181c1e;
     text-decoration: none; }
 
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
 /*Responsive versions*/
 /*Smaller screens*/
 @media only screen and (max-width: 1023px) {
