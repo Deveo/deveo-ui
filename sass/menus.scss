@@ -12,6 +12,11 @@
     .avatar {
       margin-right: 10px;
     }
+
+    .divider {
+      border-top: 1px solid #f1f1f1;
+      border-bottom: 1px solid #f1f1f1;
+    }
   }
 
   &.menu-inline > li {
@@ -42,6 +47,17 @@
       background-color: #f1f1f1;
       color: $alt-link-hover-color;
       text-decoration: none;
+    }
+  }
+
+  &.menu-large {
+    min-width: 348px;
+    min-height: 425px;
+  }
+
+  &.menu-large > li {
+    a {
+      padding: 7px 15px;
     }
   }
 
@@ -136,6 +152,7 @@
     a {
       padding-left: 20px;
       color: $alt-link-color;
+      font-size: 12px;
       line-height: 40px;
       text-transform: uppercase;
     }

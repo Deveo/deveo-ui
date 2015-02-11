@@ -1292,7 +1292,7 @@ a {
   .button.button-icon-only .icons:first-of-type {
     margin-right: 0; }
   .button > .icons {
-    margin-right: 5px;
+    margin-right: 10px;
     line-height: initial; }
   .button:hover, .button:active {
     border-color: #98a1a7;
@@ -1403,7 +1403,8 @@ a {
   content: ''; }
 
 .dropdown-menu {
-  min-width: 150px;
+  min-width: 160px;
+  max-width: 350px;
   margin-top: 0;
   padding: 5px 0;
   border: 1px solid #b3bcc3;
@@ -1411,7 +1412,7 @@ a {
   background-color: #fff;
   list-style: none; }
   .dropdown-menu ul {
-    max-width: 500px;
+    max-width: 350px;
     max-height: 320px;
     margin-bottom: 0;
     overflow: auto; }
@@ -2085,6 +2086,9 @@ a {
       display: block; }
     .menu li .avatar {
       margin-right: 10px; }
+    .menu li .divider {
+      border-top: 1px solid #f1f1f1;
+      border-bottom: 1px solid #f1f1f1; }
   .menu.menu-inline > li {
     display: inline-block;
     margin-right: 1em; }
@@ -2102,6 +2106,11 @@ a {
     background-color: #f1f1f1;
     color: #181c1e;
     text-decoration: none; }
+  .menu.menu-large {
+    min-width: 348px;
+    min-height: 425px; }
+  .menu.menu-large > li a {
+    padding: 7px 15px; }
   .menu .menu-tab-list {
     margin: 0; }
   .menu .menu-tab-panel {
@@ -2152,6 +2161,7 @@ a {
   .menu.menu-sidebar a {
     padding-left: 20px;
     color: #5d5f68;
+    font-size: 12px;
     line-height: 40px;
     text-transform: uppercase; }
   .menu.menu-sidebar a:hover {
