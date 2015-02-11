@@ -1365,7 +1365,7 @@ a {
     .button.button-secondary:active {
       box-shadow: none; }
     .button.button-secondary .avatar {
-      margin-right: 5px; }
+      margin-right: 10px; }
     .button.button-secondary.button-icon-only .avatar {
       margin-right: 0; }
 
@@ -2117,10 +2117,10 @@ a {
     border-top-right-radius: 8px;
     background-color: #fafafa; }
     .menu.menu-tabs .menu-tab.active {
-      border-top: 4px solid #da8572;
+      border-top: 4px solid #cb6654;
       background-color: #fff; }
     .menu.menu-tabs .menu-tab.active a, .menu.menu-tabs .menu-tab.active a:hover {
-      color: #da8572; }
+      color: #cb6654; }
     .menu.menu-tabs .menu-tab a {
       padding: 10px 25px;
       color: #5d5f68;
@@ -2145,9 +2145,9 @@ a {
     .menu.menu-tabs-alt .menu-tab a:hover {
       color: #181c1e; }
     .menu.menu-tabs-alt .menu-tab.active {
-      border-color: #da8572; }
+      border-color: #cb6654; }
     .menu.menu-tabs-alt .menu-tab.active a, .menu.menu-tabs-alt .menu-tab.active a:hover {
-      color: #da8572; }
+      color: #cb6654; }
   .menu.menu-sidebar a {
     padding-left: 20px;
     color: #5d5f68;
@@ -2156,15 +2156,15 @@ a {
   .menu.menu-sidebar a:hover {
     background-color: #e7e9eb;
     text-decoration: none; }
-  .menu.menu-sidebar .active > a {
-    color: #da8572; }
+  .menu.menu-sidebar .active a {
+    color: #cb6654; }
   .menu.menu-sidebar .active > ul {
     display: block; }
   .menu.menu-sidebar i {
-    width: 20px;
+    width: 15px;
     margin-right: 15px;
     font-size: 15px;
-    text-align: center; }
+    text-align: left; }
   .menu.menu-sidebar ul {
     display: none;
     margin: 0; }
@@ -2172,10 +2172,8 @@ a {
     padding-left: 55px;
     text-transform: initial; }
   .menu.menu-sidebar ul i {
-    width: 20px;
-    margin-right: 0;
-    font-size: 11px;
-    text-align: left; }
+    margin-right: 5px;
+    font-size: 11px; }
 
 .stack {
   padding: 20px 20px 0;
