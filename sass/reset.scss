@@ -57,9 +57,3 @@ table {
 *, *:before, *:after {
   box-sizing: border-box;
 }
-
-.clearfix:after {
-  display: table;
-  clear: both;
-  content: '';
-}

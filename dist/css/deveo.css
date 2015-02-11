@@ -357,11 +357,6 @@ table {
 *, *:before, *:after {
   box-sizing: border-box; }
 
-.clearfix:after {
-  display: table;
-  clear: both;
-  content: ''; }
-
 /*Vertical rhythm*/
 h1 {
   margin-top: 0.5em;
@@ -2222,3 +2217,8 @@ a {
     margin-top: 0; }
   .stack.stack-inline .content {
     line-height: 30px; }
+
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: ''; }
