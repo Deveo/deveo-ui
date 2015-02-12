@@ -39,6 +39,10 @@ a:hover {
   color: $default-link-hover-color;
 }
 
-a.discreet {
-  color: inherit;
+a.discreet, .discreet {
+  color: #c2c2c2;
+
+  &:hover {
+    color: #c2c2c2;
+  }
 }

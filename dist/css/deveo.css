@@ -440,8 +440,10 @@ a {
 a:hover {
   color: #33aff6; }
 
-a.discreet {
-  color: inherit; }
+a.discreet, .discreet {
+  color: #c2c2c2; }
+  a.discreet:hover, .discreet:hover {
+    color: #c2c2c2; }
 
 html, body {
   height: 100%; }
@@ -1072,12 +1074,20 @@ i.icons {
   color: inherit;
   font-family: deveoicons;
   font-size: 14px;
+  -webkit-font-smoothing: antialiased;
   font-style: normal;
   font-weight: normal;
-  text-align: center;
-  -webkit-font-smoothing: antialiased; }
+  text-align: center; }
   i.icons.hidden {
     display: none; }
+  i.icons.icon-small {
+    font-size: 11px; }
+  i.icons.icon-medium {
+    font-size: 16px; }
+  i.icons.icon-large {
+    font-size: 20px; }
+  i.icons.icon-xlarge {
+    font-size: 22px; }
   i.icons.black {
     color: #000; }
   i.icons.blue {
@@ -2087,8 +2097,7 @@ a {
     .menu li .avatar {
       margin-right: 10px; }
     .menu li .divider {
-      border-top: 1px solid #f1f1f1;
-      border-bottom: 1px solid #f1f1f1; }
+      border-top: 1px solid #f1f1f1; }
   .menu.menu-inline > li {
     display: inline-block;
     margin-right: 1em; }
