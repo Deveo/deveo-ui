@@ -51,11 +51,9 @@
 
   &.menu-large {
     min-width: 348px;
-    min-height: 425px;
-  }
+    max-height: 425px;
 
-  &.menu-large > li {
-    a {
+    > li a {
       padding: 7px 15px;
     }
   }

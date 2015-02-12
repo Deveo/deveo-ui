@@ -2117,9 +2117,9 @@ a {
     text-decoration: none; }
   .menu.menu-large {
     min-width: 348px;
-    min-height: 425px; }
-  .menu.menu-large > li a {
-    padding: 7px 15px; }
+    max-height: 425px; }
+    .menu.menu-large > li a {
+      padding: 7px 15px; }
   .menu .menu-tab-list {
     margin: 0; }
   .menu .menu-tab-panel {
