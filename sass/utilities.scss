@@ -13,3 +13,10 @@
 .pull-right {
   float: right !important;
 }
+
+// General
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}

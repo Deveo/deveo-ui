@@ -2253,3 +2253,7 @@ a {
 
 .pull-right {
   float: right !important; }
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none; }
