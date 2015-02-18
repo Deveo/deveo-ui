@@ -1,76 +1,245 @@
 form, .form {
+  p {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
   .error {
     color: #ca4b4b;
   }
+
+  span {
+    &.error {
+      display: block;
+      margin: 5px 0;
+    }
+  }
+
+  // NOTE: Resets pointer-events to display different cursor
+  .disabled {
+    pointer-events: auto;
+
+    input, label {
+      cursor: not-allowed;
+    }
+  }
 }
 
-input.text, input.password, textarea {
-  position: relative;
-  position: relative;
-  width: 100%;
-  height: rem(36px);
-  padding: rem(10px) rem(15px);
+// Inline form
+// TODO: Align buttons with input
 
+.form-inline {
+  input, textarea {
+    width: auto;
+  }
+
+  label {
+    display: inline-block;
+  }
+
+  label + label {
+    margin-left: 15px;
+  }
+
+  label > [type="text"] {
+    margin: 0 5px;
+  }
+}
+
+// Default styles for inputs and textareas
+
+input, textarea {
+  width: 100%;
+  margin-top: 5px;
+  padding: 0 16px;
   border: 1px solid #b4bcc3;
   border-radius: 3px;
-
   background: #fff;
-
-  color: #181c1e;
-  line-height: rem(16px);
-
-  box-sizing: border-box;
-
-  &.light {
-    border-color: #c4cbd1;
-  }
-
-  &.small {
-    height: rem(28px);
-    padding: rem(4px) rem(10px);
-
-    font-size: rem(12px);
-  }
-
-  &.placeholder {
-    color: #cecece;
-  }
-
-  &.error {
-    border-color: #deb3b4;
-
-    color: inherit;
-  }
+  color: $alt-link-color;
+  line-height: 34px;
 
   &:hover {
     border-color: #98a1a7;
   }
 
   &:focus {
-    border-color: #269fe5;
+    border-color: #66afe9 !important;
+    outline: 0;
+    color: initial;
+  }
+
+  // Small size
+
+  &.input-small {
+    line-height: 26px;
+  }
+
+  // Input states
+
+  &.success {
+    border-color: #96cd9b;
+    color: #62aa95;
+  }
+
+  &.error {
+    border-color: #d9a5a5;
+    color: #ca4b4b;
+  }
+
+  &.success:focus, &.error:focus {
+    border-color: initial;
+    color: initial;
   }
 }
 
-.disabled input.text, .disabled input.password, .disabled textarea, input.text.disabled, input.password.disabled, textarea.disabled {
-  color: #ccc;
-
-  opacity: 0.5;
+textarea {
+  padding: 7px 16px;
+  line-height: initial;
+  overflow: auto;
 }
 
-input[type='checkbox'], input[type='radio'] {
-  margin-right: rem(10px);
+label {
+  display: block;
+  margin-bottom: 5px;
+  cursor: pointer;
 }
+
+// Align checkbox / radio button to the left of label
+
+[type="checkbox"], [type="radio"] {
+  width: auto;
+}
+
+// Alt color for trigger labels
+
+.label-alt {
+  color: $default-link-color;
+
+  &:hover {
+    color: $default-link-hover-color;
+  }
+}
+
+// Fit two inputs to the same row in default form
+
+.inline-group {
+  margin-bottom: 20px;
+
+  p, label, input {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  p:first-of-type {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+    float: left;
+  }
+
+  p:last-of-type {
+    width: 50%;
+  }
+}
+
+// Form actions
+
+input[type="submit"] {
+  width: auto;
+}
+
+.button + .button {
+  margin-left: 15px;
+}
+
+// TODO: Clean-up
+
+.input-group {
+  display: table;
+  position: relative;
+  border-collapse: separate;
+
+  input:not(:first-child):not(:last-child), .input-group-addon:not(:first-child):not(:last-child) {
+    border-radius: 0;
+  }
+
+  .input-group-addon {
+    display: table-cell;
+    width: 1%;
+    min-width: 36px;
+    border: 1px solid #b4bcc3;
+    border-radius: 3px;
+    background-color: #f1f1f1;
+    color: #555;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+
+    &.success {
+      border-color: #96cd9b;
+      background-color: #96cd9b;
+      color: #fff;
+    }
+
+    &.error {
+      border-color: #d9a5a5;
+      background-color: #d9a5a5;
+      color: #fff;
+    }
+  }
+
+  input {
+    margin-top: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .input-group-addon:first-child {
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .input-group-addon:last-child {
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.input-group-wrapper {
+  margin-bottom: 20px;
+}
+
+[type='checkbox'], [type='radio'] {
+  margin: 0 10px 0 0;
+}
+
+// Polyfill for browsers not supporting placeholder attr (IE9)
 
 .placeholder {
-  color: #cecece;
+  color: #999;
 }
 
-::-webkit-input-placeholder {
-  /* WebKit browsers */
-  color: #cecece;
+// TODO: Let autoprefixer handle these
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #999;
 }
 
-:-ms-input-placeholder {
-  /* Internet Explorer 10+ */
-  color: #cecece;
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ color: #999;
+ opacity: 1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+ color: #999;
+ opacity: 1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+ color: #999;
 }
