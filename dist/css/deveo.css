@@ -1254,6 +1254,12 @@ a {
     line-height: 60px; }
     .avatar.avatar-large i, .avatar.avatar-large .initials {
       font-size: 30px; }
+  .avatar.avatar-xlarge {
+    width: 100px;
+    height: 100px;
+    line-height: 100px; }
+    .avatar.avatar-xlarge i, .avatar.avatar-xlarge .initials {
+      font-size: 50px; }
   .avatar.avatar-alt i, .avatar.avatar-alt .initials {
     background-color: #50566a; }
   .avatar.blue i, .avatar.blue .initials {
@@ -1288,6 +1294,11 @@ a {
     bottom: -8px;
     font-size: 19px;
     line-height: 30px; }
+  .avatar.avatar-xlarge i:last-of-type:not(:only-of-type) {
+    right: -20px;
+    bottom: -15px;
+    font-size: 30px;
+    line-height: 50px; }
 
 .button {
   display: inline-block;
