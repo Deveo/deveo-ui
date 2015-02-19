@@ -626,7 +626,7 @@ label {
   .inline-group p:last-of-type {
     width: 50%; }
 
-input[type="submit"] {
+[type="submit"] {
   width: auto; }
 
 .button + .button {
@@ -635,7 +635,13 @@ input[type="submit"] {
 .input-group {
   display: table;
   position: relative;
+  width: 100%;
   border-collapse: separate; }
+  .input-group input {
+    margin-top: 0; }
+  .input-group input:not(:only-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
   .input-group input:not(:first-child):not(:last-child), .input-group .input-group-addon:not(:first-child):not(:last-child) {
     border-radius: 0; }
   .input-group .input-group-addon {
@@ -660,10 +666,6 @@ input[type="submit"] {
       border-color: #d9a5a5;
       background-color: #d9a5a5;
       color: #fff; }
-  .input-group input {
-    margin-top: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0; }
   .input-group .input-group-addon:first-child {
     border-right: 0;
     border-top-right-radius: 0;

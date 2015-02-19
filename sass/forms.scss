@@ -144,7 +144,7 @@ label {
 
 // Form actions
 
-input[type="submit"] {
+[type="submit"] {
   width: auto;
 }
 
@@ -157,7 +157,17 @@ input[type="submit"] {
 .input-group {
   display: table;
   position: relative;
+  width: 100%;
   border-collapse: separate;
+
+  input {
+    margin-top: 0;
+  }
+
+  input:not(:only-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 
   input:not(:first-child):not(:last-child), .input-group-addon:not(:first-child):not(:last-child) {
     border-radius: 0;
@@ -189,12 +199,6 @@ input[type="submit"] {
       background-color: #d9a5a5;
       color: #fff;
     }
-  }
-
-  input {
-    margin-top: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
   }
 
   .input-group-addon:first-child {
