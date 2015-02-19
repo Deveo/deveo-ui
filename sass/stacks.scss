@@ -68,9 +68,13 @@
     background-color: transparent;
 
     .item {
-      padding: 20px;
       border-radius: 5px;
       background: #fff;
+    }
+
+    .item > a {
+      display: block;
+      padding: 20px;
     }
   }
 

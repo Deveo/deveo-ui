@@ -2351,9 +2351,11 @@ a {
     padding: 0;
     background-color: transparent; }
     .stack.stack-card .item {
-      padding: 20px;
       border-radius: 5px;
       background: #fff; }
+    .stack.stack-card .item > a {
+      display: block;
+      padding: 20px; }
   .stack.stack-inline .pull {
     margin-top: 0; }
   .stack.stack-inline .content {
