@@ -1,6 +1,6 @@
 .alert {
+  margin: 20px 0;
   padding: 10px 15px;
-
   border-width: 1px;
   border-style: solid;
   border-radius: 5px;
@@ -13,21 +13,18 @@
     text-decoration: underline;
   }
 
-  &.info {
+  &.alert-info {
     border-color: #a4b2bc;
-
     color: #6a8496;
   }
 
-  &.error {
+  &.alert-error {
     border-color: #d9a5a5;
-
     color: #aa6d6e;
   }
 
-  &.success {
+  &.alert-success {
     border-color: #96cd9b;
-
     color: #62aa95;
   }
 }
