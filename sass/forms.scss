@@ -177,15 +177,12 @@ label {
     display: table-cell;
     width: 1%;
     min-width: 36px;
+    padding: 0 5px;
     border: 1px solid #b4bcc3;
     border-radius: 3px;
     background-color: #f1f1f1;
     color: #555;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1;
     text-align: center;
-    white-space: nowrap;
     vertical-align: middle;
 
     &.success {
