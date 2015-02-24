@@ -7,18 +7,18 @@ form, .form {
     margin-bottom: 20px;
   }
 
-  .error {
-    color: #ca4b4b;
-  }
+  // Error messages
 
   span {
     &.error {
       display: block;
       margin: 5px 0;
+      color: #ca4b4b;
     }
   }
 
   // Reset pointer-events to display disabled cursor
+
   .disabled {
     pointer-events: auto;
 
@@ -26,30 +26,19 @@ form, .form {
       cursor: not-allowed !important;
     }
   }
-}
 
-// Inline form
-// TODO: Align buttons with input
+  // Form actions
 
-.form-inline {
-  input, textarea {
+  [type="submit"] {
     width: auto;
   }
 
-  label {
-    display: inline-block;
-  }
-
-  label + label {
+  .button + .button {
     margin-left: 15px;
-  }
-
-  label > [type="text"] {
-    margin: 0 5px;
   }
 }
 
-// Default styles for inputs and textareas
+// Default styles for common form elements
 // TODO: Hover & focus styles for other elements
 //       Disable hover & focus styles for disabled elements
 
@@ -72,11 +61,6 @@ input, textarea {
   background: #fff;
   color: $alt-link-color;
 
-  // Reset border for IE
-  &[type="checkbox"], &[type="radio"] {
-    border: none;
-  }
-
   &:hover {
     border-color: #98a1a7;
   }
@@ -86,8 +70,6 @@ input, textarea {
     outline: 0;
     color: initial;
   }
-
-  // Input states
 
   &.success {
     border-color: #96cd9b;
@@ -103,6 +85,16 @@ input, textarea {
     border-color: initial;
     color: initial;
   }
+
+  // Resets for checkbox / radio buttons
+  // Align buttons to the left of label
+  // Reset border for IE
+
+  &[type="checkbox"], &[type="radio"] {
+    width: auto;
+    margin: 0 10px 0 0;
+    border: 0;
+  }
 }
 
 textarea {
@@ -117,12 +109,6 @@ label {
   cursor: pointer;
 }
 
-// Align checkbox / radio button to the left of label
-
-[type="checkbox"], [type="radio"] {
-  width: auto;
-}
-
 // Alt color for trigger labels
 
 .label-alt {
@@ -133,41 +119,14 @@ label {
   }
 }
 
-// Fit two inputs to the same row in default form
-
-.inline-group {
-  p, label, input {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 0;
-  }
-
-  p:first-of-type {
-    width: calc(50% - 10px);
-    margin-right: 10px;
-    float: left;
-  }
-
-  p:last-of-type {
-    width: 50%;
-  }
-}
-
-// Form actions
-
-[type="submit"] {
-  width: auto;
-}
-
-.button + .button {
-  margin-left: 15px;
-}
-
 // TODO: Clean-up
+
+.input-group-wrapper {
+  margin-bottom: 20px;
+}
 
 .input-group {
   display: table;
-  position: relative;
   width: 100%;
   border-collapse: separate;
 
@@ -222,12 +181,45 @@ label {
   }
 }
 
-.input-group-wrapper {
-  margin-bottom: 20px;
+// Fit two inputs on the same row in default form
+
+.inline-group {
+  p, label, input {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  p:first-of-type {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+    float: left;
+  }
+
+  p:last-of-type {
+    width: 50%;
+  }
 }
 
-[type='checkbox'], [type='radio'] {
-  margin: 0 10px 0 0;
+// Inline form
+// TODO: Tweak left-right margins between elements
+
+.form-inline {
+  input, textarea {
+    width: auto;
+  }
+
+  label {
+    display: inline-block;
+  }
+
+  label + label {
+    margin-left: 15px;
+  }
+
+  label > [type="text"] {
+    margin: 0 5px;
+  }
 }
 
 // Polyfill for browsers not supporting placeholder attr (IE9)

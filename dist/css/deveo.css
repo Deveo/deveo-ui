@@ -550,24 +550,18 @@ form p, .form p {
   margin-top: 0; }
 form p, form .inline-group, .form p, .form .inline-group {
   margin-bottom: 20px; }
-form .error, .form .error {
-  color: #ca4b4b; }
 form span.error, .form span.error {
   display: block;
-  margin: 5px 0; }
+  margin: 5px 0;
+  color: #ca4b4b; }
 form .disabled, .form .disabled {
   pointer-events: auto; }
   form .disabled *, .form .disabled * {
     cursor: not-allowed !important; }
-
-.form-inline input, .form-inline textarea {
+form [type="submit"], .form [type="submit"] {
   width: auto; }
-.form-inline label {
-  display: inline-block; }
-.form-inline label + label {
+form .button + .button, .form .button + .button {
   margin-left: 15px; }
-.form-inline label > [type="text"] {
-  margin: 0 5px; }
 
 input[type="text"], input[type="password"] {
   height: 36px; }
@@ -582,8 +576,6 @@ input, textarea {
   border-radius: 3px;
   background: #fff;
   color: #5d5f68; }
-  input[type="checkbox"], input[type="radio"], textarea[type="checkbox"], textarea[type="radio"] {
-    border: none; }
   input:hover, textarea:hover {
     border-color: #98a1a7; }
   input:focus, textarea:focus {
@@ -599,6 +591,10 @@ input, textarea {
   input.success:focus, input.error:focus, textarea.success:focus, textarea.error:focus {
     border-color: initial;
     color: initial; }
+  input[type="checkbox"], input[type="radio"], textarea[type="checkbox"], textarea[type="radio"] {
+    width: auto;
+    margin: 0 10px 0 0;
+    border: 0; }
 
 textarea {
   padding: 7px 16px;
@@ -610,34 +606,16 @@ label {
   margin-bottom: 5px;
   cursor: pointer; }
 
-[type="checkbox"], [type="radio"] {
-  width: auto; }
-
 .label-alt {
   color: #269fe5; }
   .label-alt:hover {
     color: #33aff6; }
 
-.inline-group p, .inline-group label, .inline-group input {
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 0; }
-.inline-group p:first-of-type {
-  width: calc(50% - 10px);
-  margin-right: 10px;
-  float: left; }
-.inline-group p:last-of-type {
-  width: 50%; }
-
-[type="submit"] {
-  width: auto; }
-
-.button + .button {
-  margin-left: 15px; }
+.input-group-wrapper {
+  margin-bottom: 20px; }
 
 .input-group {
   display: table;
-  position: relative;
   width: 100%;
   border-collapse: separate; }
   .input-group input {
@@ -675,11 +653,25 @@ label {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0; }
 
-.input-group-wrapper {
-  margin-bottom: 20px; }
+.inline-group p, .inline-group label, .inline-group input {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 0; }
+.inline-group p:first-of-type {
+  width: calc(50% - 10px);
+  margin-right: 10px;
+  float: left; }
+.inline-group p:last-of-type {
+  width: 50%; }
 
-[type='checkbox'], [type='radio'] {
-  margin: 0 10px 0 0; }
+.form-inline input, .form-inline textarea {
+  width: auto; }
+.form-inline label {
+  display: inline-block; }
+.form-inline label + label {
+  margin-left: 15px; }
+.form-inline label > [type="text"] {
+  margin: 0 5px; }
 
 .placeholder {
   color: #999; }
