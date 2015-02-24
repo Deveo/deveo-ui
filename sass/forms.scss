@@ -18,12 +18,12 @@ form, .form {
     }
   }
 
-  // NOTE: Resets pointer-events to display different cursor
+  // Reset pointer-events to display disabled cursor
   .disabled {
     pointer-events: auto;
 
     * {
-      cursor: not-allowed;
+      cursor: not-allowed !important;
     }
   }
 }

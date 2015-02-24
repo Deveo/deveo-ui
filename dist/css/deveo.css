@@ -558,7 +558,7 @@ form span.error, .form span.error {
 form .disabled, .form .disabled {
   pointer-events: auto; }
   form .disabled *, .form .disabled * {
-    cursor: not-allowed; }
+    cursor: not-allowed !important; }
 
 .form-inline input, .form-inline textarea {
   width: auto; }
