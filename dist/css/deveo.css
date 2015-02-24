@@ -582,6 +582,8 @@ input, textarea {
   border-radius: 3px;
   background: #fff;
   color: #5d5f68; }
+  input[type="checkbox"], input[type="radio"], textarea[type="checkbox"], textarea[type="radio"] {
+    border: none; }
   input:hover, textarea:hover {
     border-color: #98a1a7; }
   input:focus, textarea:focus {

@@ -72,6 +72,11 @@ input, textarea {
   background: #fff;
   color: $alt-link-color;
 
+  // Reset border for IE
+  &[type="checkbox"], &[type="radio"] {
+    border: none;
+  }
+
   &:hover {
     border-color: #98a1a7;
   }
