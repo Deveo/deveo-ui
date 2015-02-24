@@ -22,7 +22,7 @@ form, .form {
   .disabled {
     pointer-events: auto;
 
-    input, label {
+    * {
       cursor: not-allowed;
     }
   }
