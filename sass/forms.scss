@@ -1,6 +1,9 @@
 form, .form {
   p {
     margin-top: 0;
+  }
+
+  p, .inline-group {
     margin-bottom: 20px;
   }
 
@@ -123,8 +126,6 @@ label {
 // Fit two inputs to the same row in default form
 
 .inline-group {
-  margin-bottom: 20px;
-
   p, label, input {
     display: inline-block;
     width: 100%;
