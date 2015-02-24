@@ -50,6 +50,18 @@ form, .form {
 }
 
 // Default styles for inputs and textareas
+// TODO: Hover & focus styles for other elements
+//       Disable hover & focus styles for disabled elements
+
+input {
+  &[type="text"], &[type="password"] {
+    height: 36px;
+
+    &.input-small {
+      height: 28px;
+    }
+  }
+}
 
 input, textarea {
   width: 100%;
@@ -59,7 +71,6 @@ input, textarea {
   border-radius: 3px;
   background: #fff;
   color: $alt-link-color;
-  line-height: 34px;
 
   &:hover {
     border-color: #98a1a7;
@@ -69,12 +80,6 @@ input, textarea {
     border-color: #66afe9 !important;
     outline: 0;
     color: initial;
-  }
-
-  // Small size
-
-  &.input-small {
-    line-height: 26px;
   }
 
   // Input states

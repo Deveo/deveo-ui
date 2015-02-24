@@ -547,7 +547,8 @@ body {
   overflow: hidden; }
 
 form p, .form p {
-  margin-top: 0;
+  margin-top: 0; }
+form p, form .inline-group, .form p, .form .inline-group {
   margin-bottom: 20px; }
 form .error, .form .error {
   color: #ca4b4b; }
@@ -556,7 +557,7 @@ form span.error, .form span.error {
   margin: 5px 0; }
 form .disabled, .form .disabled {
   pointer-events: auto; }
-  form .disabled input, form .disabled label, .form .disabled input, .form .disabled label {
+  form .disabled *, .form .disabled * {
     cursor: not-allowed; }
 
 .form-inline input, .form-inline textarea {
@@ -568,6 +569,11 @@ form .disabled, .form .disabled {
 .form-inline label > [type="text"] {
   margin: 0 5px; }
 
+input[type="text"], input[type="password"] {
+  height: 36px; }
+  input[type="text"].input-small, input[type="password"].input-small {
+    height: 28px; }
+
 input, textarea {
   width: 100%;
   margin-top: 5px;
@@ -575,16 +581,13 @@ input, textarea {
   border: 1px solid #b4bcc3;
   border-radius: 3px;
   background: #fff;
-  color: #5d5f68;
-  line-height: 34px; }
+  color: #5d5f68; }
   input:hover, textarea:hover {
     border-color: #98a1a7; }
   input:focus, textarea:focus {
     border-color: #66afe9 !important;
     outline: 0;
     color: initial; }
-  input.input-small, textarea.input-small {
-    line-height: 26px; }
   input.success, textarea.success {
     border-color: #96cd9b;
     color: #62aa95; }
@@ -613,18 +616,16 @@ label {
   .label-alt:hover {
     color: #33aff6; }
 
-.inline-group {
-  margin-bottom: 20px; }
-  .inline-group p, .inline-group label, .inline-group input {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 0; }
-  .inline-group p:first-of-type {
-    width: calc(50% - 10px);
-    margin-right: 10px;
-    float: left; }
-  .inline-group p:last-of-type {
-    width: 50%; }
+.inline-group p, .inline-group label, .inline-group input {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 0; }
+.inline-group p:first-of-type {
+  width: calc(50% - 10px);
+  margin-right: 10px;
+  float: left; }
+.inline-group p:last-of-type {
+  width: 50%; }
 
 [type="submit"] {
   width: auto; }
@@ -648,15 +649,12 @@ label {
     display: table-cell;
     width: 1%;
     min-width: 36px;
+    padding: 0 5px;
     border: 1px solid #b4bcc3;
     border-radius: 3px;
     background-color: #f1f1f1;
     color: #555;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1;
     text-align: center;
-    white-space: nowrap;
     vertical-align: middle; }
     .input-group .input-group-addon.success {
       border-color: #96cd9b;
