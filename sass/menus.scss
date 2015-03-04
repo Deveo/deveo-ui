@@ -12,10 +12,6 @@
     .avatar {
       margin-right: 10px;
     }
-
-    .divider {
-      border-top: 1px solid #f1f1f1;
-    }
   }
 
   &.menu-inline > li {
@@ -35,17 +31,26 @@
   }
 
   &.menu-stack > li, &.menu-stack > li {
+    padding: 5px 15px;
+    cursor: pointer;
+
     a, label {
       display: block;
-      padding: 5px 15px;
-      cursor: pointer;
       color: $alt-link-color;
     }
 
     a:hover, label:hover {
-      background-color: #f1f1f1;
       color: $alt-link-hover-color;
       text-decoration: none;
+    }
+
+    &:hover {
+      background-color: #f1f1f1;
+    }
+
+    &.divider {
+      padding: 0;
+      border-top: 1px solid #f1f1f1;
     }
   }
 
@@ -53,7 +58,7 @@
     min-width: 348px;
     max-height: 425px;
 
-    > li a {
+    > li {
       padding: 7px 15px;
     }
   }

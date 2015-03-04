@@ -2852,8 +2852,6 @@ a {
       display: block; }
     .menu li .avatar {
       margin-right: 10px; }
-    .menu li .divider {
-      border-top: 1px solid #f1f1f1; }
   .menu.menu-inline > li {
     display: inline-block;
     margin-right: 1em; }
@@ -2862,19 +2860,24 @@ a {
     margin-left: 1em; }
   .menu.menu-stack {
     background-color: #fff; }
-  .menu.menu-stack > li a, .menu.menu-stack > li label, .menu.menu-stack > li a, .menu.menu-stack > li label {
-    display: block;
+  .menu.menu-stack > li, .menu.menu-stack > li {
     padding: 5px 15px;
-    cursor: pointer;
-    color: #5d5f68; }
-  .menu.menu-stack > li a:hover, .menu.menu-stack > li label:hover, .menu.menu-stack > li a:hover, .menu.menu-stack > li label:hover {
-    background-color: #f1f1f1;
-    color: #181c1e;
-    text-decoration: none; }
+    cursor: pointer; }
+    .menu.menu-stack > li a, .menu.menu-stack > li label, .menu.menu-stack > li a, .menu.menu-stack > li label {
+      display: block;
+      color: #5d5f68; }
+    .menu.menu-stack > li a:hover, .menu.menu-stack > li label:hover, .menu.menu-stack > li a:hover, .menu.menu-stack > li label:hover {
+      color: #181c1e;
+      text-decoration: none; }
+    .menu.menu-stack > li:hover, .menu.menu-stack > li:hover {
+      background-color: #f1f1f1; }
+    .menu.menu-stack > li.divider, .menu.menu-stack > li.divider {
+      padding: 0;
+      border-top: 1px solid #f1f1f1; }
   .menu.menu-large {
     min-width: 348px;
     max-height: 425px; }
-    .menu.menu-large > li a {
+    .menu.menu-large > li {
       padding: 7px 15px; }
   .menu .menu-tab-list {
     margin: 0; }
