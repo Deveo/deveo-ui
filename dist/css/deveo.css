@@ -544,7 +544,8 @@ body {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden; }
+  overflow: hidden;
+  word-wrap: normal; }
 
 form p, .form p {
   margin-top: 0; }
