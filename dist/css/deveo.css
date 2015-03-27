@@ -445,11 +445,9 @@ a.discreet, .discreet {
   a.discreet:hover, .discreet:hover {
     color: #c2c2c2; }
 
-html, body {
-  height: 100%; }
-
 body {
   width: auto;
+  height: 100%;
   margin: 0 auto;
   overflow-x: hidden; }
 
