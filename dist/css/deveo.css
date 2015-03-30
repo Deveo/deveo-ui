@@ -1490,6 +1490,17 @@ a {
     .button.button-secondary.button-icon-only .avatar {
       margin-right: 0; }
 
+.button-group .button:first-of-type {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
+.button-group .button:last-of-type {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
+.button-group .button:not(:first-of-type):not(:last-of-type) {
+  border-right: 0;
+  border-radius: 0; }
+
 [data-dropdown] > .icons:last-of-type {
   margin-right: 0;
   margin-left: 5px;
