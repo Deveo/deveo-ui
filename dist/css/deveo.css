@@ -1497,9 +1497,13 @@ a {
 .button-group .button:last-of-type {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
+  .button-group .button:last-of-type.button-primary {
+    border-left: 1px solid #0088d2; }
 .button-group .button:not(:first-of-type):not(:last-of-type) {
   border-right: 0;
   border-radius: 0; }
+  .button-group .button:not(:first-of-type):not(:last-of-type).button-primary {
+    border-left: 1px solid #0088d2; }
 
 [data-dropdown] > .icons:last-of-type {
   margin-right: 0;

@@ -150,10 +150,18 @@
   &:last-of-type {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+
+    &.button-primary {
+      border-left: 1px solid #0088d2;
+    }
   }
 
   &:not(:first-of-type):not(:last-of-type) {
     border-right: 0;
     border-radius: 0;
+
+    &.button-primary {
+      border-left: 1px solid #0088d2;
+    }
   }
 }
