@@ -1289,6 +1289,9 @@ a {
 .text-right {
   text-align: right; }
 
+.capitalize {
+  text-transform: capitalize; }
+
 /*Responsive versions*/
 /*Smaller screens*/
 @media only screen and (max-width: 1023px) {
@@ -2413,3 +2416,7 @@ a {
 
 .hidden {
   display: none !important; }
+
+.divider {
+  margin: 10px 0;
+  border-bottom: 1px solid #f1f1f1; }
