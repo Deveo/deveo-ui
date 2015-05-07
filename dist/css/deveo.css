@@ -2319,6 +2319,8 @@ a {
       border-color: #cb6654; }
     .menu.menu-tabs-alt .menu-tab.active a, .menu.menu-tabs-alt .menu-tab.active a:hover {
       color: #cb6654; }
+  .menu.menu-tabs-alt .menu-tab-panel {
+    background: none; }
   .menu.menu-sidebar a {
     padding-left: 20px;
     color: #5d5f68;
@@ -2398,6 +2400,18 @@ a {
     margin-top: 0; }
   .stack.stack-inline .content {
     line-height: 30px; }
+
+.blip {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background-color: #425456; }
+  .blip.blip-red {
+    background-color: #d45e3d; }
+  .blip.blip-green {
+    background-color: #44cb1f; }
 
 .clearfix:after {
   display: table;
