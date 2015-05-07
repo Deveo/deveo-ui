@@ -1,0 +1,16 @@
+.blip {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background-color: #425456;
+
+  &.blip-red {
+    background-color: #d45e3d;
+  }
+
+  &.blip-green {
+    background-color: #44cb1f;
+  }
+}
