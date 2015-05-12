@@ -2361,6 +2361,8 @@ a {
     margin-bottom: 20px;
     float: left;
     clear: right; }
+  .stack .item:hover .settings-link {
+    display: inline-block; }
   .stack .pull {
     width: 30px;
     margin-top: 5px;
@@ -2374,11 +2376,30 @@ a {
   .stack .content {
     margin-left: 50px; }
   .stack .title {
+    margin-bottom: 2px;
     font-size: 14px;
     font-weight: bold; }
+  .stack .settings .title {
+    display: inline;
+    width: auto;
+    max-width: 85%;
+    float: left; }
+  .stack .settings-link {
+    display: none;
+    width: 14px;
+    height: 14px;
+    margin-left: 8px;
+    float: left;
+    clear: none;
+    z-index: 10; }
+    .stack .settings-link i {
+      color: #269fe5;
+      font-weight: bold; }
+    .stack .settings-link:hover i {
+      color: #33aff6; }
   .stack .details {
-    margin-top: 5px;
-    color: #5d5f68; }
+    color: #5d5f68;
+    font-size: 12px; }
     .stack .details > i, .stack .details > span:not(:only-child) {
       color: #919aa1;
       font-size: 12px; }

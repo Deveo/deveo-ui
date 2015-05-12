@@ -11,6 +11,12 @@
     clear: right;
   }
 
+  .item:hover {
+    .settings-link {
+      display: inline-block;
+    }
+  }
+
   // Left side
 
   .pull {
@@ -38,13 +44,44 @@
   }
 
   .title {
+    margin-bottom: 2px;
     font-size: 14px;
     font-weight: bold;
   }
 
+  // Optional icon link after title
+
+  .settings .title {
+    display: inline;
+    width: auto;
+    max-width: 85%;
+    float: left;
+  }
+
+  .settings-link {
+    display: none;
+    width: 14px;
+    height: 14px;
+    margin-left: 8px;
+    float: left;
+    clear: none;
+    z-index: 10;
+
+    i {
+      color: $default-link-color;
+      font-weight: bold;
+    }
+
+    &:hover i {
+      color: $default-link-hover-color;
+    }
+  }
+
+  // Bottom part
+
   .details {
-    margin-top: 5px;
     color: #5d5f68;
+    font-size: 12px;
 
     > i, > span:not(:only-child) {
       color: #919aa1;
