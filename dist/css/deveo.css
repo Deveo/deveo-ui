@@ -1493,6 +1493,11 @@ a {
     .button.button-secondary.button-icon-only .avatar {
       margin-right: 0; }
 
+.button-group .button.active {
+  color: #cb6654; }
+  .button-group .button.active:hover {
+    border-color: #b4bcc3;
+    background-color: #fff; }
 .button-group .button:first-of-type {
   border-right: 0;
   border-top-right-radius: 0;

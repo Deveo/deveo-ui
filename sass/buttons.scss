@@ -141,6 +141,15 @@
 }
 
 .button-group .button {
+  &.active {
+    color: $active-color;
+
+    &:hover {
+      border-color: #b4bcc3;
+      background-color: #fff;
+    }
+  }
+
   &:first-of-type {
     border-right: 0;
     border-top-right-radius: 0;
