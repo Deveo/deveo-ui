@@ -1494,10 +1494,11 @@ a {
       margin-right: 0; }
 
 .button-group .button.active {
+  border-color: #98a1a7;
   color: #cb6654; }
   .button-group .button.active:hover {
-    border-color: #b4bcc3;
-    background-color: #fff; }
+    border-color: #98a1a7;
+    background: #fdfdfd; }
 .button-group .button:first-of-type {
   border-right: 0;
   border-top-right-radius: 0;

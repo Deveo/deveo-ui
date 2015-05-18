@@ -142,11 +142,12 @@
 
 .button-group .button {
   &.active {
+    border-color: #98a1a7;
     color: $active-color;
 
     &:hover {
-      border-color: #b4bcc3;
-      background-color: #fff;
+      border-color: #98a1a7;
+      background: #fdfdfd;
     }
   }
 
