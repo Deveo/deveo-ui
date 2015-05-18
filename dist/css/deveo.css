@@ -2419,6 +2419,8 @@ a {
     .stack .settings-link:hover i {
       color: #33aff6; }
   .stack .details {
+    display: block;
+    clear: both;
     color: #5d5f68;
     font-size: 12px; }
     .stack .details > i, .stack .details > span:not(:only-child) {
