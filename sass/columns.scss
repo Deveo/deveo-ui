@@ -90,12 +90,12 @@ body {
     clear: none;
 
     > .content {
-      margin-left: 55px;
+      margin-left: 50px;
     }
   }
 
   > .pull {
-    width: 55px;
+    width: 50px;
     margin-left: -100%;
     float: left;
     clear: none;
@@ -103,7 +103,7 @@ body {
 
   &.reverse {
     > .push > .content {
-      margin-right: 55px;
+      margin-right: 50px;
       margin-left: 0;
     }
 
