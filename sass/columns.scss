@@ -82,18 +82,20 @@ body {
 // Pull fixed columns from content
 
 .fixed {
+  @extend .clearfix;
+
   > .push {
     width: 100%;
     float: left;
     clear: none;
 
     > .content {
-      margin-left: 120px;
+      margin-left: 55px;
     }
   }
 
   > .pull {
-    width: 100px;
+    width: 55px;
     margin-left: -100%;
     float: left;
     clear: none;
@@ -101,7 +103,7 @@ body {
 
   &.reverse {
     > .push > .content {
-      margin-right: 120px;
+      margin-right: 55px;
       margin-left: 0;
     }
 
