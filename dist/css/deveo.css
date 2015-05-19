@@ -1535,27 +1535,27 @@ a {
     height: 60px;
     line-height: 60px; }
     .avatar.avatar-large i, .avatar.avatar-large .initials {
-      font-size: 30px; }
+      font-size: 26px; }
   .avatar.avatar-xlarge {
-    width: 100px;
-    height: 100px;
-    line-height: 100px; }
+    width: 80px;
+    height: 80px;
+    line-height: 80px; }
     .avatar.avatar-xlarge i, .avatar.avatar-xlarge .initials {
-      font-size: 50px; }
+      font-size: 36px; }
   .avatar.avatar-alt i, .avatar.avatar-alt .initials {
     background-color: #50566a; }
   .avatar.blue i, .avatar.blue .initials {
-    background-color: #3589c4; }
+    background-color: #478fca; }
   .avatar.green i, .avatar.green .initials {
-    background-color: #abce00; }
+    background-color: #adcb64; }
   .avatar.red i, .avatar.red .initials {
-    background-color: #e5163d; }
+    background-color: #d55858; }
   .avatar.orange i, .avatar.orange .initials {
-    background-color: #ff9500; }
+    background-color: #ea9448; }
   .avatar.turquoise i, .avatar.turquoise .initials {
-    background-color: #00d9a3; }
+    background-color: #77bfbc; }
   .avatar.purple i, .avatar.purple .initials {
-    background-color: #623494; }
+    background-color: #8e73be; }
   .avatar i:last-of-type:not(:only-of-type) {
     position: absolute;
     right: -6px;
@@ -1584,7 +1584,7 @@ a {
 
 .button {
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 15px;
   border: 1px solid #b4bcc3;
   border-radius: 3px;
   background: #fff;
