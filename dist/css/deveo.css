@@ -2444,6 +2444,8 @@ a {
     margin: 0; }
     .menu li, .menu li a {
       display: block; }
+    .menu li .icons {
+      margin-right: 10px; }
     .menu li .avatar {
       margin-right: 10px; }
   .menu.menu-inline > li {
