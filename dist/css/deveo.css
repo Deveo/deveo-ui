@@ -1594,9 +1594,19 @@ a {
   line-height: 34px; }
   .button.button-icon-only .icons:first-of-type {
     margin-right: 0; }
+  .button.is-loading {
+    position: relative; }
+    .button.is-loading .text {
+      visibility: hidden; }
   .button > .icons {
     margin-right: 10px;
     line-height: initial; }
+    .button > .icons.icon-spin {
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      line-height: inherit; }
   .button:hover, .button:active {
     border-color: #98a1a7;
     background: #fdfdfd;
@@ -2417,6 +2427,16 @@ a {
 
 .icon-wiki:before {
   content: "\f0ff"; }
+
+.icon-spin {
+  animation: icon-spin 2s infinite linear; }
+
+@keyframes icon-spin {
+  0% {
+    transform: rotate(0deg); }
+
+  100% {
+    transform: rotate(359deg); } }
 
 .label {
   padding: 10px 5px;

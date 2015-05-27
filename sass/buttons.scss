@@ -14,9 +14,25 @@
     margin-right: 0;
   }
 
+  &.is-loading {
+    position: relative;
+
+    .text {
+      visibility: hidden;
+    }
+  }
+
   > .icons {
     margin-right: 10px;
     line-height: initial;
+
+    &.icon-spin {
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      line-height: inherit;
+    }
   }
 
   // State styles
