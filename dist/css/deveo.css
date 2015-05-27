@@ -2677,6 +2677,10 @@ a {
   opacity: 0.5;
   pointer-events: none; }
 
+.disabled-alt {
+  opacity: 1;
+  pointer-events: none; }
+
 .hidden {
   display: none !important; }
 

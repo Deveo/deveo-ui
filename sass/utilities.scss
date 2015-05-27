@@ -21,6 +21,11 @@
   pointer-events: none;
 }
 
+.disabled-alt {
+  opacity: 1;
+  pointer-events: none;
+}
+
 .hidden {
   display: none !important;
 }
