@@ -1596,6 +1596,8 @@ a {
     margin-right: 0; }
   .button.is-loading {
     position: relative; }
+    .button.is-loading .icons.icon-spin {
+      opacity: 1; }
     .button.is-loading .text {
       visibility: hidden; }
   .button > .icons {
@@ -1606,7 +1608,8 @@ a {
       right: 0;
       left: 0;
       margin: 0 auto;
-      line-height: inherit; }
+      line-height: inherit;
+      opacity: 0; }
   .button:hover, .button:active {
     border-color: #98a1a7;
     background: #fdfdfd;

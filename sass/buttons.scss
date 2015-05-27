@@ -17,6 +17,10 @@
   &.is-loading {
     position: relative;
 
+    .icons.icon-spin {
+      opacity: 1;
+    }
+
     .text {
       visibility: hidden;
     }
@@ -32,6 +36,7 @@
       left: 0;
       margin: 0 auto;
       line-height: inherit;
+      opacity: 0;
     }
   }
 
