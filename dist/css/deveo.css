@@ -1595,21 +1595,23 @@ a {
   .button.button-icon-only .icons:first-of-type {
     margin-right: 0; }
   .button.is-loading {
-    position: relative; }
-    .button.is-loading .icons.icon-spin {
-      opacity: 1; }
+    position: relative;
+    cursor: default; }
+    .button.is-loading img {
+      top: 6px;
+      height: 22px; }
+    .button.is-loading .icon-spinner {
+      position: absolute;
+      right: 0;
+      left: -1px;
+      margin: 0 auto;
+      line-height: inherit;
+      opacity: 0.8; }
     .button.is-loading .text {
       visibility: hidden; }
   .button > .icons {
     margin-right: 10px;
     line-height: initial; }
-    .button > .icons.icon-spin {
-      position: absolute;
-      right: 0;
-      left: 0;
-      margin: 0 auto;
-      line-height: inherit;
-      opacity: 0; }
   .button:hover, .button:active {
     border-color: #98a1a7;
     background: #fdfdfd;
@@ -1624,6 +1626,9 @@ a {
     line-height: 26px; }
     .button.button-small.button-icon-only .icons:first-of-type {
       margin-right: 0; }
+    .button.button-small img {
+      top: 5px;
+      height: 16px; }
     .button.button-small > .icons {
       font-size: 12px; }
   .button.button-xsmall {
@@ -1632,6 +1637,9 @@ a {
     line-height: 20px; }
     .button.button-xsmall.button-icon-only .icons:first-of-type {
       margin-right: 0; }
+    .button.button-xsmall img {
+      top: 3px;
+      height: 14px; }
     .button.button-xsmall > .icons {
       font-size: 9px; }
   .button.button-primary {
@@ -1685,6 +1693,8 @@ a {
       margin-right: 10px; }
     .button.button-secondary.button-icon-only .avatar {
       margin-right: 0; }
+    .button.button-secondary img {
+      top: 1px; }
 
 .button-group .button.active {
   border-color: #98a1a7;

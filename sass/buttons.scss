@@ -16,9 +16,20 @@
 
   &.is-loading {
     position: relative;
+    cursor: default;
 
-    .icons.icon-spin {
-      opacity: 1;
+    img {
+      top: 6px;
+      height: 22px;
+    }
+
+    .icon-spinner {
+      position: absolute;
+      right: 0;
+      left: -1px;
+      margin: 0 auto;
+      line-height: inherit;
+      opacity: 0.8;
     }
 
     .text {
@@ -29,15 +40,6 @@
   > .icons {
     margin-right: 10px;
     line-height: initial;
-
-    &.icon-spin {
-      position: absolute;
-      right: 0;
-      left: 0;
-      margin: 0 auto;
-      line-height: inherit;
-      opacity: 0;
-    }
   }
 
   // State styles
@@ -65,6 +67,11 @@
       margin-right: 0;
     }
 
+    img {
+      top: 5px;
+      height: 16px;
+    }
+
     > .icons {
       font-size: 12px;
     }
@@ -77,6 +84,11 @@
 
     &.button-icon-only .icons:first-of-type {
       margin-right: 0;
+    }
+
+    img {
+      top: 3px;
+      height: 14px;
     }
 
     > .icons {
@@ -157,6 +169,10 @@
 
     &.button-icon-only .avatar {
       margin-right: 0;
+    }
+
+    img {
+      top: 1px;
     }
   }
 }
