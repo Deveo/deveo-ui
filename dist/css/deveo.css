@@ -1600,7 +1600,8 @@ a {
     .button.is-loading img {
       top: 6px;
       height: 22px; }
-    .button.is-loading .icon-spinner {
+    .button.is-loading .spinner {
+      display: inline;
       position: absolute;
       right: 0;
       left: -1px;
@@ -1609,6 +1610,8 @@ a {
       opacity: 0.8; }
     .button.is-loading .text {
       visibility: hidden; }
+  .button .spinner {
+    display: none; }
   .button > .icons {
     margin-right: 10px;
     line-height: initial; }

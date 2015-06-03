@@ -23,7 +23,8 @@
       height: 22px;
     }
 
-    .icon-spinner {
+    .spinner {
+      display: inline;
       position: absolute;
       right: 0;
       left: -1px;
@@ -35,6 +36,10 @@
     .text {
       visibility: hidden;
     }
+  }
+
+  .spinner {
+    display: none;
   }
 
   > .icons {
