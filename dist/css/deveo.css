@@ -1400,45 +1400,32 @@ i.icons {
     font-size: 20px; }
   i.icons.icon-xlarge {
     font-size: 22px; }
-
-.black {
-  color: #000; }
-
-.blue {
-  color: #3589c4; }
-
-.blue2 {
-  color: #87bbd6; }
-
-.dark {
-  color: #29587a; }
-
-.darker {
-  color: #142630; }
-
-.gray {
-  color: #8394a0; }
-
-.gray2 {
-  color: #9094a3; }
-
-.white {
-  color: #fff; }
-
-.red {
-  color: #d87f6f; }
-
-.red2 {
-  color: #da9d9d; }
-
-.green {
-  color: #22d792; }
-
-.green2 {
-  color: #8ec2b0; }
-
-.purple {
-  color: #ad91cb; }
+  i.icons.black {
+    color: #000; }
+  i.icons.blue {
+    color: #3589c4; }
+  i.icons.blue2 {
+    color: #87bbd6; }
+  i.icons.dark {
+    color: #29587a; }
+  i.icons.darker {
+    color: #142630; }
+  i.icons.gray {
+    color: #8394a0; }
+  i.icons.gray2 {
+    color: #9094a3; }
+  i.icons.white {
+    color: #fff; }
+  i.icons.red {
+    color: #d87f6f; }
+  i.icons.red2 {
+    color: #da9d9d; }
+  i.icons.green {
+    color: #22d792; }
+  i.icons.green2 {
+    color: #8ec2b0; }
+  i.icons.purple {
+    color: #ad91cb; }
 
 pre, code, kbd, samp {
   font-family: monospace; }
