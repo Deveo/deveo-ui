@@ -8,14 +8,6 @@
     &, a {
       display: block;
     }
-
-    .icons {
-      margin-right: 10px;
-    }
-
-    .avatar {
-      margin-right: 10px;
-    }
   }
 
   &.menu-inline > li {
@@ -32,6 +24,14 @@
 
   &.menu-stack {
     background-color: #fff;
+
+    .icons {
+      margin-right: 10px;
+    }
+
+    .avatar {
+      margin-right: 10px;
+    }
   }
 
   &.menu-stack > li, &.menu-stack > li {
@@ -40,6 +40,7 @@
 
     a, label {
       display: block;
+      margin-bottom: 0;
       color: $alt-link-color;
     }
 
