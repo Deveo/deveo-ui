@@ -1341,6 +1341,9 @@ html, body {
 .condensed {
   line-height: 1.2; }
 
+.cozy {
+  line-height: 1.8; }
+
 /*Fonts*/
 @font-face {
   font-family: "deveoicons";
@@ -1531,7 +1534,7 @@ a {
   border-style: solid;
   border-radius: 5px; }
   .alert i {
-    margin-right: 20px; }
+    margin-right: 10px; }
   .alert a {
     text-decoration: underline; }
   .alert.alert-info {
@@ -1806,6 +1809,8 @@ a {
     max-height: 320px;
     margin-bottom: 0;
     overflow: auto; }
+    .dropdown-menu ul .icons {
+      margin-right: 10px; }
 
 .dropdown.dropdown-right:before {
   right: 4px;
@@ -2558,8 +2563,6 @@ a {
     margin-left: 1em; }
   .menu.menu-stack {
     background-color: #fff; }
-    .menu.menu-stack .icons {
-      margin-right: 10px; }
     .menu.menu-stack .avatar {
       margin-right: 10px; }
   .menu.menu-stack > li, .menu.menu-stack > li {
@@ -2646,7 +2649,7 @@ a {
     display: block; }
   .menu.menu-sidebar i {
     width: 14px;
-    margin-right: 14px;
+    margin-right: 11px;
     font-size: 14px;
     text-align: left; }
   .menu.menu-sidebar ul {
