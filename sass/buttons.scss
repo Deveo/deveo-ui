@@ -43,7 +43,7 @@
   }
 
   > .icons {
-    margin-right: 10px;
+    margin-right: 4px; /* should be 10px but until we fix the whitespace issue */
     line-height: initial;
   }
 

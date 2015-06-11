@@ -1656,7 +1656,8 @@ a {
   .button .spinner {
     display: none; }
   .button > .icons {
-    margin-right: 10px;
+    margin-right: 4px;
+    /* should be 10px but until we fix the whitespace issue */
     line-height: initial; }
   .button:hover, .button:active {
     border-color: #98a1a7;
