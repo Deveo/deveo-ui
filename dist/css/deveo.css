@@ -879,7 +879,8 @@ label {
     color: #5d5f68 !important;
     opacity: 0.4; }
 .selects label {
-  position: relative; }
+  position: relative;
+  margin-bottom: 0; }
   .selects label .icons {
     position: absolute;
     top: 14px;
