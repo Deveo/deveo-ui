@@ -1501,6 +1501,24 @@ a {
     font-weight: inherit;
     text-decoration: inherit; }
 
+.link-alt {
+  color: #5d5f68; }
+  .link-alt > a {
+    color: #5d5f68; }
+    .link-alt > a:hover {
+      color: #181c1e; }
+  .link-alt:hover {
+    color: #181c1e; }
+
+.link-alt-discreet {
+  color: #909aa1; }
+  .link-alt-discreet > a {
+    color: #909aa1; }
+    .link-alt-discreet > a:hover {
+      color: #5d5f68; }
+  .link-alt-discreet:hover {
+    color: #5d5f68; }
+
 .trigger, .profile, .undo {
   color: #5d5f68; }
   .trigger:hover, .profile:hover, .undo:hover {
@@ -2640,7 +2658,7 @@ a {
     padding-left: 20px;
     color: #5d5f68;
     font-size: 12px;
-    line-height: 36px;
+    line-height: 35px;
     text-transform: uppercase; }
   .menu.menu-sidebar a:hover {
     background-color: #e7e9eb;

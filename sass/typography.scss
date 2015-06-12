@@ -242,12 +242,45 @@ a {
     &:hover {
       color: $alt-link-discreet-hover-color;
     }
+
   }
 
   &.link-inherit {
     color: inherit;
     font-weight: inherit;
     text-decoration: inherit;
+  }
+}
+
+.link-alt {
+  color: $alt-link-color;
+
+  > a {
+    color: $alt-link-color;
+
+    &:hover {
+      color: $alt-link-hover-color;
+    }
+  }
+
+  &:hover {
+    color: $alt-link-hover-color;
+  }
+}
+
+.link-alt-discreet {
+  color: $alt-link-discreet-color;
+
+  > a {
+    color: $alt-link-discreet-color;
+
+    &:hover {
+      color: $alt-link-discreet-hover-color;
+    }
+  }
+
+  &:hover {
+    color: $alt-link-discreet-hover-color;
   }
 }
 
