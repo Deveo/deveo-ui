@@ -2709,7 +2709,8 @@ a {
   .stack .content {
     margin-left: 50px; }
   .stack .title {
-    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-bottom: 4px;
     font-size: 14px;
     font-weight: bold; }
   .stack .settings .title {
@@ -2736,13 +2737,13 @@ a {
     color: #5d5f68;
     font-size: 12px; }
     .stack .details > i, .stack .details > span:not(:only-child) {
-      color: #919aa1;
-      font-size: 12px; }
+      color: #abafba;
+      font-size: 11px; }
     .stack .details > i {
       vertical-align: top; }
     .stack .details > span:not(:only-child) {
-      margin-right: 8px;
-      margin-left: 4px; }
+      margin-right: 10px;
+      margin-left: 5px; }
   .stack.stack-card {
     padding: 0;
     background-color: transparent; }
