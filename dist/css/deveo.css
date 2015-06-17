@@ -625,6 +625,9 @@ a.discreet, .discreet {
   a.discreet:hover, .discreet:hover {
     color: #c2c2c2; }
 
+.discreet-alt {
+  color: #909aa1; }
+
 body {
   width: auto;
   height: 100%;
@@ -2709,7 +2712,6 @@ a {
   .stack .content {
     margin-left: 50px; }
   .stack .title {
-    margin-top: 2px;
     margin-bottom: 4px;
     font-size: 14px;
     font-weight: bold; }
@@ -2722,6 +2724,7 @@ a {
     display: none;
     width: 14px;
     height: 14px;
+    margin-top: 2px;
     margin-left: 8px;
     float: left;
     clear: none;
