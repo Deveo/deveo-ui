@@ -1477,6 +1477,9 @@ h2 a, h3 a, h4 a, h5 a, h6 a {
 a.discreet, h2.discreet, h3.discreet, h4.discreet, h5.discreet, h6.discreet {
   font-weight: inherit; }
 
+b, strong {
+  font-weight: bold; }
+
 .required label, label.required {
   font-weight: bold; }
 
