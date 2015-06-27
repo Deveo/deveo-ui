@@ -71,11 +71,9 @@
   }
 
   .menu-tab-panel {
-    display: none;
     background-color: #fff;
 
-    &.active {
-      display: inline-block;
+    [active=true] {
       width: 100%;
     }
   }
@@ -83,29 +81,22 @@
   // Normal Tab Menu
 
   &.menu-tabs .menu-tab {
-    display: inline-block;
     margin: 0;
+    padding: 10px 25px;
     border-top: 4px solid #fafafa;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     background-color: #fafafa;
+    color: #5d5f68;
+    text-decoration: none;
 
-    &.active {
+    [active=true] {
       border-top: 4px solid #cb6654;
       background-color: #fff;
-    }
-
-    &.active a, &.active a:hover {
       color: #cb6654;
     }
 
-    a {
-      padding: 10px 25px;
-      color: #5d5f68;
-      text-decoration: none;
-    }
-
-    a:hover {
+    &:hover {
       color: #181c1e;
     }
   }
@@ -129,22 +120,17 @@
     display: inline-block;
     margin: 0 20px 0 0;
     border-bottom: 2px solid transparent;
+    cursor: pointer;
+    color: #5d5f68;
+    line-height: 30px;
+    text-decoration: none;
 
-    a {
-      color: #5d5f68;
-      line-height: 30px;
-      text-decoration: none;
-    }
-
-    a:hover {
+    &:hover {
       color: #181c1e;
     }
 
-    &.active {
+    &[active=true] {
       border-color: #cb6654;
-    }
-
-    &.active a, &.active a:hover {
       color: #cb6654;
     }
   }

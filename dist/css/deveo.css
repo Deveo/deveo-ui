@@ -2611,28 +2611,23 @@ a {
   .menu .menu-tab-list {
     margin: 0; }
   .menu .menu-tab-panel {
-    display: none;
     background-color: #fff; }
-    .menu .menu-tab-panel.active {
-      display: inline-block;
+    .menu .menu-tab-panel [active=true] {
       width: 100%; }
   .menu.menu-tabs .menu-tab {
-    display: inline-block;
     margin: 0;
+    padding: 10px 25px;
     border-top: 4px solid #fafafa;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    background-color: #fafafa; }
-    .menu.menu-tabs .menu-tab.active {
+    background-color: #fafafa;
+    color: #5d5f68;
+    text-decoration: none; }
+    .menu.menu-tabs .menu-tab [active=true] {
       border-top: 4px solid #cb6654;
-      background-color: #fff; }
-    .menu.menu-tabs .menu-tab.active a, .menu.menu-tabs .menu-tab.active a:hover {
+      background-color: #fff;
       color: #cb6654; }
-    .menu.menu-tabs .menu-tab a {
-      padding: 10px 25px;
-      color: #5d5f68;
-      text-decoration: none; }
-    .menu.menu-tabs .menu-tab a:hover {
+    .menu.menu-tabs .menu-tab:hover {
       color: #181c1e; }
   .menu.menu-tabs .menu-tab-panel {
     border-radius: 0 5px 5px; }
@@ -2644,16 +2639,15 @@ a {
   .menu.menu-tabs-alt .menu-tab {
     display: inline-block;
     margin: 0 20px 0 0;
-    border-bottom: 2px solid transparent; }
-    .menu.menu-tabs-alt .menu-tab a {
-      color: #5d5f68;
-      line-height: 30px;
-      text-decoration: none; }
-    .menu.menu-tabs-alt .menu-tab a:hover {
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    color: #5d5f68;
+    line-height: 30px;
+    text-decoration: none; }
+    .menu.menu-tabs-alt .menu-tab:hover {
       color: #181c1e; }
-    .menu.menu-tabs-alt .menu-tab.active {
-      border-color: #cb6654; }
-    .menu.menu-tabs-alt .menu-tab.active a, .menu.menu-tabs-alt .menu-tab.active a:hover {
+    .menu.menu-tabs-alt .menu-tab[active=true] {
+      border-color: #cb6654;
       color: #cb6654; }
   .menu.menu-tabs-alt .menu-tab-panel {
     background: none; }
