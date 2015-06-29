@@ -33,10 +33,10 @@
     width: 100%;
     float: left;
     clear: none;
-  }
 
-  .content {
-    margin-left: 50px;
+    > .content {
+      margin-left: 50px;
+    }
   }
 
   .title, .details {
