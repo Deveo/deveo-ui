@@ -30,7 +30,7 @@
     }
   }
 
-  &.menu-stack > li, &.menu-stack > li {
+  &.menu-stack > li {
     padding: 5px 15px;
     cursor: pointer;
 
@@ -52,6 +52,54 @@
     &.divider {
       padding: 0;
       border-top: 1px solid #f1f1f1;
+    }
+  }
+
+  // List Menu - No gray background hover
+
+  &.menu-list {
+    background-color: #fff;
+
+    .avatar {
+      margin-right: 10px;
+    }
+  }
+
+  &.menu-list > li {
+    position: relative;
+    padding: 5px 0;
+    cursor: default;
+
+    a, label {
+      display: block;
+      margin-bottom: 0;
+      color: $alt-link-color;
+    }
+
+    a:hover, label:hover {
+      color: $alt-link-hover-color;
+      text-decoration: none;
+    }
+  }
+
+  // List Link Menu - No gray background hover but cursor pointer
+
+  &.menu-list-link {
+    background-color: #fff;
+
+    .avatar {
+      margin-right: 10px;
+    }
+  }
+
+  &.menu-list-link > li {
+    position: relative;
+    padding: 5px 0;
+    cursor: pointer;
+
+    &:hover {
+      color: $alt-link-hover-color;
+      text-decoration: none;
     }
   }
 
