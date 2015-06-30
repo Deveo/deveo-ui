@@ -1416,7 +1416,7 @@ i.icons {
   i.icons.blue2 {
     color: #87bbd6; }
   i.icons.dark {
-    color: #29587a; }
+    color: #5d5f68; }
   i.icons.darker {
     color: #142630; }
   i.icons.grey {
@@ -1834,6 +1834,9 @@ a {
     overflow: auto; }
     .dropdown-menu ul .icons {
       margin-right: 10px; }
+  .dropdown-menu .menu.menu-tabs-alt .menu-tab-list {
+    margin-bottom: 10px;
+    padding: 0 15px; }
 
 .dropdown.dropdown-right:before {
   right: 4px;
@@ -2588,21 +2591,47 @@ a {
     background-color: #fff; }
     .menu.menu-stack .avatar {
       margin-right: 10px; }
-  .menu.menu-stack > li, .menu.menu-stack > li {
+  .menu.menu-stack > li {
     padding: 5px 15px;
     cursor: pointer; }
-    .menu.menu-stack > li a, .menu.menu-stack > li label, .menu.menu-stack > li a, .menu.menu-stack > li label {
+    .menu.menu-stack > li a, .menu.menu-stack > li label {
       display: block;
       margin-bottom: 0;
       color: #5d5f68; }
-    .menu.menu-stack > li a:hover, .menu.menu-stack > li label:hover, .menu.menu-stack > li a:hover, .menu.menu-stack > li label:hover {
+    .menu.menu-stack > li a:hover, .menu.menu-stack > li label:hover {
       color: #181c1e;
       text-decoration: none; }
-    .menu.menu-stack > li:hover, .menu.menu-stack > li:hover {
+    .menu.menu-stack > li:hover {
       background-color: #f1f1f1; }
-    .menu.menu-stack > li.divider, .menu.menu-stack > li.divider {
+    .menu.menu-stack > li.divider {
       padding: 0;
       border-top: 1px solid #f1f1f1; }
+  .menu.menu-list {
+    background-color: #fff; }
+    .menu.menu-list .avatar {
+      margin-right: 10px; }
+  .menu.menu-list > li {
+    position: relative;
+    padding: 5px 0;
+    cursor: default; }
+    .menu.menu-list > li a, .menu.menu-list > li label {
+      display: block;
+      margin-bottom: 0;
+      color: #5d5f68; }
+    .menu.menu-list > li a:hover, .menu.menu-list > li label:hover {
+      color: #181c1e;
+      text-decoration: none; }
+  .menu.menu-list-link {
+    background-color: #fff; }
+    .menu.menu-list-link .avatar {
+      margin-right: 10px; }
+  .menu.menu-list-link > li {
+    position: relative;
+    padding: 5px 0;
+    cursor: pointer; }
+    .menu.menu-list-link > li:hover {
+      color: #181c1e;
+      text-decoration: none; }
   .menu.menu-large {
     min-width: 348px;
     max-height: 425px; }
@@ -2634,8 +2663,7 @@ a {
   .menu.menu-tabs-alt {
     background-color: #fff; }
   .menu.menu-tabs-alt .menu-tab-list {
-    margin-bottom: 10px;
-    padding: 0 15px; }
+    margin-bottom: 10px; }
   .menu.menu-tabs-alt .menu-tab {
     display: inline-block;
     margin: 0 20px 0 0;
@@ -2718,7 +2746,7 @@ a {
     display: none;
     width: 14px;
     height: 14px;
-    margin-top: 2px;
+    margin-top: 0;
     margin-left: 8px;
     float: left;
     clear: none;
