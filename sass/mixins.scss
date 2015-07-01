@@ -1,5 +1,5 @@
 @mixin generate-spacing-classes(
-  $spaces: (5, 10, 15, 20, 25, 30),
+  $spaces: (0, 5, 10, 15, 20, 25, 30),
   $directions: (all, top, right, bottom, left)
 ) {
   @each $direction in $directions {

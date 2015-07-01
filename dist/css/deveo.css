@@ -1,3 +1,9 @@
+.margin-0 {
+  margin: 0px !important; }
+
+.padding-0 {
+  padding: 0px !important; }
+
 .margin-5 {
   margin: 5px !important; }
 
@@ -33,6 +39,12 @@
 
 .padding-30 {
   padding: 30px !important; }
+
+.margin-top-0 {
+  margin-top: 0px !important; }
+
+.padding-top-0 {
+  padding-top: 0px !important; }
 
 .margin-top-5 {
   margin-top: 5px !important; }
@@ -70,6 +82,12 @@
 .padding-top-30 {
   padding-top: 30px !important; }
 
+.margin-right-0 {
+  margin-right: 0px !important; }
+
+.padding-right-0 {
+  padding-right: 0px !important; }
+
 .margin-right-5 {
   margin-right: 5px !important; }
 
@@ -106,6 +124,12 @@
 .padding-right-30 {
   padding-right: 30px !important; }
 
+.margin-bottom-0 {
+  margin-bottom: 0px !important; }
+
+.padding-bottom-0 {
+  padding-bottom: 0px !important; }
+
 .margin-bottom-5 {
   margin-bottom: 5px !important; }
 
@@ -141,6 +165,12 @@
 
 .padding-bottom-30 {
   padding-bottom: 30px !important; }
+
+.margin-left-0 {
+  margin-left: 0px !important; }
+
+.padding-left-0 {
+  padding-left: 0px !important; }
 
 .margin-left-5 {
   margin-left: 5px !important; }
