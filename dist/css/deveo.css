@@ -2585,25 +2585,6 @@ a {
   100% {
     transform: rotate(359deg); } }
 
-.label {
-  padding: 10px 5px;
-  line-height: 1.2;
-  text-align: center; }
-  .label abbr {
-    display: block;
-    text-decoration: none;
-    cursor: default; }
-  .label em, .label strong, .label small {
-    display: block; }
-  .label em, .label strong {
-    font-size: 1.2em;
-    font-style: inherit; }
-  .label small {
-    font-size: 0.8333em; }
-
-.label {
-  background: #000; }
-
 .menu {
   padding-left: 0;
   list-style: none; }
