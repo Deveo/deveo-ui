@@ -898,6 +898,8 @@ label {
   cursor: pointer;
   color: #5d5f68;
   appearance: none; }
+  .selects select[multiple] {
+    height: initial; }
   .selects select:hover {
     border-color: #98a1a7;
     color: #181c1e; }

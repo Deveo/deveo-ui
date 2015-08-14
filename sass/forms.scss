@@ -240,6 +240,10 @@ label {
     color: $alt-link-color;
     appearance: none;
 
+    &[multiple] {
+      height: initial;
+    }
+
     &:hover {
       border-color: #98a1a7;
       color: $alt-link-hover-color;
