@@ -2605,11 +2605,12 @@ a {
     .menu.menu-stack .avatar {
       margin-right: 10px; }
   .menu.menu-stack > li {
-    padding: 5px 15px;
+    padding: 5px 0;
     cursor: pointer; }
     .menu.menu-stack > li a, .menu.menu-stack > li label {
       display: block;
       margin-bottom: 0;
+      padding: 0 15px;
       color: #5d5f68; }
     .menu.menu-stack > li a:hover, .menu.menu-stack > li label:hover {
       color: #181c1e;

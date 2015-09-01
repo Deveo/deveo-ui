@@ -31,12 +31,13 @@
   }
 
   &.menu-stack > li {
-    padding: 5px 15px;
+    padding: 5px 0;
     cursor: pointer;
 
     a, label {
       display: block;
       margin-bottom: 0;
+      padding: 0 15px;
       color: $alt-link-color;
     }
 
