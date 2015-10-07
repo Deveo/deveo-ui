@@ -12,7 +12,7 @@
     "gulp-foreach": "^0.1.0",
     "gulp-plumber": "^0.6.3",
     "gulp-rename": "^1.2.0",
-    "gulp-sass": "^0.7.2",
+    "gulp-sass": "^2.0.4",
     "gulp-uglify": "^0.3.1"
   },
   "engines": {
