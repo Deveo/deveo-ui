@@ -217,3 +217,15 @@
     }
   }
 }
+
+.button-group .button-dropdown {
+  padding: 0 10px;
+
+  &.button-small {
+    padding: 0 8px;
+  }
+
+  > .icons:last-of-type {
+    margin: 0;
+  }
+}
