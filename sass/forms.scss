@@ -43,7 +43,7 @@ form, .form {
 //       Disable hover & focus styles for disabled elements
 
 input {
-  &[type="text"], &[type="password"] {
+  &[type="text"], &[type="password"], &[type="number"] {
     height: 36px;
 
     &.input-small {
