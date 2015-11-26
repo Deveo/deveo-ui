@@ -212,7 +212,19 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -221,7 +233,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
@@ -233,7 +246,8 @@ ol, ul {
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: '';
   content: none; }
 
@@ -273,14 +287,29 @@ body {
  * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
   display: block; }
 
 /**
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-audio, canvas, progress, video {
+audio,
+canvas,
+progress,
+video {
   display: inline-block;
   /* 1 */
   vertical-align: baseline;
@@ -298,7 +327,8 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
-[hidden], template {
+[hidden],
+template {
   display: none; }
 
 /* Links
@@ -312,7 +342,8 @@ a {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-a:active, a:hover {
+a:active,
+a:hover {
   outline: 0; }
 
 /* Text-level semantics
@@ -326,7 +357,8 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
-b, strong {
+b,
+strong {
   font-weight: bold; }
 
 /**
@@ -359,7 +391,8 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -410,7 +443,10 @@ pre {
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
   font-family: monospace, monospace;
   font-size: 1em; }
 
@@ -426,7 +462,11 @@ code, kbd, pre, samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   color: inherit;
   /* 1 */
   font: inherit;
@@ -446,7 +486,8 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-button, select {
+button,
+select {
   text-transform: none; }
 
 /**
@@ -456,7 +497,9 @@ button, select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
+button,
+html input[type="button"], input[type="reset"],
+input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
@@ -465,13 +508,15 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-button[disabled], html input[disabled] {
+button[disabled],
+html input[disabled] {
   cursor: default; }
 
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-button::-moz-focus-inner, input::-moz-focus-inner {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
@@ -489,7 +534,8 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -500,7 +546,8 @@ input[type="checkbox"], input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
 /**
@@ -521,7 +568,8 @@ input[type="search"] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 /**
@@ -564,7 +612,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-td, th {
+td,
+th {
   padding: 0; }
 
 /*Vertical rhythm*/
@@ -585,6 +634,7 @@ h2, h3, h4, h5, h6, p, ul, ol, table, pre, blockquote {
 
 .inverted .condensed h4 {
   margin-top: 0.5em; }
+
 .inverted .list h4 {
   margin-top: 0; }
 
@@ -708,20 +758,19 @@ body {
   clear: none; }
   .clearfix > .push > .content {
     margin-left: 100px; }
+
 .clearfix > .pull {
   width: 100px;
   margin-left: -100%;
   float: left;
   clear: none; }
+
 .clearfix.reverse > .push > .content {
   margin-right: 100px;
   margin-left: 0; }
+
 .clearfix.reverse > .pull {
   float: right; }
-
-@media only screen and (max-width: 1023px) { }
-
-@media handheld, only screen and (max-width: 767px) { }
 
 .deactivated {
   opacity: 0.4; }
@@ -729,6 +778,7 @@ body {
 .render-error .icon-bot {
   padding-right: 15px;
   font-size: 2em; }
+
 .render-error.task .icon-bot {
   color: #444; }
 
@@ -760,18 +810,23 @@ body {
 
 form p, .form p {
   margin-top: 0; }
+
 form p, form .inline-group, .form p, .form .inline-group {
   margin-bottom: 20px; }
+
 form span.error, .form span.error {
   display: block;
   margin: 5px 0;
   color: #ca4b4b; }
+
 form .disabled, .form .disabled {
   pointer-events: auto; }
   form .disabled *, .form .disabled * {
     cursor: not-allowed !important; }
+
 form [type="submit"], .form [type="submit"] {
   width: auto; }
+
 form .button + .button, .form .button + .button {
   margin-left: 15px; }
 
@@ -869,19 +924,24 @@ label {
   display: inline-block;
   width: 100%;
   margin-bottom: 0; }
+
 .inline-group p:first-of-type {
   width: calc(50% - 10px);
   margin-right: 10px;
   float: left; }
+
 .inline-group p:last-of-type {
   width: 50%; }
 
 .form-inline input, .form-inline textarea {
   width: auto; }
+
 .form-inline label {
   display: inline-block; }
+
 .form-inline label + label {
   margin-left: 15px; }
+
 .form-inline label > [type="text"] {
   margin: 0 5px; }
 
@@ -913,6 +973,7 @@ label {
     cursor: default;
     color: #5d5f68 !important;
     opacity: 0.4; }
+
 .selects label {
   position: relative;
   margin-bottom: 0; }
@@ -951,406 +1012,531 @@ label {
 
 .syntax .hll {
   background-color: #ffc; }
+
 .syntax .c {
   /* Comment */
   color: #408080;
   font-style: italic; }
+
 .syntax .err {
   /* Error */
   border: 1px dotted #e5163d; }
+
 .syntax .k {
   /* Keyword */
   color: #40455d;
   font-weight: bold; }
+
 .syntax .o {
   /* Operator */
   color: #666; }
+
 .syntax .cm {
   /* Comment.Multiline */
   color: #408080;
   font-style: italic; }
+
 .syntax .cp {
   /* Comment.Preproc */
   color: #e67658; }
+
 .syntax .c1 {
   /* Comment.Single */
   color: #999;
   font-style: italic; }
+
 .syntax .cs {
   /* Comment.Special */
   color: #408080;
   font-style: italic; }
+
 .syntax .gd {
   /* Generic.Deleted */
   color: #a00000; }
+
 .syntax .ge {
   /* Generic.Emph */
   font-style: italic; }
+
 .syntax .gr {
   /* Generic.Error */
   color: #e5163d; }
+
 .syntax .gh {
   /* Generic.Heading */
   color: #000080;
   font-weight: bold; }
+
 .syntax .gi {
   /* Generic.Inserted */
   color: #00a000; }
+
 .syntax .go {
   /* Generic.Output */
   color: #808080; }
+
 .syntax .gp {
   /* Generic.Prompt */
   color: #000080;
   font-weight: bold; }
+
 .syntax .gs {
   /* Generic.Strong */
   font-weight: bold; }
+
 .syntax .gu {
   /* Generic.Subheading */
   color: #800080;
   font-weight: bold; }
+
 .syntax .gt {
   /* Generic.Traceback */
   color: #0040d0; }
+
 .syntax .kc {
   /* Keyword.Constant */
   color: #3840f4;
   font-weight: bold; }
+
 .syntax .kd {
   /* Keyword.Declaration */
   color: #3840f4;
   font-weight: bold; }
+
 .syntax .kn {
   /* Keyword.Namespace */
   color: #3840f4;
   font-weight: bold; }
+
+.syntax .kp {
+  /* Keyword.Pseudo */ }
+
 .syntax .kr {
   /* Keyword.Reserved */
   color: #3840f4;
   font-weight: bold; }
+
 .syntax .kt {
   /* Keyword.Type */
   color: #b00040; }
+
 .syntax .m {
   /* Literal.Number */
   color: #666; }
+
 .syntax .s {
   /* Literal.String */
   color: #0fb943; }
+
 .syntax .na {
   /* Name.Attribute */
   color: #3266cc;
   font-style: italic; }
+
 .syntax .nb {
   /* Name.Builtin */
   color: #3840f4; }
+
 .syntax .nc {
   /* Name.Class */
   color: #40455d;
   font-weight: bold; }
+
 .syntax .no {
   /* Name.Constant */
   color: #30c76f; }
+
 .syntax .nd {
   /* Name.Decorator */
   color: #a2f; }
+
 .syntax .ni {
   /* Name.Entity */
   color: #999;
   font-weight: bold; }
+
 .syntax .ne {
   /* Name.Exception */
   color: #d2413a;
   font-weight: bold; }
+
+.syntax .nf {
+  /* Name.Function */ }
+
 .syntax .nl {
   /* Name.Label */
   color: #a0a000; }
+
 .syntax .nn {
   /* Name.Namespace */
   font-weight: bold; }
+
 .syntax .nt {
   /* Name.Tag */
   color: #26459d; }
+
 .syntax .nv {
   /* Name.Variable */
   color: #4da9e9; }
+
 .syntax .ow {
   /* Operator.Word */
   color: #a2f;
   font-weight: bold; }
+
 .syntax .w {
   /* Text.Whitespace */
   color: #bbb; }
+
 .syntax .mf {
   /* Literal.Number.Float */
   color: #ff9500; }
+
 .syntax .mh {
   /* Literal.Number.Hex */
   color: #ff9500; }
+
 .syntax .mi {
   /* Literal.Number.Integer */
   color: #ff9500; }
+
 .syntax .mo {
   /* Literal.Number.Oct */
   color: #ff9ef9; }
+
 .syntax .sb {
   /* Literal.String.Backtick */
   color: #0fb943; }
+
 .syntax .sc {
   /* Literal.String.Char */
   color: #0fb943; }
+
 .syntax .sd {
   /* Literal.String.Doc */
   color: #0fb943;
   font-style: italic; }
+
 .syntax .s2 {
   /* Literal.String.Double */
   color: #e67658; }
+
 .syntax .se {
   /* Literal.String.Escape */
   color: #b62;
   font-weight: bold; }
+
 .syntax .sh {
   /* Literal.String.Heredoc */
   color: #0fb943; }
+
 .syntax .si {
   /* Literal.String.Interpol */
   color: #b68;
   font-weight: bold; }
+
 .syntax .sx {
   /* Literal.String.Other */
   color: #3840f4; }
+
 .syntax .sr {
   /* Literal.String.Regex */
   color: #b68; }
+
 .syntax .s1 {
   /* Literal.String.Single */
   color: #e67658; }
+
 .syntax .ss {
   /* Literal.String.Symbol */
   color: #c26767; }
+
 .syntax .bp {
   /* Name.Builtin.Pseudo */
   color: #3840f4; }
+
 .syntax .vc {
   /* Name.Variable.Class */
   color: #4da9e9; }
+
 .syntax .vg {
   /* Name.Variable.Global */
   color: #4da9e9; }
+
 .syntax .vi {
   /* Name.Variable.Instance */
   color: #f7b763; }
+
 .syntax .il {
   /* Literal.Number.Integer.Long */
   color: #ff9500; }
+
 .syntax.inverted .hll {
   background-color: #ffc; }
+
 .syntax.inverted .c {
   /* Comment */
   color: #998;
   font-style: italic; }
+
 .syntax.inverted .err {
   background-color: #e3d2d2;
   /* Error */
   color: #a61717; }
+
 .syntax.inverted .k {
   /* Keyword */
   color: #000;
   font-weight: bold; }
+
 .syntax.inverted .o {
   /* Operator */
   color: #000;
   font-weight: bold; }
+
 .syntax.inverted .cm {
   /* Comment.Multiline */
   color: #998;
   font-style: italic; }
+
 .syntax.inverted .cp {
   /* Comment.Preproc */
   color: #999;
   font-style: italic;
   font-weight: bold; }
+
 .syntax.inverted .c1 {
   /* Comment.Single */
   color: #998;
   font-style: italic; }
+
 .syntax.inverted .cs {
   /* Comment.Special */
   color: #999;
   font-style: italic;
   font-weight: bold; }
+
 .syntax.inverted .gd {
   background-color: #fdd;
   /* Generic.Deleted */
   color: #000; }
+
 .syntax.inverted .ge {
   /* Generic.Emph */
   color: #000;
   font-style: italic; }
+
 .syntax.inverted .gr {
   /* Generic.Error */
   color: #a00; }
+
 .syntax.inverted .gh {
   /* Generic.Heading */
   color: #999; }
+
 .syntax.inverted .gi {
   background-color: #dfd;
   /* Generic.Inserted */
   color: #000; }
+
 .syntax.inverted .go {
   /* Generic.Output */
   color: #888; }
+
 .syntax.inverted .gp {
   /* Generic.Prompt */
   color: #555; }
+
 .syntax.inverted .gs {
   /* Generic.Strong */
   font-weight: bold; }
+
 .syntax.inverted .gu {
   /* Generic.Subheading */
   color: #aaa; }
+
 .syntax.inverted .gt {
   /* Generic.Traceback */
   color: #a00; }
+
 .syntax.inverted .kc {
   /* Keyword.Constant */
   color: #000;
   font-weight: bold; }
+
 .syntax.inverted .kd {
   /* Keyword.Declaration */
   color: #000;
   font-weight: bold; }
+
 .syntax.inverted .kn {
   /* Keyword.Namespace */
   color: #000;
   font-weight: bold; }
+
 .syntax.inverted .kp {
   /* Keyword.Pseudo */
   color: #000;
   font-weight: bold; }
+
 .syntax.inverted .kr {
   /* Keyword.Reserved */
   color: #000;
   font-weight: bold; }
+
 .syntax.inverted .kt {
   /* Keyword.Type */
   color: #458;
   font-weight: bold; }
+
 .syntax.inverted .m {
   /* Literal.Number */
   color: #099; }
+
 .syntax.inverted .s {
   /* Literal.String */
   color: #d01040; }
+
 .syntax.inverted .na {
   /* Name.Attribute */
   color: #3266cc;
   font-style: italic; }
+
 .syntax.inverted .nb {
   /* Name.Builtin */
   color: #0086b3; }
+
 .syntax.inverted .nc {
   /* Name.Class */
   color: #458;
   font-weight: bold; }
+
 .syntax.inverted .no {
   /* Name.Constant */
   color: #008080; }
+
 .syntax.inverted .nd {
   /* Name.Decorator */
   color: #3c5d5d;
   font-weight: bold; }
+
 .syntax.inverted .ni {
   /* Name.Entity */
   color: #800080; }
+
 .syntax.inverted .ne {
   /* Name.Exception */
   color: #900;
   font-weight: bold; }
+
 .syntax.inverted .nf {
   /* Name.Function */
   color: #900;
   font-weight: bold; }
+
 .syntax.inverted .nl {
   /* Name.Label */
   color: #900;
   font-weight: bold; }
+
 .syntax.inverted .nn {
   /* Name.Namespace */
   color: #555; }
+
 .syntax.inverted .nt {
   background: none;
   /* Name.Tag */
   color: #26459d; }
+
 .syntax.inverted .nv {
   /* Name.Variable */
   color: #008080; }
+
 .syntax.inverted .ow {
   /* Operator.Word */
   color: #000;
   font-weight: bold; }
+
 .syntax.inverted .w {
   /* Text.Whitespace */
   color: #bbb; }
+
 .syntax.inverted .mf {
   /* Literal.Number.Float */
   color: #099; }
+
 .syntax.inverted .mh {
   /* Literal.Number.Hex */
   color: #099; }
+
 .syntax.inverted .mi {
   /* Literal.Number.Integer */
   color: #099; }
+
 .syntax.inverted .mo {
   /* Literal.Number.Oct */
   color: #099; }
+
 .syntax.inverted .sb {
   /* Literal.String.Backtick */
   color: #d01040; }
+
 .syntax.inverted .sc {
   /* Literal.String.Char */
   color: #d01040; }
+
 .syntax.inverted .sd {
   /* Literal.String.Doc */
   color: #d01040; }
+
 .syntax.inverted .s2 {
   /* Literal.String.Double */
   color: #d01040; }
+
 .syntax.inverted .se {
   /* Literal.String.Escape */
   color: #d01040; }
+
 .syntax.inverted .sh {
   /* Literal.String.Heredoc */
   color: #d01040; }
+
 .syntax.inverted .si {
   /* Literal.String.Interpol */
   color: #d01040; }
+
 .syntax.inverted .sx {
   /* Literal.String.Other */
   color: #d01040; }
+
 .syntax.inverted .sr {
   /* Literal.String.Regex */
   color: #009926; }
+
 .syntax.inverted .s1 {
   /* Literal.String.Single */
   color: #d01040; }
+
 .syntax.inverted .ss {
   /* Literal.String.Symbol */
   color: #990073; }
+
 .syntax.inverted .bp {
   /* Name.Builtin.Pseudo */
   color: #999; }
+
 .syntax.inverted .vc {
   /* Name.Variable.Class */
   color: #008080; }
+
 .syntax.inverted .vg {
   /* Name.Variable.Global */
   color: #008080; }
+
 .syntax.inverted .vi {
   /* Name.Variable.Instance */
   color: #008080; }
+
 .syntax.inverted .il {
   /* Literal.Number.Integer.Long */
   color: #099; }
@@ -1386,14 +1572,14 @@ html, body {
 @font-face {
   font-family: "deveoicons";
   src: url("../fonts/deveo_icons-2910151635.eot");
-  src: url("../fonts/deveo_icons-2910151635.woff") format('woff'), url("../fonts/deveo_icons-2910151635.svg#deveo-icons") format('svg'), url("../fonts/deveo_icons-2910151635.otf") format('opentype'), url("../fonts/deveo_icons-2910151635.ttf") format('truetype'); }
+  src: url("../fonts/deveo_icons-2910151635.woff") format("woff"), url("../fonts/deveo_icons-2910151635.svg#deveo-icons") format("svg"), url("../fonts/deveo_icons-2910151635.otf") format("opentype"), url("../fonts/deveo_icons-2910151635.ttf") format("truetype"); }
 
 /* Webfont: LatoLatinLight-Regular */
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/lato-light-webfont.eot');
+  src: url("../fonts/lato-light-webfont.eot");
   /* IE9 Compat Modes */
-  src: url('../fonts/lato-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-light-webfont.woff') format('woff'), url('../fonts/lato-light-webfont.ttf') format('truetype');
+  src: url("../fonts/lato-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-light-webfont.woff") format("woff"), url("../fonts/lato-light-webfont.ttf") format("truetype");
   font-style: normal;
   font-weight: 300;
   text-rendering: optimizeLegibility; }
@@ -1401,9 +1587,9 @@ html, body {
 /* Webfont: LatoLatin-Regular */
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/lato-regular-webfont.eot');
+  src: url("../fonts/lato-regular-webfont.eot");
   /* IE9 Compat Modes */
-  src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-regular-webfont.woff') format('woff'), url('../fonts/lato-regular-webfont.ttf') format('truetype');
+  src: url("../fonts/lato-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-regular-webfont.woff") format("woff"), url("../fonts/lato-regular-webfont.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility; }
@@ -1411,9 +1597,9 @@ html, body {
 /* Webfont: LatoLatinSemBd-Regular */
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/lato-semibold-webfont.eot');
+  src: url("../fonts/lato-semibold-webfont.eot");
   /* IE9 Compat Modes */
-  src: url('../fonts/lato-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-semibold-webfont.woff') format('woff'), url('../fonts/lato-semibold-webfont.ttf') format('truetype');
+  src: url("../fonts/lato-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-semibold-webfont.woff") format("woff"), url("../fonts/lato-semibold-webfont.ttf") format("truetype");
   font-style: normal;
   font-weight: bold;
   text-rendering: optimizeLegibility; }
@@ -1422,6 +1608,10 @@ html, input {
   font-family: 'Lato', 'Lucida Grande', 'Segoe UI', 'Arial', sans-serif; }
 
 blockquote, q {
+  margin-right: 5px;
+  padding-left: 5px;
+  border-left: 2px solid #eee;
+  color: #999;
   font-family: 'Georgia', serif; }
 
 i.icons {
@@ -1805,15 +1995,18 @@ a {
   .button-group .button.active:hover {
     border-color: #98a1a7;
     background: #fdfdfd; }
+
 .button-group .button:first-of-type {
   border-right: 0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
+
 .button-group .button:last-of-type {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
   .button-group .button:last-of-type.button-primary {
     border-left: 1px solid #0088d2; }
+
 .button-group .button:not(:first-of-type):not(:last-of-type) {
   border-right: 0;
   border-radius: 0; }
@@ -2619,7 +2812,6 @@ a {
 @keyframes icon-spin {
   0% {
     transform: rotate(0deg); }
-
   100% {
     transform: rotate(359deg); } }
 
@@ -2686,7 +2878,7 @@ a {
     min-width: 348px;
     max-height: 425px; }
     .menu.menu-large > li {
-      padding: 7px 15px; }
+      padding: 7px 0; }
   .menu .menu-tab-list {
     margin: 0; }
   .menu .menu-tab-panel {
