@@ -280,6 +280,26 @@ label {
   }
 }
 
+// Search inputs with search icon
+
+.search-expanded {
+
+  input {
+    min-width: 200px;
+    padding-left: 25px;
+    float: right;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: url('../assets/search.svg') #fff no-repeat 7px center;
+    background-size: 11px 11px;
+
+    &:focus {
+      width: 140%;
+    }
+  }
+}
+
 // Polyfill for browsers not supporting placeholder attr (IE9)
 
 .placeholder {
