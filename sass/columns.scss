@@ -10,7 +10,7 @@ body {
 
 .column {
   min-height: 1px;
-  margin-right: 3.8%;
+  margin-right: 2.8%;
   float: left;
   clear: right;
 
@@ -39,7 +39,7 @@ body {
   }
 
   &.three {
-    width: 22.05%;
+    width: 20.05%;
   }
 
   &.four {
@@ -63,7 +63,7 @@ body {
   }
 
   &.nine {
-    width: 74.05%;
+    width: 77.05%;
   }
 
   &.ten {
@@ -111,9 +111,80 @@ body {
   }
 }
 
-// Smaller screens
-@media only screen and (max-width: 1023px) {
+// layout responsiveness
+
+@media handheld, only screen and (min-width: 1480px) {
+  .column {
+    &.three {
+      width: 15.05%;
+    }
+
+    &.nine {
+      width: 82.05%;
+    }
+  }
+}
+
+@media handheld, (min-width: 1200px) and (max-width: 1479px) {
+  .column {
+    &.three {
+      width: 17.05%;
+    }
+
+    &.nine {
+      width: 80.05%;
+    }
+  }
 }
 
 @media handheld, only screen and (max-width: 767px) {
+  .column {
+    &.one {
+      width: 100%;
+    }
+
+    &.two {
+      width: 100%;
+    }
+
+    &.three {
+      width: 100%;
+    }
+
+    &.four {
+      width: 100%;
+    }
+
+    &.five {
+      width: 100%;
+    }
+
+    &.six {
+      width: 100%;
+    }
+
+    &.seven {
+      width: 100%;
+    }
+
+    &.eight {
+      width: 100%;
+    }
+
+    &.nine {
+      width: 100%;
+    }
+
+    &.ten {
+      width: 100%;
+    }
+
+    &.eleven {
+      width: 100%;
+    }
+
+    &.twelve {
+      width: 100%;
+    }
+  }
 }

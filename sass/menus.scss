@@ -146,7 +146,7 @@
     }
 
     &:hover {
-      color: #181c1e;
+      color: $darker;
     }
   }
 
@@ -174,7 +174,7 @@
     text-decoration: none;
 
     &:hover {
-      color: #181c1e;
+      color: $darker;
     }
 
     &[active=true] {

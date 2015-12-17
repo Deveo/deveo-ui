@@ -1,7 +1,5 @@
 .stack {
-  padding: 20px 20px 0;
-  border-radius: 5px;
-  background-color: #fff;
+  padding: 0;
 
   .item {
     width: 240px;
@@ -114,7 +112,6 @@
 
     .item > a {
       display: block;
-      padding: 20px;
     }
   }
 
@@ -127,6 +124,18 @@
 
     .content {
       line-height: 30px;
+    }
+  }
+}
+
+// layout responsiveness
+
+@media handheld, only screen and (max-width: 640px) {
+  .stack {
+    padding-bottom: 0;
+
+    .item {
+      margin-bottom: 10px;
     }
   }
 }

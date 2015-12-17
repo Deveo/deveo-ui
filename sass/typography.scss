@@ -16,11 +16,11 @@ html, body {
 
 @font-face {
   font-family: "deveoicons";
-  src: url("../fonts/deveo_icons-0312151216.eot");
-  src: url("../fonts/deveo_icons-0312151216.woff") format('woff'),
-       url("../fonts/deveo_icons-0312151216.svg#deveo-icons") format('svg'),
-       url("../fonts/deveo_icons-0312151216.otf") format('opentype'),
-       url("../fonts/deveo_icons-0312151216.ttf") format('truetype');
+  src: url("../fonts/deveo_icons-1712151136.eot");
+  src: url("../fonts/deveo_icons-1712151136.woff") format('woff'),
+       url("../fonts/deveo_icons-1712151136.svg#deveo-icons") format('svg'),
+       url("../fonts/deveo_icons-1712151136.otf") format('opentype'),
+       url("../fonts/deveo_icons-1712151136.ttf") format('truetype');
 }
 
 /* Webfont: LatoLatinLight-Regular */
@@ -170,18 +170,22 @@ body {
 }
 
 h1 {
+  color: $darker;
   font-size: 2.8em;
 }
 
 h2 {
+  color: $darker;
   font-size: 1.4em;
 }
 
 h3 {
+  color: $darker;
   font-size: 1.4em;
 }
 
 h4 {
+  color: $darker;
   font-size: 1.1em;
 }
 
