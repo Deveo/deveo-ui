@@ -59,6 +59,17 @@ html, body {
   text-rendering: optimizeLegibility;
 }
 
+/* Webfont Monospace: Incosolata */
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('../fonts/Inconsolata-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Inconsolata-Regular.woff') format('woff'),
+       url('../fonts/Inconsolata-Regular.ttf')  format('truetype'),
+       url('../fonts/Inconsolata-Regular.svg#Inconsolata-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, input {
   font-family: 'Lato', 'Lucida Grande', 'Segoe UI', 'Arial', sans-serif;
 }
@@ -73,7 +84,6 @@ blockquote, q {
 
 i.icons {
   display: inline-block;
-
   color: inherit;
   font-family: deveoicons;
   font-size: 14px;
@@ -156,7 +166,13 @@ i.icons {
 }
 
 pre, code, kbd, samp {
-  font-family: monospace;
+  padding: 2px 6px;
+  border: 1px solid #dde5ea;
+  border-radius: 2px;
+  background: #f5f8fa;
+  color: #3a4145;
+  font-family: 'Inconsolata', monospace;
+  font-size: 14px;
 }
 
 /*Sizes*/
