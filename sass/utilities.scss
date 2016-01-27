@@ -17,11 +17,13 @@
 // General
 
 .disabled {
+  cursor: not-allowed;
   opacity: 0.5;
   pointer-events: none;
 }
 
 .disabled-alt {
+  cursor: not-allowed;
   opacity: 1;
   pointer-events: none;
 }

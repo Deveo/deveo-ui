@@ -986,6 +986,18 @@ label {
     font-size: 12px;
     pointer-events: none; }
 
+.search-expanded input {
+  min-width: 200px;
+  padding-left: 25px;
+  float: right;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: url("../assets/search.svg") #fff no-repeat 7px center;
+  background-size: 11px 11px; }
+  .search-expanded input:focus {
+    width: 140%; }
+
 .placeholder {
   color: #999; }
 
@@ -1571,8 +1583,8 @@ html, body {
 /*Fonts*/
 @font-face {
   font-family: "deveoicons";
-  src: url("../fonts/deveo_icons-2910151635.eot");
-  src: url("../fonts/deveo_icons-2910151635.woff") format("woff"), url("../fonts/deveo_icons-2910151635.svg#deveo-icons") format("svg"), url("../fonts/deveo_icons-2910151635.otf") format("opentype"), url("../fonts/deveo_icons-2910151635.ttf") format("truetype"); }
+  src: url("../fonts/deveo_icons-0312151216.eot");
+  src: url("../fonts/deveo_icons-0312151216.woff") format("woff"), url("../fonts/deveo_icons-0312151216.svg#deveo-icons") format("svg"), url("../fonts/deveo_icons-0312151216.otf") format("opentype"), url("../fonts/deveo_icons-0312151216.ttf") format("truetype"); }
 
 /* Webfont: LatoLatinLight-Regular */
 @font-face {
@@ -2533,278 +2545,281 @@ a {
 .icon-lock-open:before {
   content: "\f0b7"; }
 
-.icon-mercurial:before {
+.icon-menu:before {
   content: "\f0b8"; }
 
-.icon-message-outline:before {
+.icon-mercurial:before {
   content: "\f0b9"; }
 
-.icon-message:before {
+.icon-message-outline:before {
   content: "\f0ba"; }
 
-.icon-milestone:before {
+.icon-message:before {
   content: "\f0bb"; }
 
-.icon-music:before {
+.icon-milestone:before {
   content: "\f0bc"; }
 
-.icon-overview:before {
+.icon-music:before {
   content: "\f0bd"; }
 
-.icon-page-text:before {
+.icon-overview:before {
   content: "\f0be"; }
 
-.icon-page:before {
+.icon-page-text:before {
   content: "\f0bf"; }
 
-.icon-pirate:before {
+.icon-page:before {
   content: "\f0c0"; }
 
-.icon-preview-alt:before {
+.icon-pirate:before {
   content: "\f0c1"; }
 
-.icon-preview:before {
+.icon-preview-alt:before {
   content: "\f0c2"; }
 
-.icon-project-outline:before {
+.icon-preview:before {
   content: "\f0c3"; }
 
-.icon-project:before {
+.icon-project-outline:before {
   content: "\f0c4"; }
 
-.icon-pull:before {
+.icon-project:before {
   content: "\f0c5"; }
 
-.icon-push:before {
+.icon-pull:before {
   content: "\f0c6"; }
 
-.icon-puzzle-outline:before {
+.icon-push:before {
   content: "\f0c7"; }
 
-.icon-puzzle:before {
+.icon-puzzle-outline:before {
   content: "\f0c8"; }
 
-.icon-quit:before {
+.icon-puzzle:before {
   content: "\f0c9"; }
 
-.icon-refresh-alt:before {
+.icon-quit:before {
   content: "\f0ca"; }
 
-.icon-refresh:before {
+.icon-refresh-alt:before {
   content: "\f0cb"; }
 
-.icon-remove-circle:before {
+.icon-refresh:before {
   content: "\f0cc"; }
 
-.icon-remove-thin:before {
+.icon-remove-circle:before {
   content: "\f0cd"; }
 
-.icon-remove:before {
+.icon-remove-thin:before {
   content: "\f0ce"; }
 
-.icon-reply:before {
+.icon-remove:before {
   content: "\f0cf"; }
 
-.icon-repository-deveo-outline:before {
+.icon-reply:before {
   content: "\f0d0"; }
 
-.icon-repository-deveo:before {
+.icon-repository-deveo-outline:before {
   content: "\f0d1"; }
 
-.icon-repository-outline:before {
+.icon-repository-deveo:before {
   content: "\f0d2"; }
 
-.icon-repository:before {
+.icon-repository-outline:before {
   content: "\f0d3"; }
 
-.icon-rocket-outline:before {
+.icon-repository:before {
   content: "\f0d4"; }
 
-.icon-rocket:before {
+.icon-rocket-outline:before {
   content: "\f0d5"; }
 
-.icon-save:before {
+.icon-rocket:before {
   content: "\f0d6"; }
 
-.icon-search:before {
+.icon-save:before {
   content: "\f0d7"; }
 
-.icon-settings-alt:before {
+.icon-search:before {
   content: "\f0d8"; }
 
-.icon-settings-outline-alt:before {
+.icon-settings-alt:before {
   content: "\f0d9"; }
 
-.icon-settings:before {
+.icon-settings-outline-alt:before {
   content: "\f0da"; }
 
-.icon-snapshot:before {
+.icon-settings:before {
   content: "\f0db"; }
 
-.icon-social-circle-dribbble:before {
+.icon-snapshot:before {
   content: "\f0dc"; }
 
-.icon-social-circle-facebook:before {
+.icon-social-circle-dribbble:before {
   content: "\f0dd"; }
 
-.icon-social-circle-google-plus:before {
+.icon-social-circle-facebook:before {
   content: "\f0de"; }
 
-.icon-social-circle-linkedin:before {
+.icon-social-circle-google-plus:before {
   content: "\f0df"; }
 
-.icon-social-circle-rss:before {
+.icon-social-circle-linkedin:before {
   content: "\f0e0"; }
 
-.icon-social-circle-twitter-alt:before {
+.icon-social-circle-rss:before {
   content: "\f0e1"; }
 
-.icon-social-circle-twitter:before {
+.icon-social-circle-twitter-alt:before {
   content: "\f0e2"; }
 
-.icon-social-dribbble:before {
+.icon-social-circle-twitter:before {
   content: "\f0e3"; }
 
-.icon-social-facebook:before {
+.icon-social-dribbble:before {
   content: "\f0e4"; }
 
-.icon-social-google-plus:before {
+.icon-social-facebook:before {
   content: "\f0e5"; }
 
-.icon-social-linkedin:before {
+.icon-social-google-plus:before {
   content: "\f0e6"; }
 
-.icon-social-rss:before {
+.icon-social-linkedin:before {
   content: "\f0e7"; }
 
-.icon-social-twitter-alt:before {
+.icon-social-rss:before {
   content: "\f0e8"; }
 
-.icon-social-twitter:before {
+.icon-social-twitter-alt:before {
   content: "\f0e9"; }
 
-.icon-spinner-alt:before {
+.icon-social-twitter:before {
   content: "\f0ea"; }
 
-.icon-spinner:before {
+.icon-spinner-alt:before {
   content: "\f0eb"; }
 
-.icon-star-outline:before {
+.icon-spinner:before {
   content: "\f0ec"; }
 
-.icon-star:before {
+.icon-star-outline:before {
   content: "\f0ed"; }
 
-.icon-storage-rack-big:before {
+.icon-star:before {
   content: "\f0ee"; }
 
-.icon-storage-rack:before {
+.icon-storage-rack-big:before {
   content: "\f0ef"; }
 
-.icon-storage:before {
+.icon-storage-rack:before {
   content: "\f0f0"; }
 
-.icon-story:before {
+.icon-storage:before {
   content: "\f0f1"; }
 
-.icon-subtract:before {
+.icon-story:before {
   content: "\f0f2"; }
 
-.icon-subversion:before {
+.icon-subtract:before {
   content: "\f0f3"; }
 
-.icon-tag-alt:before {
+.icon-subversion:before {
   content: "\f0f4"; }
 
-.icon-tag:before {
+.icon-tag-alt:before {
   content: "\f0f5"; }
 
-.icon-task:before {
+.icon-tag:before {
   content: "\f0f6"; }
 
-.icon-text:before {
+.icon-task:before {
   content: "\f0f7"; }
 
-.icon-thumb-view:before {
+.icon-text:before {
   content: "\f0f8"; }
 
-.icon-thumbup-outline:before {
+.icon-thumb-view:before {
   content: "\f0f9"; }
 
-.icon-thumbup:before {
+.icon-thumbup-outline:before {
   content: "\f0fa"; }
 
-.icon-timer-check:before {
+.icon-thumbup:before {
   content: "\f0fb"; }
 
-.icon-tip-outline:before {
+.icon-timer-check:before {
   content: "\f0fc"; }
 
-.icon-tip:before {
+.icon-tip-outline:before {
   content: "\f0fd"; }
 
-.icon-trash-outline:before {
+.icon-tip:before {
   content: "\f0fe"; }
 
-.icon-trash:before {
+.icon-trash-outline:before {
   content: "\f0ff"; }
 
-.icon-twitter:before {
+.icon-trash:before {
   content: "\f100"; }
 
-.icon-update-alt:before {
+.icon-twitter:before {
   content: "\f101"; }
 
-.icon-update:before {
+.icon-update-alt:before {
   content: "\f102"; }
 
-.icon-upload:before {
+.icon-update:before {
   content: "\f103"; }
 
-.icon-user-collab-outline:before {
+.icon-upload:before {
   content: "\f104"; }
 
-.icon-user-collab:before {
+.icon-user-collab-outline:before {
   content: "\f105"; }
 
-.icon-user-dashed:before {
+.icon-user-collab:before {
   content: "\f106"; }
 
-.icon-user-edit:before {
+.icon-user-dashed:before {
   content: "\f107"; }
 
-.icon-user-outline:before {
+.icon-user-edit:before {
   content: "\f108"; }
 
-.icon-user-profile:before {
+.icon-user-outline:before {
   content: "\f109"; }
 
-.icon-user:before {
+.icon-user-profile:before {
   content: "\f10a"; }
 
-.icon-video:before {
+.icon-user:before {
   content: "\f10b"; }
 
-.icon-watch-double:before {
+.icon-video:before {
   content: "\f10c"; }
 
-.icon-watch:before {
+.icon-watch-double:before {
   content: "\f10d"; }
 
-.icon-webdav-alt:before {
+.icon-watch:before {
   content: "\f10e"; }
 
-.icon-webdav-alt2:before {
+.icon-webdav-alt:before {
   content: "\f10f"; }
 
-.icon-webdav:before {
+.icon-webdav-alt2:before {
   content: "\f110"; }
 
-.icon-wiki-edit:before {
+.icon-webdav:before {
   content: "\f111"; }
 
-.icon-wiki:before {
+.icon-wiki-edit:before {
   content: "\f112"; }
+
+.icon-wiki:before {
+  content: "\f113"; }
 
 .icon-spin {
   animation: icon-spin 1s infinite linear; }
@@ -2847,7 +2862,7 @@ a {
       background-color: #f1f1f1; }
     .menu.menu-stack > li.divider {
       padding: 0;
-      border-top: 1px solid #f1f1f1; }
+      border-bottom: 1px solid #ededed; }
   .menu.menu-list {
     background-color: #fff; }
     .menu.menu-list .avatar {
@@ -2922,16 +2937,21 @@ a {
   .menu.menu-tabs-alt .menu-tab-panel {
     background: none; }
   .menu.menu-sidebar a {
+    height: 36px;
     padding-left: 20px;
-    color: #5d5f68;
+    color: #abacb0;
     font-size: 12px;
     line-height: 35px;
-    text-transform: uppercase; }
+    overflow: hidden; }
   .menu.menu-sidebar a:hover {
-    background-color: #e7e9eb;
+    color: #fff;
     text-decoration: none; }
-  .menu.menu-sidebar .active > a {
-    color: #cb6654; }
+  .menu.menu-sidebar .active a {
+    background: #242529;
+    color: #fff; }
+  .menu.menu-sidebar .active {
+    background: #242529;
+    color: #fff; }
   .menu.menu-sidebar .active > ul {
     display: block; }
   .menu.menu-sidebar i {
@@ -2939,15 +2959,22 @@ a {
     margin-right: 11px;
     font-size: 14px;
     text-align: left; }
+  .menu.menu-sidebar .icon-interaction-left {
+    margin-right: 0;
+    margin-left: 3px; }
+  .menu.menu-sidebar .icon-interaction-right {
+    margin-right: 0;
+    margin-left: 3px; }
   .menu.menu-sidebar ul {
     display: none;
     margin: 0; }
   .menu.menu-sidebar ul a {
-    padding-left: 55px;
+    padding-left: 48px;
     line-height: 24px;
     text-transform: initial; }
   .menu.menu-sidebar ul i {
-    margin-right: 5px;
+    width: 5px;
+    margin-right: 0;
     font-size: 10px;
     vertical-align: top; }
 
@@ -3049,10 +3076,12 @@ a {
   float: right !important; }
 
 .disabled {
+  cursor: not-allowed;
   opacity: 0.5;
   pointer-events: none; }
 
 .disabled-alt {
+  cursor: not-allowed;
   opacity: 1;
   pointer-events: none; }
 
