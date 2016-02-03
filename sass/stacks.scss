@@ -4,7 +4,7 @@
   .item {
     width: 240px;
     margin-right: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     float: left;
     clear: right;
   }
@@ -124,6 +124,22 @@
 
     .content {
       line-height: 30px;
+    }
+  }
+
+  &.stack-inline-compact {
+    .pull {
+      margin-top: 0;
+    }
+
+    .push {
+      > .content {
+        margin-left: 35px;
+      }
+    }
+
+    .content {
+      line-height: 20px;
     }
   }
 }
