@@ -31,35 +31,35 @@ body {
   // Widths
 
   &.one {
-    width: 4.85%;
+    width: 6.65%;
   }
 
   &.two {
-    width: 13.45%;
+    width: 14.45%;
   }
 
   &.three {
-    width: 20.85%;
+    width: 20.95%;
   }
 
   &.four {
-    width: 27.55%;
+    width: 25.6%;
   }
 
   &.five {
-    width: 39.45%;
+    width: 38%;
   }
 
   &.six {
-    width: 48%;
+    width: 49%;
   }
 
   &.seven {
-    width: 60.75%;
+    width: 60%;
   }
 
   &.eight {
-    width: 65.4%;
+    width: 72.4%;
   }
 
   &.nine {
@@ -67,7 +67,7 @@ body {
   }
 
   &.ten {
-    width: 82.7%;
+    width: 83.55%;
   }
 
   &.eleven {
@@ -128,11 +128,11 @@ body {
 @media handheld, (min-width: 1200px) and (max-width: 1479px) {
   .column {
     &.three {
-      width: 17.05%;
+      width: 17%;
     }
 
     &.nine {
-      width: 80.05%;
+      width: 81%;
     }
   }
 }
