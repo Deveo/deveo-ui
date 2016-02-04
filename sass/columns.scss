@@ -47,7 +47,7 @@ body {
   }
 
   &.five {
-    width: 38%;
+    width: 31%;
   }
 
   &.six {
@@ -55,7 +55,7 @@ body {
   }
 
   &.seven {
-    width: 60%;
+    width: 67%;
   }
 
   &.eight {
@@ -133,6 +133,18 @@ body {
 
     &.nine {
       width: 81%;
+    }
+  }
+}
+
+@media handheld, only screen and (max-width: 940px) {
+  .column {
+    &.five {
+      width: 36%;
+    }
+
+    &.seven {
+      width: 62%;
     }
   }
 }
