@@ -146,7 +146,7 @@
     }
 
     &:hover {
-      color: #181c1e;
+      color: $darker;
     }
   }
 
@@ -174,7 +174,7 @@
     text-decoration: none;
 
     &:hover {
-      color: #181c1e;
+      color: $darker;
     }
 
     &[active=true] {
@@ -206,12 +206,12 @@
     }
 
     .active a {
-      background: #242529;
+      background: #000;
       color: #fff;
     }
 
     .active {
-      background: #242529;
+      background: #000;
       color: #fff;
     }
 

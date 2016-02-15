@@ -1,12 +1,10 @@
 .stack {
-  padding: 20px 20px 0;
-  border-radius: 5px;
-  background-color: #fff;
+  padding: 0;
 
   .item {
     width: 240px;
     margin-right: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     float: left;
     clear: right;
   }
@@ -114,7 +112,6 @@
 
     .item > a {
       display: block;
-      padding: 20px;
     }
   }
 
@@ -127,6 +124,34 @@
 
     .content {
       line-height: 30px;
+    }
+  }
+
+  &.stack-inline-compact {
+    .pull {
+      margin-top: 0;
+    }
+
+    .push {
+      > .content {
+        margin-left: 35px;
+      }
+    }
+
+    .content {
+      line-height: 20px;
+    }
+  }
+}
+
+// layout responsiveness
+
+@media handheld, only screen and (max-width: 640px) {
+  .stack {
+    padding-bottom: 0;
+
+    .item {
+      margin-bottom: 10px;
     }
   }
 }

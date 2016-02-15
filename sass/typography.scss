@@ -16,11 +16,11 @@ html, body {
 
 @font-face {
   font-family: "deveoicons";
-  src: url("../fonts/deveo_icons-0312151216.eot");
-  src: url("../fonts/deveo_icons-0312151216.woff") format('woff'),
-       url("../fonts/deveo_icons-0312151216.svg#deveo-icons") format('svg'),
-       url("../fonts/deveo_icons-0312151216.otf") format('opentype'),
-       url("../fonts/deveo_icons-0312151216.ttf") format('truetype');
+  src: url("../fonts/deveo_icons-1712151136.eot");
+  src: url("../fonts/deveo_icons-1712151136.woff") format('woff'),
+       url("../fonts/deveo_icons-1712151136.svg#deveo-icons") format('svg'),
+       url("../fonts/deveo_icons-1712151136.otf") format('opentype'),
+       url("../fonts/deveo_icons-1712151136.ttf") format('truetype');
 }
 
 /* Webfont: LatoLatinLight-Regular */
@@ -59,6 +59,17 @@ html, body {
   text-rendering: optimizeLegibility;
 }
 
+/* Webfont Monospace: Incosolata */
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('../fonts/Inconsolata-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Inconsolata-Regular.woff') format('woff'),
+       url('../fonts/Inconsolata-Regular.ttf')  format('truetype'),
+       url('../fonts/Inconsolata-Regular.svg#Inconsolata-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, input {
   font-family: 'Lato', 'Lucida Grande', 'Segoe UI', 'Arial', sans-serif;
 }
@@ -73,7 +84,6 @@ blockquote, q {
 
 i.icons {
   display: inline-block;
-
   color: inherit;
   font-family: deveoicons;
   font-size: 14px;
@@ -156,7 +166,13 @@ i.icons {
 }
 
 pre, code, kbd, samp {
-  font-family: monospace;
+  padding: 2px 6px;
+  border: 1px solid #dde5ea;
+  border-radius: 2px;
+  background: #f5f8fa;
+  color: #3a4145;
+  font-family: 'Inconsolata', monospace;
+  font-size: 14px;
 }
 
 /*Sizes*/
@@ -170,18 +186,22 @@ body {
 }
 
 h1 {
+  color: $darker;
   font-size: 2.8em;
 }
 
 h2 {
+  color: $darker;
   font-size: 1.4em;
 }
 
 h3 {
+  color: $darker;
   font-size: 1.4em;
 }
 
 h4 {
+  color: $darker;
   font-size: 1.1em;
 }
 
@@ -326,7 +346,11 @@ a {
 @media handheld, only screen and (max-width: 767px) {
   body {
     font-size: rem(11px);
-
     -webkit-text-size-adjust: none;
+  }
+
+  h2 {
+    padding-top: 5px;
+    font-size: 1.1em;
   }
 }

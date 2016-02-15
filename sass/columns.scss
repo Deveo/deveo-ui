@@ -10,7 +10,7 @@ body {
 
 .column {
   min-height: 1px;
-  margin-right: 3.8%;
+  margin-right: 2%;
   float: left;
   clear: right;
 
@@ -31,43 +31,43 @@ body {
   // Widths
 
   &.one {
-    width: 4.85%;
+    width: 6.65%;
   }
 
   &.two {
-    width: 13.45%;
+    width: 14.45%;
   }
 
   &.three {
-    width: 22.05%;
+    width: 20.95%;
   }
 
   &.four {
-    width: 30.75%;
+    width: 25.6%;
   }
 
   &.five {
-    width: 39.45%;
+    width: 31%;
   }
 
   &.six {
-    width: 48%;
+    width: 49%;
   }
 
   &.seven {
-    width: 56.75%;
+    width: 67%;
   }
 
   &.eight {
-    width: 65.4%;
+    width: 72.4%;
   }
 
   &.nine {
-    width: 74.05%;
+    width: 77.05%;
   }
 
   &.ten {
-    width: 82.7%;
+    width: 83.55%;
   }
 
   &.eleven {
@@ -111,9 +111,92 @@ body {
   }
 }
 
-// Smaller screens
-@media only screen and (max-width: 1023px) {
+// layout responsiveness
+
+@media handheld, only screen and (min-width: 1480px) {
+  .column {
+    &.three {
+      width: 15.05%;
+    }
+
+    &.nine {
+      width: 82.05%;
+    }
+  }
+}
+
+@media handheld, (min-width: 1200px) and (max-width: 1479px) {
+  .column {
+    &.three {
+      width: 17%;
+    }
+
+    &.nine {
+      width: 81%;
+    }
+  }
+}
+
+@media handheld, only screen and (max-width: 940px) {
+  .column {
+    &.five {
+      width: 36%;
+    }
+
+    &.seven {
+      width: 62%;
+    }
+  }
 }
 
 @media handheld, only screen and (max-width: 767px) {
+  .column {
+    &.one {
+      width: 100%;
+    }
+
+    &.two {
+      width: 100%;
+    }
+
+    &.three {
+      width: 100%;
+    }
+
+    &.four {
+      width: 100%;
+    }
+
+    &.five {
+      width: 100%;
+    }
+
+    &.six {
+      width: 100%;
+    }
+
+    &.seven {
+      width: 100%;
+    }
+
+    &.eight {
+      width: 100%;
+    }
+
+    &.nine {
+      width: 100%;
+    }
+
+    &.ten {
+      width: 100%;
+    }
+
+    &.eleven {
+      width: 100%;
+    }
+
+    &.twelve {
+      width: 100%;
+    }
+  }
 }
