@@ -1556,8 +1556,8 @@ pre, code, kbd, samp {
   border-radius: 2px;
   background: #f5f8fa;
   color: #3a4145;
-  font-family: 'Inconsolata', monospace;
-  font-size: 14px; }
+  font-family: monospace;
+  font-size: 13px; }
 
 /*Sizes*/
 html {
@@ -3027,10 +3027,12 @@ a {
   float: right !important; }
 
 .disabled {
+  cursor: not-allowed;
   opacity: 0.5;
   pointer-events: none; }
 
 .disabled-alt {
+  cursor: not-allowed;
   opacity: 1;
   pointer-events: none; }
 
@@ -3044,8 +3046,5 @@ a {
 .blank-slate {
   margin: 0;
   padding: 20px;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 4px;
-  border-color: #fff;
-  background: #f5f5f5; }
+  border: 1px solid #ededed;
+  border-radius: 2px; }
