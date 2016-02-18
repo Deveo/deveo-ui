@@ -286,10 +286,17 @@
 }
 
 .button-group .button-dropdown {
+  height: 36px;
   padding: 0 10px;
 
   &.button-small {
+    height: 28px;
     padding: 0 8px;
+  }
+
+  &.button-xsmall {
+    height: 22px;
+    padding: 0 5px;
   }
 
   > .icons:last-of-type {

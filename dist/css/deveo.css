@@ -819,6 +819,8 @@ input[type="text"], input[type="password"], input[type="number"] {
   height: 36px; }
   input[type="text"].input-small, input[type="password"].input-small, input[type="number"].input-small {
     height: 28px; }
+input[type='password'] {
+  font-family: 'Arial', sans-serif; }
 
 input, textarea {
   width: 100%;
@@ -1954,9 +1956,14 @@ a {
       border-left: 1px solid #0088d2; }
 
 .button-group .button-dropdown {
+  height: 36px;
   padding: 0 10px; }
   .button-group .button-dropdown.button-small {
+    height: 28px;
     padding: 0 8px; }
+  .button-group .button-dropdown.button-xsmall {
+    height: 22px;
+    padding: 0 5px; }
   .button-group .button-dropdown > .icons:last-of-type {
     margin: 0; }
 

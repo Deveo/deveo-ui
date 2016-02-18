@@ -50,6 +50,10 @@ input {
       height: 28px;
     }
   }
+
+  &[type='password'] {
+    font-family: 'Arial', sans-serif;
+  }
 }
 
 input, textarea {
