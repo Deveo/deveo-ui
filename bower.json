@@ -6,12 +6,7 @@
   },
   "main": [
     "dist/css/deveo.css",
-    "dist/js/deveo.js",
-    "dist/fonts/deveo_icons.eot",
-    "dist/fonts/deveo_icons.otf",
-    "dist/fonts/deveo_icons.svg",
-    "dist/fonts/deveo_icons.ttf",
-    "dist/fonts/deveo_icons.woff"
+    "dist/js/deveo.js"
   ],
   "ignore": [
     "/.*",
