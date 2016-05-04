@@ -498,7 +498,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -2060,22 +2061,16 @@ a {
     background: #fdfdfd; }
 
 .button-group .button:first-of-type:not(:only-child) {
-  border-right: 0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.button-group .button:last-of-type {
+.button-group .button:last-of-type:not(:only-of-type) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
-  .button-group .button:last-of-type.button-primary:not(:first-of-type), .button-group .button:last-of-type.button-primary:only-child {
+  .button-group .button:last-of-type:not(:only-of-type).button-primary:not(:first-of-type), .button-group .button:last-of-type:not(:only-of-type).button-primary:only-child {
     border-left: 1px solid #0088d2; }
 
-.button-group .button:only-of-type:not(:only-child) {
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px; }
-
 .button-group .button:not(:first-of-type):not(:last-of-type) {
-  border-right: 0;
   border-radius: 0; }
   .button-group .button:not(:first-of-type):not(:last-of-type).button-primary {
     border-left: 1px solid #0088d2; }
@@ -2101,19 +2096,13 @@ a {
     margin: 0 5px;
     padding: 0; }
   .button-group-alt .button:first-of-type {
-    border-right: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
   .button-group-alt .button:last-of-type {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0; }
-    .button-group-alt .button:last-of-type.button-primary {
-      border-left: 1px solid #0088d2; }
   .button-group-alt .button:not(:first-of-type):not(:last-of-type) {
-    border-right: 0;
     border-radius: 0; }
-    .button-group-alt .button:not(:first-of-type):not(:last-of-type).button-primary {
-      border-left: 1px solid #0088d2; }
 
 .button-group .button-dropdown {
   height: 36px;
@@ -2130,8 +2119,24 @@ a {
 .button-group > .button-group {
   display: inline-block; }
 
+.button-group .button + .button-group > .button-primary,
+.button-group .button-group + .button-group > .button-primary {
+  border-left: 1px solid #0088d2; }
+
+.button-group .button + .button {
+  border-left: 0; }
+
+.button-group .button-group + .button-group,
 .button-group .button + .button-group {
   margin-left: -1px; }
+  .button-group .button-group + .button-group .button:first-of-type:not(:only-child),
+  .button-group .button + .button-group .button:first-of-type:not(:only-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+  .button-group .button-group + .button-group .button:first-of-type:not(:only-child),
+  .button-group .button + .button-group .button:first-of-type:not(:only-child) {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px; }
 
 @media handheld, only screen and (max-width: 940px) {
   .button.button-small {
