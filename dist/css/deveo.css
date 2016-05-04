@@ -2015,8 +2015,8 @@ a {
       min-height: 100%;
       padding: 0 5px;
       border-left: 1px solid #e9eced;
-      border-top-right-radius: 3px;
-      border-bottom-right-radius: 3px;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
       background-color: #f7f7f7;
       text-align: center; }
     .button.button-addon.button-primary > span:last-of-type {
@@ -2135,8 +2135,8 @@ a {
     border-bottom-left-radius: 0; }
   .button-group .button-group + .button-group .button:first-of-type:not(:only-child),
   .button-group .button + .button-group .button:first-of-type:not(:only-child) {
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px; }
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px; }
 
 @media handheld, only screen and (max-width: 940px) {
   .button.button-small {
