@@ -12,48 +12,6 @@ html, body {
   line-height: 1.8;
 }
 
-/*Fonts*/
-
-/* Webfont: LatoLatinLight-Regular */
-@font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato-light-webfont.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/lato-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/lato-light-webfont.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/lato-light-webfont.ttf') format('truetype');
-  font-style: normal;
-  font-weight: 300;
-  text-rendering: optimizeLegibility;
-}
-
-/* Webfont: LatoLatin-Regular */
-@font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato-regular-webfont.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/lato-regular-webfont.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/lato-regular-webfont.ttf') format('truetype');
-  font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-}
-
-/* Webfont: LatoLatinSemBd-Regular */
-@font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato-semibold-webfont.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/lato-semibold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/lato-semibold-webfont.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/lato-semibold-webfont.ttf') format('truetype');
-  font-style: normal;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-}
-
-html, input {
-  font-family: 'Lato', 'Lucida Grande', 'Segoe UI', 'Arial', sans-serif;
-}
-
 blockquote, q {
   margin-right: 5px;
   padding-left: 5px;
