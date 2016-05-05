@@ -14,15 +14,6 @@ html, body {
 
 /*Fonts*/
 
-@font-face {
-  font-family: "deveoicons";
-  src: url("../fonts/deveo_icons-2204162311.eot");
-  src: url("../fonts/deveo_icons-2204162311.woff") format('woff'),
-       url("../fonts/deveo_icons-2204162311.svg#deveo-icons") format('svg'),
-       url("../fonts/deveo_icons-2204162311.otf") format('opentype'),
-       url("../fonts/deveo_icons-2204162311.ttf") format('truetype');
-}
-
 /* Webfont: LatoLatinLight-Regular */
 @font-face {
   font-family: 'Lato';
@@ -69,89 +60,6 @@ blockquote, q {
   border-left: 2px solid #eee;
   color: #999;
   font-family: 'Georgia', serif;
-}
-
-i.icons {
-  display: inline-block;
-  color: inherit;
-  font-family: deveoicons;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  font-style: normal;
-  font-weight: normal;
-  text-align: center;
-
-  &.hidden {
-    display: none;
-  }
-
-  &.icon-small {
-    font-size: 11px;
-  }
-
-  &.icon-medium {
-    font-size: 16px;
-  }
-
-  &.icon-large {
-    font-size: 20px;
-  }
-
-  &.icon-xlarge {
-    font-size: 22px;
-  }
-
-  &.black {
-    color: $black;
-  }
-
-  &.blue {
-    color: $blue;
-  }
-
-  &.blue2 {
-    color: $blue2;
-  }
-
-  &.dark {
-    color: $dark;
-  }
-
-  &.darker {
-    color: $darker;
-  }
-
-  &.grey {
-    color: $grey;
-  }
-
-  &.grey2 {
-    color: $grey2;
-  }
-
-  &.white {
-    color: $white;
-  }
-
-  &.red {
-    color: $red;
-  }
-
-  &.red2 {
-    color: $red2;
-  }
-
-  &.green {
-    color: $green;
-  }
-
-  &.green2 {
-    color: $green2;
-  }
-
-  &.purple {
-    color: $purple;
-  }
 }
 
 pre, code, kbd, samp {
