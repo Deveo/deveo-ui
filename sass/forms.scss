@@ -226,64 +226,6 @@ label {
   }
 }
 
-// Styled selects to look like our custom dropdowns
-
-.selects {
-
-  select {
-    display: inline-block;
-    width: 100%;
-    height: 36px;
-    margin: 5px 0 0;
-    padding: 3px 10px;
-    border: 1px solid #b4bcc3;
-    border-radius: 3px;
-    outline: none;
-    background: #fff;
-    cursor: pointer;
-    color: $alt-link-color;
-    appearance: none;
-
-    &[multiple] {
-      height: initial;
-    }
-
-    &:hover {
-      border-color: #98a1a7;
-      color: $alt-link-hover-color;
-    }
-
-    &:focus {
-      border-color: #66afe9 !important;
-      outline: 0;
-      color: initial;
-    }
-
-    &:disabled {
-      border-color: #b4bcc3 !important;
-      background: #f1f1f1;
-      cursor: default;
-      color: $alt-link-color !important;
-      opacity: 0.4;
-    }
-  }
-
-  label {
-    position: relative;
-    margin-bottom: 0;
-
-    .icons {
-      position: absolute;
-      top: 14px;
-      right: 7px;
-      width: 20px;
-      background: #fff;
-      font-size: 12px;
-      pointer-events: none;
-    }
-  }
-}
-
 // Search inputs with search icon
 
 .search-expanded {

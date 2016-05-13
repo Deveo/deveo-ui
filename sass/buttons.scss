@@ -140,8 +140,8 @@
       min-height: 100%;
       padding: 0 5px;
       border-left: 1px solid #e9eced;
-      border-top-right-radius: 3px;
-      border-bottom-right-radius: 3px;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
       background-color: #f7f7f7;
       text-align: center;
     }
@@ -211,28 +211,30 @@
     }
   }
 
-  &:first-of-type {
-    border-right: 0;
+  &:first-of-type:not(:only-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
 
-  &:last-of-type {
+  &:last-of-type:not(:only-of-type) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 
-    &.button-primary {
+    &.button-primary:not(:first-of-type), &.button-primary:only-child {
       border-left: 1px solid #0088d2;
     }
   }
 
   &:not(:first-of-type):not(:last-of-type) {
-    border-right: 0;
     border-radius: 0;
 
     &.button-primary {
       border-left: 1px solid #0088d2;
     }
+  }
+
+  &:not(:first-child):not(:last-child) {
+    border-radius: 0;
   }
 }
 
@@ -261,7 +263,6 @@
   }
 
   &:first-of-type {
-    border-right: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
@@ -269,19 +270,10 @@
   &:last-of-type {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-
-    &.button-primary {
-      border-left: 1px solid #0088d2;
-    }
   }
 
   &:not(:first-of-type):not(:last-of-type) {
-    border-right: 0;
     border-radius: 0;
-
-    &.button-primary {
-      border-left: 1px solid #0088d2;
-    }
   }
 }
 
@@ -301,6 +293,42 @@
 
   > .icons:last-of-type {
     margin: 0;
+  }
+}
+
+// Nested groups
+
+.button-group > .button-group {
+  display: inline-block;
+}
+
+.button-group {
+  .button + .button-group,
+  .button-group + .button-group {
+    > .button-primary {
+      border-left: 1px solid #0088d2;
+    }
+  }
+}
+
+.button-group {
+  .button + .button {
+    border-left: 0;
+  }
+
+  .button-group + .button-group,
+  .button + .button-group {
+    margin-left: -1px;
+
+    .button:first-of-type:not(:only-child) {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .button:first-of-type:not(:only-child) {
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+    }
   }
 }
 
@@ -328,4 +356,3 @@
 @media handheld, only screen and (max-width: 640px) {
 
 }
-
