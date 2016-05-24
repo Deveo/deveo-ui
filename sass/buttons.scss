@@ -10,7 +10,7 @@
   line-height: 34px;
 
   // Icon styles
-  &.button-icon-only .icons:first-of-type {
+  &.button-icon-only .deveo-icons:first-of-type {
     margin-right: 0;
   }
 
@@ -42,7 +42,7 @@
     display: none;
   }
 
-  > .icons {
+  > .deveo-icons {
     margin-right: 4px; /* should be 10px but until we fix the whitespace issue */
     line-height: initial;
   }
@@ -68,7 +68,7 @@
     font-size: 12px;
     line-height: 26px;
 
-    &.button-icon-only .icons:first-of-type {
+    &.button-icon-only .deveo-icons:first-of-type {
       margin-right: 0;
     }
 
@@ -77,7 +77,7 @@
       height: 16px;
     }
 
-    > .icons {
+    > .deveo-icons {
       font-size: 12px;
     }
   }
@@ -87,7 +87,7 @@
     font-size: 11px;
     line-height: 20px;
 
-    &.button-icon-only .icons:first-of-type {
+    &.button-icon-only .deveo-icons:first-of-type {
       margin-right: 0;
     }
 
@@ -96,7 +96,7 @@
       height: 14px;
     }
 
-    > .icons {
+    > .deveo-icons {
       font-size: 11px;
     }
   }
@@ -299,7 +299,7 @@
     padding: 0 5px;
   }
 
-  > .icons:last-of-type {
+  > .deveo-icons:last-of-type {
     margin: 0;
   }
 }
