@@ -819,11 +819,11 @@ body {
 .deactivated {
   opacity: 0.4; }
 
-.render-error .icon-bot {
+.render-error .deveo-icons-bot {
   padding-right: 15px;
   font-size: 2em; }
 
-.render-error.task .icon-bot {
+.render-error.task .deveo-icons-bot {
   color: #444; }
 
 .thumbnail {
@@ -1024,7 +1024,7 @@ label {
 .selects label {
   position: relative;
   margin-bottom: 0; }
-  .selects label .icons {
+  .selects label .deveo-icons {
     position: absolute;
     top: 14px;
     right: 7px;
@@ -1889,7 +1889,7 @@ a {
   font-size: 14px;
   font-weight: bold;
   line-height: 34px; }
-  .button.button-icon-only .icons:first-of-type {
+  .button.button-icon-only .deveo-icons:first-of-type {
     margin-right: 0; }
   .button.is-loading {
     position: relative;
@@ -1909,7 +1909,7 @@ a {
       visibility: hidden; }
   .button .spinner {
     display: none; }
-  .button > .icons {
+  .button > .deveo-icons {
     margin-right: 4px;
     /* should be 10px but until we fix the whitespace issue */
     line-height: initial; }
@@ -1925,23 +1925,23 @@ a {
     padding: 0 10px;
     font-size: 12px;
     line-height: 26px; }
-    .button.button-small.button-icon-only .icons:first-of-type {
+    .button.button-small.button-icon-only .deveo-icons:first-of-type {
       margin-right: 0; }
     .button.button-small.is-loading img {
       top: 5px;
       height: 16px; }
-    .button.button-small > .icons {
+    .button.button-small > .deveo-icons {
       font-size: 12px; }
   .button.button-xsmall {
     padding: 0 10px;
     font-size: 11px;
     line-height: 20px; }
-    .button.button-xsmall.button-icon-only .icons:first-of-type {
+    .button.button-xsmall.button-icon-only .deveo-icons:first-of-type {
       margin-right: 0; }
     .button.button-xsmall.is-loading img {
       top: 3px;
       height: 14px; }
-    .button.button-xsmall > .icons {
+    .button.button-xsmall > .deveo-icons {
       font-size: 11px; }
   .button.button-primary {
     border-color: #269fe5;
@@ -2073,7 +2073,7 @@ a {
   .button-group .button-dropdown.button-xsmall {
     height: 22px;
     padding: 0 5px; }
-  .button-group .button-dropdown > .icons:last-of-type {
+  .button-group .button-dropdown > .deveo-icons:last-of-type {
     margin: 0; }
 
 @media handheld, only screen and (max-width: 940px) {
@@ -2084,7 +2084,7 @@ a {
   .button.button-addon > span {
     display: none; } }
 
-[data-dropdown] > .icons:last-of-type {
+[data-dropdown] > .deveo-icons:last-of-type {
   margin-right: 0;
   margin-left: 5px;
   font-size: 11px; }
@@ -2130,7 +2130,7 @@ a {
     max-height: 320px;
     margin-bottom: 0;
     overflow: auto; }
-    .dropdown-menu ul .icons {
+    .dropdown-menu ul .deveo-icons {
       margin-right: 10px; }
   .dropdown-menu .menu.menu-tabs-alt .menu-tab-list {
     margin-bottom: 10px;
@@ -2273,10 +2273,10 @@ a {
     margin-right: 11px;
     font-size: 14px;
     text-align: left; }
-  .menu.menu-sidebar .icon-interaction-left {
+  .menu.menu-sidebar .deveo-icons-interaction-left {
     margin-right: 0;
     margin-left: 3px; }
-  .menu.menu-sidebar .icon-interaction-right {
+  .menu.menu-sidebar .deveo-icons-interaction-right {
     margin-right: 0;
     margin-left: 3px; }
   .menu.menu-sidebar ul {
