@@ -162,6 +162,10 @@
 
   &.menu-tabs-alt .menu-tab-list {
     margin-bottom: 10px;
+
+    &.border-bottom {
+      border-bottom: 1px solid #ededed;
+    }
   }
 
   &.menu-tabs-alt .menu-tab {
