@@ -37,6 +37,16 @@
     }
   }
 
+  &.avatar-xsmall {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+
+    i, .initials {
+      font-size: 8px;
+    }
+  }
+
   &.avatar-large {
     width: 60px;
     height: 60px;
@@ -118,6 +128,13 @@
   &.avatar-small i:last-of-type:not(:only-of-type) {
     right: -5px;
     bottom: -4px;
+    font-size: 6px;
+    line-height: 10px;
+  }
+
+  &.avatar-xsmall i:last-of-type:not(:only-of-type) {
+    right: -3px;
+    bottom: -2px;
     font-size: 6px;
     line-height: 10px;
   }
