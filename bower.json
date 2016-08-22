@@ -1,15 +1,8 @@
 {
   "name": "deveo-ui",
   "version": "0.1.0",
-  "dependencies": {
-    "jquery": ">= 2.1.0"
-  },
-  "main": [
-    "dist/js/deveo.js"
-  ],
   "ignore": [
     "/.*",
-    "node_modules",
     "test"
   ]
 }
