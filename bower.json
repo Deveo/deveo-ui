@@ -5,7 +5,6 @@
     "jquery": ">= 2.1.0"
   },
   "main": [
-    "dist/css/deveo.css",
     "dist/js/deveo.js"
   ],
   "ignore": [
